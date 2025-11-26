@@ -13,6 +13,7 @@ By hashing the disk, your corrector can verify that:
 
 ## How to Generate `signature.txt`
 Use the following command to generate the signature in **sha1 format**:
+
 ```sha1sum debian_serv.vdi > signature.txt```
 
 ### Command breakdown
