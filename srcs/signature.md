@@ -13,7 +13,7 @@ By hashing the disk, your corrector can verify that:
 
 ## How to Generate `signature.txt`
 Use the following command to generate the signature in **sha1 format**:
-`sha1sum debian_serv.vdi > signature.txt`
+```sha1sum debian_serv.vdi > signature.txt```
 
 ### Command breakdown
 1. `sha1sum` is a program that calculates a SHA-1 **hash** of a file. SHA-1 creates a unique fingerprint of the file’s contents.
