@@ -21,5 +21,8 @@ Use the following command to generate the signature in **sha1 format**:
 3. `>` is a redirection operator. It redirects the output of the command into a file instead of printing it on the `stdin`. If the file already exists, it is overwritten.
 4. `signature.txt` is the **output file**. It will receive the hash result.
 
-After the command runs, the file will contain something like:
+After the command runs, the file will contain something like (hash + VM name):
 `7c4a8d09ca3762af61e59520943dc26494f8941b  debian_serv.vdi`
+
+>[!TIP]
+>You can also use the same command on files to obtain their hash.
