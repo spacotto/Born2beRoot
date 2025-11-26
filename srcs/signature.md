@@ -10,3 +10,16 @@ By hashing the disk, your corrector can verify that:
 - the VM booted at least once (since many systems generate the hash after initial setup),
 - you didn’t reuse someone else’s VM (each disk has different content, hence a different hash),
 - no one modified the disk afterwards (if they re-hash the disk, it must match your signature file).
+
+## How to Generate `signature.txt`
+Use the following command to generate the signature in **sha1 format**:
+`sha1sum debian_serv.vdi > signature.txt`
+
+### Command breakdown
+1. `sha1sum` is a program that calculates a SHA-1 **hash** of a file. SHA-1 creates a unique fingerprint of the file’s contents.
+2. `debian_serv.vdi` is the input file. It’s your **VirtualBox disk image**. `sha1sum` will read this file and compute its hash.
+3. `>` is a redirection operator. It redirects the output of the command into a file instead of printing it on the `stdin`. If the file already exists, it is overwritten.
+4. `signature.txt` is the **output file**. It will receive the hash result.
+
+After the command runs, the file will contain something like:
+`7c4a8d09ca3762af61e59520943dc26494f8941b  debian_serv.vdi`
