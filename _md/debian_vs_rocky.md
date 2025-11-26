@@ -14,7 +14,7 @@
 >What’s not the same: **Debian** uses the `APT` package manager and `.deb` packages, while **Rocky Linux** is a **Red Hat Enterprise Linux clone** and uses `DNF/YUM` with `.rpm` packages.
 
 ## Choose Debian if...
-You are a beginner. Debian is generally easier for a first server due to two main reasons.
+You are a beginner. Debian is generally easier for a first server due to several reasons.
 1. **Simpler defaults.** Debian comes with fewer vendor-specific tools, less SELinux complexity (it uses `AppArmor` by default), and a cleaner base system. Fewer moving parts mean fewer surprises.
 2. **Package management is beginner-friendly.** APT commands are intuitive, dependencies resolve cleanly, and most guides on the internet assume Debian/Ubuntu-style commands.
 3. **Documentation is extremely thorough but easy to digest.** Debian’s official docs are high quality, and the community is vast.
