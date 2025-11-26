@@ -6,35 +6,26 @@ Both are community-driven projects focused on stability, security, and providing
 ## Debian (latest stable version)
 
 ### Pros
-**Free and open-source.** Debian is free and open-source, making it a cost-effective choice.
-
-**Stability and security.** Debian is known for its stability and security 
-
-**Community-driven.** It's a community-driven project 
-
-**Enterprise-grade server operating systems.** Debian provides enterprise-grade server operating systems 
-
-**Extensive software applications.** It includes thousands of pre-packaged software applications ready to install and use 
-
+- **Free and open-source.** Debian is free and open-source, making it a cost-effective choice.
+- **Stability and security.** Debian is known for its stability and security.
+- **Community-driven.** It's a community-driven project.
+- **Enterprise-grade server operating systems.** Debian provides enterprise-grade server operating systems.
+- **Extensive software applications.** It includes thousands of pre-packaged software applications ready to install and use.
 
 ### Cons 
-**New system administration.** Debian might be highly recommended if you are new to system administration.
+- **New system administration.** Debian might be highly recommended if you are new to system administration.
 
 ## Rocky
 
 ### Pros 
-**Free and open-source.** Rocky Linux is free and open-source, making it a cost-effective choice.
-
-**Stability and security.** Rocky Linux is known for its stability and security.
-
-**Community-driven.** It’s a community-driven project.
-
-**Enterprise-grade server operating systems.** Rocky Linux provides enterprise-grade server operating systems.
-
-**Extensive software applications.** It includes thousands of pre-packaged software applications ready to install and use.
+- **Free and open-source.** Rocky Linux is free and open-source, making it a cost-effective choice.
+- **Stability and security.** Rocky Linux is known for its stability and security.
+- **Community-driven.** It’s a community-driven project.
+- **Enterprise-grade server operating systems.** Rocky Linux provides enterprise-grade server operating systems.
+- **Extensive software applications.** It includes thousands of pre-packaged software applications ready to install and use.
 
 ### Cons
-**New system administration.** Rocky Linux might be highly recommended if you are new to system administration.
+- **New system administration.** Rocky Linux might be highly recommended if you are new to system administration.
 
 ## Debian vs. Rocky
 >[!CAUTION]
