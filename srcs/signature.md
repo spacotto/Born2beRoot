@@ -3,3 +3,10 @@ In most training or evaluation environments, `signature.txt` is a **file generat
 
 ## Content
 It is a text file (`.txt`) containing the **hash of your VM’s disk**. It’s a cryptographic **fingerprint** of your VM’s virtual disk.
+
+## Purpose
+By hashing the disk, your corrector can verify that:
+- you actually installed the OS (because your disk hash will be unique),
+- the VM booted at least once (since many systems generate the hash after initial setup),
+- you didn’t reuse someone else’s VM (each disk has different content, hence a different hash),
+- no one modified the disk afterwards (if they re-hash the disk, it must match your signature file).
