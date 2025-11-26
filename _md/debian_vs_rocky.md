@@ -24,6 +24,7 @@ You are a beginner. Debian is generally easier for a first server due to several
 >Debian is highly recommended if you are new to system administration.
 
 ## Choose Rocky if...
-1. You want to work in environments that use **Red Hat Enterprise Linux** (corporate IT, enterprise data centres).
-2. You’ll eventually need **SELinux** in enforcing mode, which is the default and deeply integrated in the RHEL ecosystem.
-3. You want access to **RHEL-specific tooling** (Cockpit, system roles, etc.).
+You are interested in **Red Hat Enterprise Linux**. For example:
+1. you want to work in environments that use **Red Hat Enterprise Linux** (corporate IT, enterprise data centres);
+2. you’ll eventually need **SELinux** in enforcing mode, which is the default and deeply integrated in the RHEL ecosystem;
+3. you want access to **RHEL-specific tooling** (Cockpit, system roles, etc.).
