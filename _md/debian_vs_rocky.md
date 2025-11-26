@@ -1,7 +1,4 @@
 # Debian vs. Rocky
->[!CAUTION]
->Debian is highly recommended if you are new to system administration.
-
 **Debian** and **Rocky Linux** are free, open-source Linux distributions: complete operating systems that include the Linux kernel, system utilities, and thousands of pre-packaged software applications ready to install and use.
 
 ## Why Debian or Rocky?
@@ -15,3 +12,18 @@
 
 >[!WARNING]
 >What’s not the same: **Debian** uses the `APT` package manager and `.deb` packages, while **Rocky Linux** is a **Red Hat Enterprise Linux clone** and uses `DNF/YUM` with `.rpm` packages.
+
+## Choose Debian if...
+You are a beginner. Debian is generally easier for a first server due to two main reasons.
+1. **Simpler defaults.** Debian comes with fewer vendor-specific tools, less SELinux complexity (it uses `AppArmor` by default), and a cleaner base system. Fewer moving parts mean fewer surprises.
+2. **Package management is beginner-friendly.** APT commands are intuitive, dependencies resolve cleanly, and most guides on the internet assume Debian/Ubuntu-style commands.
+3. **Documentation is extremely thorough but easy to digest.** Debian’s official docs are high quality, and the community is vast.
+4. **Predictable, stable environment.** Debian favours stability over novelty, which is ideal for someone setting up a first server.
+
+>[!IMPORTANT]
+>Debian is highly recommended if you are new to system administration.
+
+## Choose Rocky if...
+1. You want to work in environments that use **Red Hat Enterprise Linux** (corporate IT, enterprise data centres).
+2. You’ll eventually need **SELinux** in enforcing mode, which is the default and deeply integrated in the RHEL ecosystem.
+3. You want access to **RHEL-specific tooling** (Cockpit, system roles, etc.).
