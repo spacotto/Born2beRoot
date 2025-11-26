@@ -5,27 +5,32 @@ Both are community-driven projects focused on stability, security, and providing
 
 ## Debian (latest stable version)
 
+### What's
+
 ### Pros
-- **Free and open-source.** Debian is free and open-source, making it a cost-effective choice.
-- **Stability and security.** Debian is known for its stability and security.
-- **Community-driven.** It's a community-driven project.
-- **Enterprise-grade server operating systems.** Debian provides enterprise-grade server operating systems.
+- **Free and open-source.** It is free and open-source.
+- **Stability and security.** It is known for its stability and security.
+- **Community-driven.** It is a community-driven project.
+- **Enterprise-grade server operating systems.** It provides enterprise-grade server operating systems.
 - **Extensive software applications.** It includes thousands of pre-packaged software applications ready to install and use.
 
 ### Cons 
-- **New system administration.** Debian might be highly recommended if you are new to system administration.
+- **New system administration.** It might be highly recommended if you are new to system administration.
 
 ## Rocky
 
+### What's Rocky Linux?
+Rocky Linux is an open-source enterprise operating system designed to be 100% bug-for-bug compatible with Red Hat Enterprise Linux®.
+
 ### Pros 
-- **Free and open-source.** Rocky Linux is free and open-source, making it a cost-effective choice.
-- **Stability and security.** Rocky Linux is known for its stability and security.
-- **Community-driven.** It’s a community-driven project.
-- **Enterprise-grade server operating systems.** Rocky Linux provides enterprise-grade server operating systems.
+- **Free and open-source.** It is free and open-source.
+- **Stability and security.** It is known for its stability and security.
+- **Community-driven.** It is a community-driven project.
+- **Enterprise-grade server operating systems.** It provides enterprise-grade server operating systems.
 - **Extensive software applications.** It includes thousands of pre-packaged software applications ready to install and use.
 
 ### Cons
-- **New system administration.** Rocky Linux might be highly recommended if you are new to system administration.
+- **New system administration.** It might be highly recommended if you are new to system administration.
 
 ## Debian vs. Rocky
 >[!CAUTION]
@@ -33,16 +38,71 @@ Both are community-driven projects focused on stability, security, and providing
 
 ## Debian vs. Rocky Linux: Feature Comparison Table
 
-| Feature | Debian | Rocky Linux |
-|---|---|---|
-| **Base/Origin** | Independent distribution | Enterprise Linux distribution derived from Red Hat Enterprise Linux (RHEL) sources |
-| **Release Cycle** | Stable (typically every 2 years), Testing, Unstable |  Generally follows RHEL release cycles, with a focus on stability |
-| **Package Management** | APT (Advanced Package Tool) using `.deb` packages |  DNF (Dandified Yum) using `.rpm` packages |
-| **Community Support** | Large and established community | Growing community, backed by a commitment to RHEL compatibility |
-| **Stability Focus** | Very high, prioritizing stability over bleeding-edge software | High, aiming for RHEL-level stability |
-| **Software Availability** | Vast software repository, though newer versions may lag behind |  Large software repository, generally aligned with RHEL versions |
-| **Ease of Use (Beginners)** | Can be challenging for beginners due to manual configuration requirements |  Generally considered easier to use than Debian, especially for those familiar with RHEL/CentOS |
-| **Hardware Support** | Broad hardware support | Broad hardware support, leveraging RHEL's extensive hardware compatibility |
-| **Cost** | Free and open-source | Free and open-source |
-| **Use Cases** | Servers, desktops, development environments, embedded systems | Servers, cloud infrastructure, enterprise applications |
-| **Security** | Strong security reputation | Strong security reputation, inheriting from RHEL’s security practices |
+### Base/Origin
+**Debian** 
+>Independent distribution.
+
+**Rocky Linux**
+>Enterprise Linux distribution
+
+### Package Management
+**Debian** 
+>APT (Advanced Package Tool) using `.deb` packages.
+
+**Rocky Linux**
+>DNF (Dandified Yum) using `.rpm` packages.
+
+### Community Support
+**Debian** 
+>Large and established community.
+
+**Rocky Linux**
+>Growing community, backed by a commitment to RHEL compatibility.
+
+### Stability Focus
+**Debian** 
+>Very high, prioritizing stability over bleeding-edge software.
+
+**Rocky Linux**
+>High, aiming for RHEL-level stability.
+
+### Software Availability
+**Debian** 
+>Vast software repository, though newer versions may lag behind.
+
+**Rocky Linux**
+>Large software repository, generally aligned with RHEL versions.
+
+### text
+**Debian** 
+>text
+
+**Rocky Linux**
+>text
+
+### text
+**Debian** 
+>text
+
+**Rocky Linux**
+>text
+
+### text
+**Debian** 
+>text
+
+**Rocky Linux**
+>text
+
+### text
+**Debian** 
+>text
+
+**Rocky Linux**
+>text
+
+| **Beginner Friendly**     | Challenging due to manual configuration requirements | Easier for those familiar with RHEL/CentOS |
+| **Hardware Support**      | Broad hardware support | Broad hardware support, leveraging RHEL's extensive hardware compatibility |
+| **Cost**                  | Free and open-source | Free and open-source |
+| **Use Cases**             | Servers, desktops, development environments, embedded systems | Servers, cloud infrastructure, enterprise applications |
+| **Security**              | Strong security reputation | Strong security reputation, inheriting from RHEL’s security practices |
