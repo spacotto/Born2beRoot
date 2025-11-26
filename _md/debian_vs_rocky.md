@@ -4,33 +4,12 @@
 
 **Debian** and **Rocky Linux** are free, open-source Linux distributions: complete operating systems that include the Linux kernel, system utilities, and thousands of pre-packaged software applications ready to install and use.
 
-Both are community-driven projects focused on stability, security, and providing enterprise-grade server operating systems without licensing costs, making them popular choices for web servers, cloud infrastructure, and production environments. 
+## Why Debian or Rocky?
+1. **Strong reputation for stability.** Both are known for being **reliable and predictable** (aka ideal for servers where you don’t want surprises).
+2. **Long-Term Support (LTS) philosophy.** Each distribution provides many years of **security updates**, making them safe for production systems.
+3. **Community-driven, not corporate-controlled.** Debian is fully community-developed. Rocky Linux was created by the community after CentOS shifted direction. Both aim to remain **independent** and stable.
+4. **Excellent documentation and large user communities.** Lots of tutorials, forum discussions, and troubleshooting guides exist for both.
+5. **Security-focused by design.** Secure defaults, quick security patches, and compatibility with hardened configurations (like SELinux or AppArmor, depending on the distro).
+6. **Suitable for similar workloads.** Both can run: web servers (Apache, Nginx); databases (PostgreSQL, MySQL); containers (Docker, Podman); virtualisation tools; development stacks.
+7. **Free and open-source.** No licensing fees, freely redistributable.
 
-## Debian (latest stable version)
-
-### What's
-
-### Pros
-- **Free and open-source.** It is free and open-source.
-- **Stability and security.** It is known for its stability and security.
-- **Community-driven.** It is a community-driven project.
-- **Enterprise-grade server operating systems.** It provides enterprise-grade server operating systems.
-- **Extensive software applications.** It includes thousands of pre-packaged software applications ready to install and use.
-
-### Cons 
-- **New system administration.** It might be highly recommended if you are new to system administration.
-
-## Rocky
-
-### What's Rocky Linux?
-Rocky Linux is an open-source enterprise operating system designed to be 100% bug-for-bug compatible with Red Hat Enterprise Linux®.
-
-### Pros 
-- **Free and open-source.** It is free and open-source.
-- **Stability and security.** It is known for its stability and security.
-- **Community-driven.** It is a community-driven project.
-- **Enterprise-grade server operating systems.** It provides enterprise-grade server operating systems.
-- **Extensive software applications.** It includes thousands of pre-packaged software applications ready to install and use.
-
-### Cons
-- **New system administration.** It might be highly recommended if you are new to system administration.
