@@ -13,3 +13,5 @@
 6. **Suitable for similar workloads.** Both can run: web servers (Apache, Nginx); databases (PostgreSQL, MySQL); containers (Docker, Podman); virtualisation tools; development stacks.
 7. **Free and open-source.** No licensing fees, freely redistributable.
 
+>[!WARNING]
+>What’s not the same: **Debian** uses the `APT` package manager and `.deb` packages, while **Rocky Linux** is a **Red Hat Enterprise Linux clone** and uses `DNF/YUM` with `.rpm` packages.
