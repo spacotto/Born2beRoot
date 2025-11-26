@@ -73,36 +73,37 @@ Rocky Linux is an open-source enterprise operating system designed to be 100% bu
 **Rocky Linux**
 >Large software repository, generally aligned with RHEL versions.
 
-### text
+### Beginner Friendly
 **Debian** 
->text
+>Challenging due to manual configuration requirements.
 
 **Rocky Linux**
->text
+>Easier for those familiar with RHEL/CentOS.
 
-### text
+### Hardware Support
 **Debian** 
->text
+>Broad hardware support.
 
 **Rocky Linux**
->text
+>Broad hardware support, leveraging RHEL's extensive hardware compatibility.
 
-### text
+### Cost
 **Debian** 
->text
+>Free and open-source.
 
 **Rocky Linux**
->text
+>Free and open-source
 
-### text
+### Use Cases
 **Debian** 
->text
+>Servers, desktops, development environments, embedded systems
 
 **Rocky Linux**
->text
+>Servers, cloud infrastructure, enterprise applications
 
-| **Beginner Friendly**     | Challenging due to manual configuration requirements | Easier for those familiar with RHEL/CentOS |
-| **Hardware Support**      | Broad hardware support | Broad hardware support, leveraging RHEL's extensive hardware compatibility |
-| **Cost**                  | Free and open-source | Free and open-source |
-| **Use Cases**             | Servers, desktops, development environments, embedded systems | Servers, cloud infrastructure, enterprise applications |
-| **Security**              | Strong security reputation | Strong security reputation, inheriting from RHEL’s security practices |
+### Security
+**Debian** 
+>Strong security reputation.
+
+**Rocky Linux**
+>Strong security reputation, inheriting from RHEL’s security practices.
