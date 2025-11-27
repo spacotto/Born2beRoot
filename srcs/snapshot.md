@@ -40,12 +40,26 @@ Snapshots are stored as **differencing disk files** in a "Snapshots" folder with
 >Note that restoring a snapshot requires the VM to be powered off.
 
 ## How to remove a snapshot on VirtualBox
-To delete a virtual machine snapshot in Oracle VM VirtualBox, you can use either the graphical user interface (GUI) or the command-line interface (CLI). In the GUI, select the virtual machine in the main window, click the "Snapshots" button in the upper-right corner, right-click the snapshot you wish to delete in the snapshots tree, and select "Delete" from the context menu.
- This action releases the disk space used by the snapshot's data but does not affect the current state of the virtual machine.
- The deletion process may take considerable time, especially for large snapshots, as data is merged between disk image files, and temporary files may require additional disk space during the operation.
+To remove a virtual machine snapshot in Oracle VM VirtualBox, you can use either the **graphical user interface (GUI)** or the **command-line interface (CLI)**. 
 
-Alternatively, use the VBoxManage command-line tool. First, list the snapshots with VBoxManage snapshot "VM_NAME" list to identify the snapshot name or UUID.
- Then, execute VBoxManage snapshot "VM_NAME" delete "SNAPSHOT_NAME" to delete the specified snapshot.
- This command can be used even while the virtual machine is running, though some operations may require the VM to be shut down.
- For deleting multiple snapshots, a script can automate the process by reading snapshot names from a text file and executing the delete command for each one.
+## Graphical User Interface (GUI)
+1. Select the virtual machine in the main window.
+2. Click the "Snapshots" button in the upper-right corner.
+3. Right-click the snapshot you wish to delete in the snapshots tree.
+4. Select "Delete" from the context menu.
 
+>[!NOTE]
+>This action releases the disk space used by the snapshot's data but does not affect the current state of the VM.
+
+>[!WARNING]
+>The deletion process **may take considerable time**, especially for large snapshots, as data is merged between disk image files, and temporary files may require additional disk space during the operation.
+
+## VBoxManage command-line tool
+Alternatively, use the VBoxManage command-line tool:
+1. List the snapshots with VBoxManage snapshot "VM_NAME" list to identify the snapshot name or UUID,
+2. Execute VBoxManage snapshot "VM_NAME" delete "SNAPSHOT_NAME" to delete the specified snapshot.
+>[!NOTE]
+>This command can be used even while the VM is running, though some operations may require the VM to be shut down.
+
+>[!TIP]
+>For deleting multiple snapshots, a script can automate the process by reading snapshot names from a text file and executing the delete command for each one.
