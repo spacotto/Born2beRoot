@@ -15,8 +15,11 @@ By hashing the disk, your corrector can verify that:
 - no one modified the disk afterwards (if they re-hash the disk, it must match your signature file).
 
 ## How to Generate `signature.txt`
+>[!IMPORTANT]
+>Run the command on thyew hot, not inside the VM.
+
 >[!CAUTION]
->Every time 
+>**Shut down the VM before** generating the signature. **A running VM changes the file**, thus the hash won't match later. In other words, (1) shut down the VM, (2) generate the signature, and (3) **DO NOT touch it again** until you're done with the corrections!
 
 Use the following command to generate the signature in **sha1 format**:
 
