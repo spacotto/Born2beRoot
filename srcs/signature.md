@@ -12,6 +12,9 @@ By hashing the disk, your corrector can verify that:
 - no one modified the disk afterwards (if they re-hash the disk, it must match your signature file).
 
 ## How to Generate `signature.txt`
+>[!CAUTION]
+>Every time 
+
 Use the following command to generate the signature in **sha1 format**:
 
 ```sha1sum debian_serv.vdi > signature.txt```
