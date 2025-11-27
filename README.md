@@ -10,7 +10,7 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 >[!CAUTION]
 >Since this project serves as an introduction to virtualisation, I will focus on installing the minimum of services. For this reason, **I will not provide a graphical interface**.
 
-## What is Virtualization?
+## What is Virtualisation?
 **Note:** This section is a work in progress and will be updated soon.
 
 ## Benefits of Using Virtual Machines
@@ -46,7 +46,16 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 ## Downloading and Installing VirtualBox
 **Note:** This section is a work in progress and will be updated soon.
 
-## Operating System: Debian 13 (Trixie)
+# Selecting an Operating System
+**Note:** This section is a work in progress and will be updated soon.
+
+## What is a "Guest" Operating System?
+**Note:** This section is a work in progress and will be updated soon.
+
+## Introduction to Debian 13 (Trixie)
+**Note:** This section is a work in progress and will be updated soon.
+
+## Why Choose Debian Over Other Distributions?
 I chose **Debian 13 (Trixie)** over Rocky Linux because, as a beginner, I wanted a system that is simple to set up, well-documented, and widely supported by the community. Debian is known for its stability and ease of use, making it ideal for learning the basics of Linux without being overwhelmed by complexity. 
 
 Moreover, since **I'm not specifically interested in working with Red Hat Enterprise Linux (RHEL)** environments or their derivatives, Rocky Linux's enterprise focus didn't match my needs. Debian 13 lets me explore, learn, and customise my VM with confidence, while providing plenty of helpful resources for newcomers.
