@@ -52,91 +52,91 @@ Moreover, since **I'm not specifically interested in working with Red Hat Enterp
 >Find out more about Debian vs. Rocky Linux [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-vs-rocky.md).
 
 # Creating Your First Virtual Machine
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Setting Up a New VM in VirtualBox
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Allocating Resources (CPU, RAM, Storage)
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Configuring Essential VM Settings
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 # Installing the Operating System
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Acquiring the Debian ISO
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Booting the VM from the ISO
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Step-by-Step Installation Process
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Initial Configuration and User Setup
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 # Basic Post-Installation Configuration
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Installing VirtualBox Guest Additions
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Setting Up Networking and Internet Access
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Updating the System
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Creating Snapshots
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 # Managing and Using Your Virtual Machine
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Basic VM Controls (Start, Stop, Pause, Reset)
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Sharing Folders Between Host and Guest
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Taking and Reverting to Snapshots
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Troubleshooting Common Issues
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 # Best Practices and Tips
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Keeping Your VM Secure
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Backing Up Your VM
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Performance Optimisation Tips
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 # Additional Resources
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Useful Links
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Recommended Reading
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Community Forums and Support
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 # Conclusion
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Recap of What You Learned
-**Note:** This section is a work in progress and will be updated soon.
+-
 
 ## Next Steps in Virtualisation
-**Note:** This section is a work in progress and will be updated soon.
+-
