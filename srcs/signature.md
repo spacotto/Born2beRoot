@@ -16,7 +16,7 @@ By hashing the disk, your corrector can verify that:
 
 ## How to Generate `signature.txt`
 >[!IMPORTANT]
->Run the command on thyew hot, not inside the VM.
+>Run the command on the host, not inside the VM.
 
 >[!CAUTION]
 >**Shut down the VM before** generating the signature. **A running VM changes the file**, thus the hash won't match later. In other words, (1) shut down the VM, (2) generate the signature, and (3) **DO NOT touch it again** until you're done with the corrections!
