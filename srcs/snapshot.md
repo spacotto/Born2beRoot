@@ -35,6 +35,7 @@ To generate a Virtual Machine (VM) snapshot in VirtualBox, do as follows.
 
 >[!NOTE]
 Snapshots are stored as **differencing disk files** in a "Snapshots" folder within the VM's directory, which only store changes from the previous state, helping to conserve disk space. You can create multiple snapshots to maintain different points in time, and later restore to any of them by selecting the desired snapshot and clicking "Restore".
+
 >[!WARNING]
 >Note that restoring a snapshot requires the VM to be powered off.
 
@@ -47,3 +48,4 @@ Alternatively, use the VBoxManage command-line tool. First, list the snapshots w
  Then, execute VBoxManage snapshot "VM_NAME" delete "SNAPSHOT_NAME" to delete the specified snapshot.
  This command can be used even while the virtual machine is running, though some operations may require the VM to be shut down.
  For deleting multiple snapshots, a script can automate the process by reading snapshot names from a text file and executing the delete command for each one.
+
