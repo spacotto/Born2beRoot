@@ -47,7 +47,7 @@ Virtual machines (VMs) offer numerous benefits that make them a cornerstone of m
 **Note:** This section is a work in progress and will be updated soon.
 
 ## What is a "Guest" Operating System?
-**Note:** This section is a work in progress and will be updated soon.
+A **Guest Operating System** (Guest OS) is **software installed within a VM that runs on a virtualised environment created by a host operating system**. It operates as a **secondary OS**, providing an **independent environment** for running applications, particularly those incompatible with the host OS. The guest OS **interacts with virtual hardware provided** by the hypervisor rather than the physical hardware directly, and it manages its own resources within the VM. **Multiple guest operating systems can run simultaneously** on a single physical machine, each isolated within its own VM, enabling the execution of diverse applications requiring different OS environments on the same hardware.
 
 ## Introduction to Debian 13 (Trixie)
 **Note:** This section is a work in progress and will be updated soon.
