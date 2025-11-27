@@ -20,7 +20,13 @@ Virtual machines (VMs) offer numerous benefits that make them a cornerstone of m
 When choosing virtualisation software for your first VM, consider factors such as **compatibility with your OS**, **ease of use**, and **available documentation or community support** for beginners. Ensure the software is **actively maintained**, **supports the type of guest operating systems** you plan to use, and offers the **core features you need**, like snapshotting, resource management, and portability. **Cost** may also be important: many popular tools like VirtualBox are free and open-source, making them excellent starting points. Selecting user-friendly and reliable software will help simplify the learning process and avoid unnecessary technical issues.
 
 ## Overview of Popular Virtualisation Tools
-**Note:** This section is a work in progress and will be updated soon.
+Several widely used virtualisation tools make it easy to create and manage virtual machines. 
+- **VirtualBox** is a free, open-source option that supports major operating systems and is great for beginners.
+- **VMware Workstation Player** and **VMware Fusion** offer user-friendly interfaces and advanced features, popular among both personal and professional users.
+- **UTM** is designed for Mac users seeking a simple virtualisation solution.
+- For Linux, **KVM (Kernel-based Virtual Machine)** provides high efficiency and integration with the system.
+
+These tools differ in terms of cost, platform support, and features, but all allow users to run multiple operating systems on a single physical machine.
 
 ## Why VirtualBox?
 **VirtualBox** is an excellent choice for creating your **first VM** because it is **free**, **open-source**, and **works on all major operating systems**, including Windows, macOS, and Linux. Its **user-friendly interface** makes setup straightforward, even for those with no prior experience in virtualisation. VirtualBox also offers a wide range of **features**, supports **many guest operating systems**, and has an **active community** that provides helpful **documentation** and troubleshooting support.
