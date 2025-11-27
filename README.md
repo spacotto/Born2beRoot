@@ -62,7 +62,7 @@ Moreover, since **I'm not specifically interested in working with Red Hat Enterp
 2. Click on `Machine`
 3. Click on `New`
 
-# Partitioning
+## Partitioning
 ```
 # lsblk
 NAME                     MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
@@ -80,90 +80,3 @@ sda                        8:0    0  30.8G  0 disk
     └─LVMGroup-var--log  254:0    0  23.3G  0 lvm   /var/log
 sr0                       11:0    1  1024M  0 rom
 ```
-
-## Setting Up a New VM in VirtualBox
--
-
-## Allocating Resources (CPU, RAM, Storage)
--
-
-## Configuring Essential VM Settings
--
-
-# Installing the Operating System
--
-
-## Acquiring the Debian ISO
--
-
-## Booting the VM from the ISO
--
-
-## Step-by-Step Installation Process
--
-
-## Initial Configuration and User Setup
--
-
-# Basic Post-Installation Configuration
--
-
-## Installing VirtualBox Guest Additions
--
-
-## Setting Up Networking and Internet Access
--
-
-## Updating the System
--
-
-## Creating Snapshots
--
-
-# Managing and Using Your Virtual Machine
--
-
-## Basic VM Controls (Start, Stop, Pause, Reset)
--
-
-## Sharing Folders Between Host and Guest
--
-
-## Taking and Reverting to Snapshots
--
-
-## Troubleshooting Common Issues
--
-
-# Best Practices and Tips
--
-
-## Keeping Your VM Secure
--
-
-## Backing Up Your VM
--
-
-## Performance Optimisation Tips
--
-
-# Additional Resources
--
-
-## Useful Links
--
-
-## Recommended Reading
--
-
-## Community Forums and Support
--
-
-# Conclusion
--
-
-## Recap of What You Learned
--
-
-## Next Steps in Virtualisation
--
