@@ -28,15 +28,15 @@ To generate a Virtual Machine (VM) snapshot in VirtualBox, do as follows.
 >[!NOTE]
 >In the dialog that appears, provide a descriptive name for the snapshot, such as "Fresh installation" or "After software update," to help identify its purpose later.
 >[!TIP]
->Optionally, add a **description** to note the state of the VM at that point, such as specific configurations or software installed (just like when you `git commit -m "Description"`). You can also choose whether to include the current memory state in the snapshot; checking this option saves the VM's running state, which can be useful for quick restoration but increases the snapshot size.
+>Optionally, add a **description** to note the state of the VM at that point, such as specific configurations or software installed (just like when you `git commit -m "Description"`). You can also choose whether to include the **current memory state** in the snapshot; checking this option saves the VM's running state, which can be u**seful for quick restoration but increases the snapshot size**.
 
 **STEP 5**
->After setting the name and options, click "OK." The snapshot creation process may take a few moments, depending on the VM's size and activity.
- Once complete, the new snapshot will appear in the list, and the current state of the VM will be based on this snapshot.
+>After setting the **name** and **options**, click "**OK**." The snapshot creation process **may take a few moments**, depending on the VM's size and activity. Once complete, the **new snapshot will appear in the list**, and the current state of the VM will be based on this snapshot.
 
-Snapshots are stored as differencing disk files in a "Snapshots" folder within the VM's directory, which only store changes from the previous state, helping to conserve disk space.
- You can create multiple snapshots to maintain different points in time, and later restore to any of them by selecting the desired snapshot and clicking "Restore".
- Note that restoring a snapshot requires the VM to be powered off.
+>[!NOTE]
+Snapshots are stored as **differencing disk files** in a "Snapshots" folder within the VM's directory, which only store changes from the previous state, helping to conserve disk space. You can create multiple snapshots to maintain different points in time, and later restore to any of them by selecting the desired snapshot and clicking "Restore".
+>[!WARNING]
+>Note that restoring a snapshot requires the VM to be powered off.
 
 ## How to remove a snapshot on VirtualBox
 To delete a virtual machine snapshot in Oracle VM VirtualBox, you can use either the graphical user interface (GUI) or the command-line interface (CLI). In the GUI, select the virtual machine in the main window, click the "Snapshots" button in the upper-right corner, right-click the snapshot you wish to delete in the snapshots tree, and select "Delete" from the context menu.
