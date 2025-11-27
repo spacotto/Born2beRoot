@@ -16,9 +16,6 @@ Virtual machines (VMs) offer numerous benefits that make them a cornerstone of m
 >[!NOTE]
 >Find out more about the benefits of using VMs [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-benefits.md).
 
-## Overview of the Guide
-**Note:** This section is a work in progress and will be updated soon.
-
 # Prerequisites
 **Note:** This section is a work in progress and will be updated soon.
 
