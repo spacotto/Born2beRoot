@@ -34,9 +34,6 @@ These tools differ in terms of cost, platform support, and features, but all all
 >[!NOTE]
 >Find out more about VirtualBox [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/virtualbox-vs-utm.md).
 
-## Downloading and Installing VirtualBox
-**Note:** This section is a work in progress and will be updated soon.
-
 # Selecting an Operating System
 **Note:** This section is a work in progress and will be updated soon.
 
