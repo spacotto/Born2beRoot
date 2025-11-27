@@ -52,7 +52,9 @@ Moreover, since **I'm not specifically interested in working with Red Hat Enterp
 >Find out more about Debian vs. Rocky Linux [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-vs-rocky.md).
 
 # Creating Your First Virtual Machine
--
+1. Open VirtualBox
+2. Click on `Machine`
+3. Click on `New`
 
 ## Setting Up a New VM in VirtualBox
 -
