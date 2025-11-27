@@ -17,7 +17,7 @@ Virtual machines (VMs) offer numerous benefits that make them a cornerstone of m
 >Find out more about the benefits of using VMs [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-benefits.md).
 
 # Choosing Virtualisation Software
-**Note:** This section is a work in progress and will be updated soon.
+When choosing virtualisation software for your first VM, consider factors such as **compatibility with your OS**, **ease of use**, and **available documentation or community support** for beginners. Ensure the software is **actively maintained**, **supports the type of guest operating systems** you plan to use, and offers the **core features you need**, like snapshotting, resource management, and portability. **Cost** may also be important: many popular tools like VirtualBox are free and open-source, making them excellent starting points. Selecting user-friendly and reliable software will help simplify the learning process and avoid unnecessary technical issues.
 
 ## Overview of Popular Virtualisation Tools
 **Note:** This section is a work in progress and will be updated soon.
