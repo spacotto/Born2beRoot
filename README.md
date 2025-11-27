@@ -38,7 +38,7 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 **VirtualBox** is an excellent choice for creating your **first VM** because it is **free**, **open-source**, and **works on all major operating systems**, including Windows, macOS, and Linux. Its **user-friendly interface** makes setup straightforward, even for those with no prior experience in virtualisation. VirtualBox also offers a wide range of **features**, supports **many guest operating systems**, and has an **active community** that provides helpful **documentation** and troubleshooting support.
 
 >[!NOTE]
->Find out more about VirtualBox [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/VirtualBox_UTM.md).
+>Find out more about VirtualBox [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/virtualbox-vs-utm.md).
 
 ## Downloading and Installing VirtualBox
 **Note:** This section is a work in progress and will be updated soon.
@@ -58,7 +58,7 @@ I chose **Debian 13 (Trixie)** over Rocky Linux because, as a beginner, I wanted
 Moreover, since **I'm not specifically interested in working with Red Hat Enterprise Linux (RHEL)** environments or their derivatives, Rocky Linux's enterprise focus didn't match my needs. Debian 13 lets me explore, learn, and customise my VM with confidence, while providing plenty of helpful resources for newcomers.
 
 >[!NOTE]
->Find out more about Debian vs. Rocky Linux [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian_vs_rocky.md).
+>Find out more about Debian vs. Rocky Linux [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-vs-rocky.md).
 
 # Creating Your First Virtual Machine
 **Note:** This section is a work in progress and will be updated soon.
