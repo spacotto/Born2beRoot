@@ -11,7 +11,10 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 **Virtualisation** is a technology that uses a software layer called a **hypervisor** to create **virtual versions of physical computing resources**, such as servers, storage, memory, and networks. This process **abstracts hardware components** like processors, memory, and storage, allowing them to be divided into multiple isolated Virtual Machines (VMs), each capable of running its own operating system and applications as if they were separate physical computers. The hypervisor acts as an **intermediary between the physical hardware and the virtual machines**, managing resource allocation and ensuring that **each VM operates independently without interfering with others**. This enables organisations to **maximise hardware utilisation**, **reduce costs**, **simplify IT management**, and **improve scalability and disaster recovery capabilities**.
  
 ## Benefits of Using Virtual Machines
-**Note:** This section is a work in progress and will be updated soon.
+Virtual machines (VMs) offer numerous benefits that make them a cornerstone of modern IT infrastructure. 
+
+>[!NOTE]
+>Find out more about the benefits of using VMs [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-benefits.md).
 
 ## Overview of the Guide
 **Note:** This section is a work in progress and will be updated soon.
