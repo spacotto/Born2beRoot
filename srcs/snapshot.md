@@ -42,7 +42,7 @@ Snapshots are stored as **differencing disk files** in a "Snapshots" folder with
 ## How to remove a snapshot on VirtualBox
 To remove a virtual machine snapshot in Oracle VM VirtualBox, you can use either the **graphical user interface (GUI)** or the **command-line interface (CLI)**. 
 
-## Graphical User Interface (GUI)
+### Graphical User Interface (GUI)
 1. Select the virtual machine in the main window.
 2. Click the "Snapshots" button in the upper-right corner.
 3. Right-click the snapshot you wish to delete in the snapshots tree.
@@ -54,7 +54,7 @@ To remove a virtual machine snapshot in Oracle VM VirtualBox, you can use either
 >[!WARNING]
 >The deletion process **may take considerable time**, especially for large snapshots, as data is merged between disk image files, and temporary files may require additional disk space during the operation.
 
-## VBoxManage command-line tool
+### VBoxManage command-line tool
 Alternatively, use the VBoxManage command-line tool:
 1. List the snapshots with VBoxManage snapshot "VM_NAME" list to identify the snapshot name or UUID,
 2. Execute VBoxManage snapshot "VM_NAME" delete "SNAPSHOT_NAME" to delete the specified snapshot.
