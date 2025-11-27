@@ -2,3 +2,6 @@
 >This is a work in progress.
 
 # About Born2beRoot
+As part of my 42 journey, I am creating my first Virtual Machine (VM). Since this project does not produce source code or traditional archives to add to my portfolio, I have chosen to develop comprehensive documentation. This guide is intended to serve both as a personal reference and as a resource for others who are embarking on similar VM setup tasks, providing clear, step-by-step instructions and lessons learned throughout the process.
+
+# Guide: How to set up a Virtual Machine (VM)
