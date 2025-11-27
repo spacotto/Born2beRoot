@@ -15,5 +15,13 @@ Its **user-friendly interface** makes setup straightforward, even for those with
 
 VirtualBox also offers a wide range of **features**, supports **many guest operating systems**, and has an **active community** that provides helpful **documentation** and troubleshooting support.
 
+>[!NOTE]
+>Find out more about VirtualBox [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/VirtualBox_UTM.md).
+
 ## Operating System: Debian 13 (Trixie)
-lorem ipsum
+I chose **Debian 13 (Trixie)** over Rocky Linux because, as a beginner, I wanted a system that is simple to set up, well-documented, and widely supported by the community. Debian is known for its stability and ease of use, making it ideal for learning the basics of Linux without being overwhelmed by complexity. 
+
+Moreover, since **I'm not specifically interested in working with Red Hat Enterprise Linux (RHEL)** environments or their derivatives, Rocky Linux's enterprise focus didn't match my needs. Debian 13 lets me explore, learn, and customise my VM with confidence, while providing plenty of helpful resources for newcomers.
+
+>[!NOTE]
+>Find out more about Debian vs. Rocky Linux [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian_vs_rocky.md).
