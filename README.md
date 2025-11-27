@@ -43,6 +43,12 @@ A **Guest Operating System** (Guest OS) is **software installed within a VM that
 ## Introduction to Debian 13 (Trixie)
 Debian 13, codenamed "Trixie," is the **latest release** (November 2025) of the **Debian Linux OS**, known for its **stability**, **security**, and **reliability**. Like previous Debian versions, Trixie is a **free**, **open-source** OS that can be used on servers, desktops, and VMs. It features a **wide selection of software packages**, **robust community support**, and **regular security updates**, making it a popular choice for users seeking a dependable and well-documented Linux experience.
 
+>[!IMPORTANT]
+>You can download the ISO [here](https://www.debian.org/distrib/netinst). I got the `amd64` version.
+
+>[!TIP]
+>I recommend downloading it to `other_locations\computer\tmp` due to the home space limitations.
+
 ## Why Choose Debian Over Other Distributions?
 I chose **Debian 13 (Trixie)** over Rocky Linux because, as a beginner, I wanted a system that is simple to set up, well-documented, and widely supported by the community. Debian is known for its stability and ease of use, making it ideal for learning the basics of Linux without being overwhelmed by complexity. 
 
