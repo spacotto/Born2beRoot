@@ -59,8 +59,9 @@ Moreover, since **I'm not specifically interested in working with Red Hat Enterp
 
 # Creating Your First Virtual Machine
 >[!CAUTION]
->Remember that this is a guide to creating a **basic** VM. We're going to discuss the implementation of the essential, minimum elements
+>Remember that this is a guide to creating a **basic** VM. We're going to discuss the implementation of the essential, minimum elements. We will not address the implementation of UI or other additional features.
 
+## Creating a New VM
 1. Open VirtualBox
 2. Click on `Machine`
 3. Click on `New`
