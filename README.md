@@ -34,7 +34,7 @@ These tools differ in terms of cost, platform support, and features, but all all
 >[!NOTE]
 >Find out more about VirtualBox [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/virtualbox-vs-utm.md).
 
-# Selecting an Operating System (OS)
+# Choosing an Operating System (OS)
 When selecting the OS for your VM, consider its **compatibility** with your **hardware** and **virtualisation software**, as well as the **ease of installation and use**. Look for systems that are **well-documented** and have **strong community support**, as this makes **troubleshooting** much easier for beginners. It's also important to think about your **goals**: choose an OS that aligns with what you want to learn or accomplish, whether it's getting comfortable with Linux, testing software, or developing projects. Opting for a **widely used, stable, and beginner-friendly OS** (such as Ubuntu or Debian) can make the entire process smoother and less overwhelming.
 
 ## What is a "Guest" Operating System?
