@@ -43,12 +43,6 @@ A **Guest Operating System** (Guest OS) is **software installed within a VM that
 ## Introduction to Debian 13 (Trixie)
 Debian 13, codenamed "Trixie," is the **latest release** (November 2025) of the **Debian Linux OS**, known for its **stability**, **security**, and **reliability**. Like previous Debian versions, Trixie is a **free**, **open-source** OS that can be used on servers, desktops, and VMs. It features a **wide selection of software packages**, **robust community support**, and **regular security updates**, making it a popular choice for users seeking a dependable and well-documented Linux experience.
 
->[!IMPORTANT]
->You can download the ISO [here](https://www.debian.org/distrib/netinst). I got the `amd64` version.
-
->[!TIP]
->I recommend downloading it to `other_locations\computer\tmp` due to the home space limitations.
-
 ## Why Choose Debian Over Other Distributions?
 I chose **Debian 13 (Trixie)** over Rocky Linux because, as a beginner, I wanted a system that is simple to set up, well-documented, and widely supported by the community. Debian is known for its stability and ease of use, making it ideal for learning the basics of Linux without being overwhelmed by complexity. 
 
@@ -62,8 +56,13 @@ Moreover, since **I'm not specifically interested in working with Red Hat Enterp
 >Remember that this is a guide to creating a **basic** VM. We're going to discuss the implementation of the essential, minimum elements. We will not address the implementation of UI or other additional features.
 
 ## Creating a New VM
-1. Open VirtualBox
-2. Click on `Machine`
-3. Click on `New`
+Open VirtualBox > Click on `Machine` > Click on `New`
+![step1](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm000.png)
+
+Set up the name and OS
+![step2](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm001.png)
+
+>[!IMPORTANT]
+>You can download the ISO [here](https://www.debian.org/distrib/netinst). I used the `amd64` version. If you don't have much space, I recommend downloading it into the `tmp` folder.
 
 ## Partitioning
