@@ -14,7 +14,7 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 
 ### Operating System (OS): Debian 13
 >[!NOTE]
->Find out more about OS [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md)
+>Find out more about OS [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-os.md)
 
 ### Features
 #### Installation
