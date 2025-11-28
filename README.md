@@ -7,15 +7,6 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 >[!CAUTION]
 >Since this project serves as an introduction to virtualisation, I will focus on installing the minimum of services. For this reason, **I will not provide a graphical interface**.
 
-## What is Virtualisation?
-**Virtualisation** is a technology that uses a software layer called a **hypervisor** to create **virtual versions of physical computing resources**, such as servers, storage, memory, and networks. This process **abstracts hardware components** like processors, memory, and storage, allowing them to be divided into multiple isolated Virtual Machines (VMs), each capable of running its own operating system and applications as if they were separate physical computers. The hypervisor acts as an **intermediary between the physical hardware and the virtual machines**, managing resource allocation and ensuring that **each VM operates independently without interfering with others**. This enables organisations to **maximise hardware utilisation**, **reduce costs**, **simplify IT management**, and **improve scalability and disaster recovery capabilities**.
- 
-## Benefits of Using Virtual Machines
-Virtual machines (VMs) offer numerous benefits that make them a cornerstone of modern IT infrastructure. 
-
->[!NOTE]
->Find out more about the benefits of using VMs [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-benefits.md).
-
 # Choosing Virtualisation Software
 When choosing virtualisation software for your first VM, consider factors such as **compatibility with your OS**, **ease of use**, and **available documentation or community support** for beginners. Ensure the software is **actively maintained**, **supports the type of guest operating systems** you plan to use, and offers the **core features you need**, like snapshotting, resource management, and portability. **Cost** may also be important: many popular tools like VirtualBox are free and open-source, making them excellent starting points. Selecting user-friendly and reliable software will help simplify the learning process and avoid unnecessary technical issues.
 
