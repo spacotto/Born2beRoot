@@ -63,6 +63,6 @@ Set up the name and OS
 ![step2](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm001.png)
 
 >[!IMPORTANT]
->You can download the [ISO](https://github.com/spacotto/Born2beRoot/blob/main/srcs/iso.md) [here](https://www.debian.org/distrib/netinst). I used the `amd64` version. If you don't have much space, I recommend downloading it into the `tmp` folder.
+>You can download the [ISO](https://github.com/spacotto/Born2beRoot/blob/main/srcs/iso.md) [here](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/). I used the `debian-13.2.0-amd64-DVD-1.iso`. If you don't have much space, I recommend downloading it into the `tmp` folder.
 
 ## Partitioning
