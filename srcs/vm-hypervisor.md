@@ -19,43 +19,26 @@ There are two primary types of hypervisors.
 
 - **VirtualBox.** Developed by Oracle as a free, open-source Type 2 hypervisor supporting Windows, macOS, Linux, and Solaris as host operating systems. Demonstrates remarkable cross-platform compatibility with an intuitive graphical interface while maintaining powerful features, including snapshots, shared folders, seamless mode, and extensive guest operating system support. Represents a compelling middle ground between accessibility and functionality.
 
-# VirtualBox (and UTM)
+## Why VirtualBox is the Best Choice for Academic Projects
+When embarking on an academic project to create a first VM, several factors must be considered, including **cost**, **ease of use**, **documentation availability**, and **resource requirements**. VirtualBox excels in each of these areas, making it the optimal choice for students and educators.
 
-## About VirtualBox
-### What VirtualBox is
-**VirtualBox** is a free, open-source virtualisation program that lets you run entire operating systems inside your current operating system. Think of it as a computer inside your computer.
+**Accessible Cost.** VirtualBox is completely **free and open-source** under the GNU General Public License. This eliminates financial barriers that might prevent students from experimenting with virtualisation technology at home. Unlike commercial alternatives that require expensive licenses or limited trial periods, VirtualBox can be freely installed on personal computers, university lab machines, or any compatible device without licensing concerns.
 
-### What it does
-VirtualBox lets you create virtual machines (VMs). A VM behaves like a real computer, with:
-- virtual CPU
-- virtual RAM
-- virtual disk
-- virtual network
+**Accessible User Interface (UI).** VirtualBox UI prioritises **simplicity without sacrificing functionality**. The VM creation wizard guides users through the process step by step, asking intuitive questions about the intended guest operating system, memory allocation, and storage configuration. This guided approach reduces the likelihood of configuration errors that could frustrate beginners. The main window presents all VMs in a clear list format with easily accessible controls for starting, pausing, and managing VMs.
 
-Inside that VM, without affecting your main system, you can install:
-- Debian
-- Rocky Linux
-- Windows
-- macOS (with restrictions)
-- other OS
+**Appropriate complexity.** For academic purposes where the goal is to understand fundamental virtualisation concepts rather than to deploy production infrastructure, VirtualBox provides precisely the right level of complexity. Students can focus on essential concepts such as **resource allocation**, **OS installation**, and **basic VM management** without being overwhelmed by enterprise-level features they won't immediately need.
 
-### What people use VirtualBox for
-- Testing operating systems safely
-- Learning Linux without touching the real machine
-- Running older software
-- Isolating risky apps
-- Hosting small lab environments
-- Trying server setups before doing them on real hardware
+**Vast Documentation & Support.** The **documentation** and **community support** surrounding VirtualBox are of great value. Oracle maintains comprehensive official documentation covering installation, configuration, and troubleshooting. Beyond official sources, VirtualBox's popularity has generated an enormous repository of tutorials, video guides, forum discussions, and blog posts addressing virtually every conceivable use case and problem. When students encounter difficulties, they can typically find solutions quickly through a simple web search.
 
-### Why it’s relevant to the project
-If you want to practice setting up Debian or Rocky before touching your real server, VirtualBox is perfect. You can:
-- Install Debian in a VM
-- Practice configuring Nginx, SSH, and firewalls
-- Break things and reinstall quickly
-- Get confident before deploying the real server
+**Cross-Platform Consistency.** VirtualBox's **cross-platform** nature ensures that all students can participate regardless of their host OS. Whether using Windows, macOS, or Linux, the VirtualBox interface and functionality remain consistent. This uniformity is invaluable in academic settings where students may use different personal computers but need to complete identical assignments. Instructors can provide universal guidance without needing to account for platform-specific variations.
 
-## About UTM
-### What UTM is
+**Accessible Requirements.** Academic projects typically focus on basic VMs running lightweight OS or Linux distributions. VirtualBox handles these scenarios efficiently, running comfortably on modest hardware. Students don't require high-end computers to create functional VMs, democratising access to virtualisation education.
+
+**Snapshots.** The snapshot feature in VirtualBox proves particularly valuable for learning environments. Students can create snapshots before making system changes, conducting experiments, or installing software. If something goes wrong, they can instantly revert to a previous state without losing hours of work or needing to rebuild the entire VM from scratch. This safety net encourages experimentation and risk-taking, essential components of effective learning.
+
+From a pedagogical perspective, VirtualBox aligns well with progressive learning objectives. Students begin with basic VM creation, then progressively explore more advanced topics such as networking configurations, storage management, cloning, and automation. The software scales with the learning journey without requiring migration to different platforms.
+
+## VirtualBox vs. UTM
 UTM is a **virtual machine manager** that lets you run operating systems inside your Mac. It uses **QEMU** under the hood, wrapped in a simple and friendly interface.
 
 ### Why UTM is offered as an alternative
@@ -75,4 +58,3 @@ UTM, using Apple’s built-in virtualisation framework, doesn’t require kernel
 | Underlying tech            | VirtualBox engine | QEMU                                       |
 | Ease of use                | Easy              | Easy                                       |
 | Cost                       | Free              | Free                                       |
-
