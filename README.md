@@ -17,20 +17,13 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 >Find out more about OS [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-os.md)
 
 ### Features
-#### Installation
-#### Partitioning
-
-# Creating Your First Virtual Machine
 >[!CAUTION]
 >Remember that this is a guide to creating a **basic** VM. We're going to discuss the implementation of the essential, minimum elements. We will not address the implementation of UI or other additional features.
 
-## Creating a New VM
-Open VirtualBox > Click on `Machine` > Click on `New`
-![step1](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm000.png)
+#### Installation
+>[!NOTE]
+>Find out more about the VM installation here.
 
-Set up the name and OS
-
->[!IMPORTANT]
->You can download the [ISO](https://github.com/spacotto/Born2beRoot/blob/main/srcs/iso.md) [here](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/). I used the `debian-13.2.0-amd64-DVD-1.iso`. If you don't have much space, I recommend downloading it into the `tmp` folder.
-
-## Partitioning
+#### Partitioning
+>[!NOTE]
+>Find out more about the VM partitioning here.
