@@ -48,4 +48,4 @@ sda                      xxx:x     0  xxxxx   0  disk
 sr0                      xxx:x     1  xxxxx   0  from
 ```
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-partitioning.md) you can find the details concerning the disk (storage) partitioning.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-partitioning.md) you can find the details concerning disk (storage) partitioning process.
