@@ -25,6 +25,8 @@ sr0                      xxx:x     1  xxxxx   0  rom
 ```
 
 ## Logical Volume Manager (LVM)
+>[!NOTE]
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-lvm.md) you can find more information concerning the Logical Volume Manager (LVM).
 
 ### LVM root
 
