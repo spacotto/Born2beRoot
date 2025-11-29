@@ -7,7 +7,7 @@ A command-line tool for package management in Debian-based systems (like Ubuntu)
 ```
 aptitude
 ```
-An alternative package manager with both command-line and text-based interactive interfaces.
+An alternative package manager with both command-line and text-based interactive interfaces. In other words, `aptitude` not only gives you **warnings** in case of issues, but it also **proposes solutions** interactively.
 
 >[!NOTE]
 >On ArchLinux, `pacman` is the equivalent of both `apt` and `aptitude` combined.
