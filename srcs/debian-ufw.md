@@ -45,3 +45,18 @@ sudo ufw delete allow 80                 # Delete by rule
 sudo ufw status numbered                 # List numbered rules
 sudo ufw delete 2                        # Delete rule number 2
 ```
+
+### Common Service Ports
+```
+sudo ufw allow http                      # Port 80
+sudo ufw allow https                     # Port 443
+sudo ufw allow ssh                       # Port 22
+sudo ufw allow ftp                       # Port 21
+```
+
+## Default Policies
+```
+sudo ufw default deny incoming           # Block all incoming
+sudo ufw default allow outgoing          # Allow all outgoing
+sudo ufw default deny outgoing           # Block all outgoing
+```
