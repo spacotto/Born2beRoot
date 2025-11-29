@@ -7,23 +7,28 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 >[!CAUTION]
 >Since this project serves as an introduction to virtualisation, I will focus on installing the minimum of services. For this reason, **I will not provide sources concerning the graphical interface**.
 
-## VM Characteristics
-### Hypervisor: VirtualBox
+## Virtualisation Software (Hypervisor)
+**Software:** VirtualBox
+**Version:** 
+
 >[!NOTE]
 >Find out more about hypervisors [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md)
 
-### Operating System (OS): Debian 13
+## Operating System (OS)
+**OS:** Debian
+**Version:** 
+
 >[!NOTE]
 >Find out more about OS [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-os.md)
 
-### Features
+## Features
 >[!CAUTION]
->Remember that this is a guide to creating a **basic** VM. We're going to discuss the implementation of the essential, minimum elements. We will not address the implementation of UI or other additional features.
+>Keep in mind that this is a guide to creating a **basic** VM. I am going to discuss **exclusively** the implementation of the essential, minimum elements. I am NOT going to address the implementation of UI or other additional features.
 
-#### Installation
+### Installation
 >[!NOTE]
->Find out more about the VM installation here.
+>Find out more about the VM installation [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-installation.md).
 
-#### Partitioning
+### Partitioning
 >[!NOTE]
->Find out more about the VM partitioning here.
+>Find out more about the VM partitioning [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-partitioning.md).
