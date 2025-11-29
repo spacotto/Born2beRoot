@@ -27,7 +27,7 @@ sha1sum debian_serv.vdi > signature.txt
 ```
 
 ### Command breakdown
-1. `sha1sum` is a program that calculates a SHA-1 **hash** of a file. SHA-1 (encryption algorithm) creates a unique fingerprint of its input contents.
+1. `sha1sum` is a program that calculates a SHA-1 **hash** of a file. SHA-1 (one-way encryption algorithm) creates a unique fingerprint of its input contents.
 2. `debian_serv.vdi` is the input file. It’s your **VirtualBox disk image**. `sha1sum` will read this file and compute its hash.
 3. `>` is a redirection operator. It redirects the output of the command into a file instead of printing it on the `stdin`. If the file already exists, it is overwritten.
 4. `signature.txt` is the **output file**. It will receive the hash result.
