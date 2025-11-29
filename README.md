@@ -29,7 +29,23 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 >[!NOTE]
 >Find out more about OS [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-os.md).
 
-## Disk Layout & Storage
-## Partitioning
->[!NOTE]
->Find out more about the VM partitioning [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-partitioning.md).
+## Storage Architecture
+```
+# lsblk
+NAME                     MAJ:MIN  RM   SIZE  RO  TYPE  MOUNTPOINTS
+sda                      xxx:x     0  xxxxx   0  disk
+├─sda1                   xxx:x     0  xxxxx   0  part  /boot
+├─sda2                   xxx:x     0  xxxxx   0  part
+└─sda5                   xxx:x     0  xxxxx   0  part
+  └─sda5_crypt           xxx:x     0  xxxxx   0  crypt  
+    ├─LVMGroup-root      xxx:x     0  xxxxx   0  lvm   /
+    ├─LVMGroup-swap      xxx:x     0  xxxxx   0  lvm   [SWAP]
+    ├─LVMGroup-home      xxx:x     0  xxxxx   0  lvm   /home
+    ├─LVMGroup-var       xxx:x     0  xxxxx   0  lvm   /var
+    ├─LVMGroup-srv       xxx:x     0  xxxxx   0  lvm   /srv
+    ├─LVMGroup-tmp       xxx:x     0  xxxxx   0  lvm   /tmp
+    └─LVMGroup-var--log  xxx:x     0  xxxxx   0  lvm   /var/log
+sr0                      xxx:x     1  xxxxx   0  from
+```
+>[!IMPORTANT]
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-partitioning.md) you can find the details concerning the disk (storage) partitioning.
