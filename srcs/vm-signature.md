@@ -22,8 +22,9 @@ By hashing the disk, your corrector can verify that:
 >**Shut down the VM before** generating the signature. **A running VM changes the file**, thus the hash won't match later. In other words, (1) shut down the VM, (2) generate the signature, and (3) **DO NOT touch it again** until you're done with the corrections!
 
 Use the following command to generate the signature in **sha1 format**:
-
-```sha1sum debian_serv.vdi > signature.txt```
+```
+sha1sum debian_serv.vdi > signature.txt
+```
 
 ### Command breakdown
 1. `sha1sum` is a program that calculates a SHA-1 **hash** of a file. SHA-1 creates a unique fingerprint of the file’s contents.
