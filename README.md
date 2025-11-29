@@ -23,7 +23,7 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 
 ## Features
 >[!CAUTION]
->Keep in mind that this is a guide to creating a **basic** VM. I am going to discuss **exclusively** the implementation of the essential, minimum elements. I am NOT going to address the implementation of UI or other additional features.
+>Keep in mind this documentation concerns the creation of a **minimalist** VM. I am going to discuss **exclusively** the implementation of the **essential elements**. I am NOT going to address the implementation of UI or other additional features.
 
 ### Installation
 >[!NOTE]
