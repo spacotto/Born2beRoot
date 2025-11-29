@@ -103,5 +103,42 @@ Profiles define allowed access. Common rules include:
 Capabilities grant specific privileges:
 ```
 capability net_bind_service,  # bind to ports < 1024
-capability dac_override,       # bypass file permissions
+capability dac_override,      # bypass file permissions
 ```
+
+## Troubleshooting
+- View AppArmor denials in the logs:
+```
+sudo dmesg | grep apparmor
+sudo journalctl | grep AppArmor
+```
+
+- Or check audit logs:
+```
+sudo grep apparmor /var/log/audit/audit.log
+```
+
+>[!TIP]
+>If a program breaks after confinement, switch to complain mode, reproduce the issue, then use `aa-logprof` to update the profile.
+
+## Disable AppArmor (Not Recommended)
+For a single profile, use:
+```
+aa-disable
+```
+
+To disable completely:
+```
+sudo systemctl stop apparmor
+sudo systemctl disable AppArmor
+```
+Or add `apparmor=0` to kernel boot parameters in `/etc/default/grub`, then run `sudo update-grub`.
+
+## Best Practices
+- Start new profiles in **complain mode** to avoid breaking functionality. 
+- Use the **built-in profiles** from `apparmor-profiles` and `apparmor-profiles-extra` packages when available.
+- **Review logs regularly** to catch issues early.
+- **Test thoroughly before moving profiles** to enforce mode in production.
+
+>[!NOTE]
+>AppArmor provides strong security with minimal performance impact when profiles are properly configured.
