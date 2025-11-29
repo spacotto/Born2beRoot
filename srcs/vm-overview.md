@@ -22,9 +22,23 @@ IT professionals use VMs for training and education, creating safe sandbox envir
 
 Individuals may use VMs to run legacy applications that require older operating systems, to test software before installing it on their primary system, or to maintain privacy by isolating specific activities within a VM.
 
-| **Pros of Using Virtual Machines**                                                                                        | **Cons of Using Virtual Machines**                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| **Resource efficiency & cost reduction** — Multiple VMs can run on a single physical machine, maximising hardware usage.  | **Performance overhead** — VMs are slower than bare metal because resources are shared and virtualized.               |
-| **Isolation & security** — Each VM is separated from others, reducing the impact of system failures or security breaches. | **Higher resource demands** — Each VM needs its own OS, which consumes CPU, RAM, and storage.                         |
-| **Flexibility & compatibility** — Run different operating systems, test configurations, or replicate environments easily. | **Possible hardware limitations** — Host systems with limited resources may struggle to support multiple VMs.         |
-| **Simplified disaster recovery & business continuity** — VMs can be snapshotted, cloned, and restored quickly.            | **Complexity at scale** — Managing many VMs can require additional tools and expertise (e.g., hypervisor management). |
+## Pros & Cons of Using Virtual Machines
+### Pros 
+- **Resource efficiency & cost reduction.** Multiple VMs can run on a single physical machine, maximising hardware usage.
+- **Isolation & security.** Each VM is separated from others, reducing the impact of system failures or security breaches.
+- **Flexibility & compatibility** Run different operating systems, test configurations, or replicate environments easily.
+- **Simplified disaster recovery & business continuity** — VMs can be snapshotted, cloned, and restored quickly. 
+
+### Cons 
+- **Performance overhead.** VMs are slower than bare metal because resources are shared and virtualised.
+- **Higher resource demands.** Each VM needs its own OS, which consumes CPU, RAM, and storage.
+- **Possible hardware limitations** — Host systems with limited resources may struggle to support multiple VMs.
+- **Complexity at scale** — Managing many VMs can require additional tools and expertise (e.g., hypervisor management).
+
+### Summary Table
+| Pros                  | Cons                 |
+| :-------------------- | :------------------- |
+| Cost reduction        | Performance overhead |
+| Security              | Resource demands     |
+| Flexibility           | hardware limitations |
+| Recovery & Continuity | Complexity at scale  |
