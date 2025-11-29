@@ -13,23 +13,20 @@ sudo apt install ufw
 ```
 
 ## Basic Commands
-- Enable UFW (Start firewall and enable on boot)
+### Enable/Disable UFW
 ```
-sudo ufw enable
+sudo ufw enable                          # Start firewall and enable on boot
+sudo ufw disable                         # Stop firewall
 ```
-- Disable UFW (Stop firewall)
+### Check Status
 ```
-sudo ufw disable
-```
-- Check Status
-```
-sudo ufw status           # Basic status
-sudo ufw status verbose   # Detailed status
-sudo ufw status numbered  # Show rule numbers
+sudo ufw status                          # Basic status
+sudo ufw status verbose                  # Detailed status
+sudo ufw status numbered                 # Show rule numbers
 ```
 
 ## Managing Rules
-- Allow Connections
+### Allow/Deny Connections
 ```
 sudo ufw allow 22                        # Allow port 22 (SSH)
 sudo ufw allow ssh                       # Allow by service name
@@ -38,9 +35,13 @@ sudo ufw allow 80/tcp                    # Allow port 80, TCP only
 sudo ufw allow from 192.168.1.100        # Allow specific IP
 sudo ufw allow from 192.168.1.0/24       # Allow subnet
 sudo ufw allow proto tcp to any port 80  # Specific protocol
+
+sudo ufw deny 25                         # Deny port 25
 ```
 
-- Deny Connections
+### Delete Rules
 ```
-sudo ufw deny 25                         # Deny port 25
+sudo ufw delete allow 80                 # Delete by rule
+sudo ufw status numbered                 # List numbered rules
+sudo ufw delete 2                        # Delete rule number 2
 ```
