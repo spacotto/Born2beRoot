@@ -18,18 +18,18 @@ An alternative package manager with both command-line and text-based interactive
 - `aptitude` offers both command-line mode and an interactive text UI (launched by running aptitude without arguments).
 
 ### Dependency Resolution
-- `apt` uses a simpler dependency resolver that works well for most cases
-- `aptitude` has a more sophisticated dependency resolver that can suggest alternative solutions when conflicts arise
+- `apt` uses a simpler dependency resolver that works well for most cases.
+- `aptitude` has a more sophisticated dependency resolver that can suggest alternative solutions when conflicts arise.
 
 ### Default Behaviour
-- `apt` keeps unused dependencies installed unless you run apt autoremove
-- `aptitude` automatically tracks and removes unused dependencies
+- `apt` keeps unused dependencies installed unless you run apt autoremove.
+- `aptitude` automatically tracks and removes unused dependencies.
 
 ## Which to Use
 For most users, `apt` is recommended.
-- It's simpler and faster
-- It's the officially recommended tool by Debian/Ubuntu
-- It handles modern package management well
+- It's simpler and faster.
+- It's the officially recommended tool by Debian/Ubuntu.
+- It handles modern package management well.
 
 Use `aptitude` if you:
 - Need the interactive interface to browse packages
