@@ -12,6 +12,9 @@
 sudo apt install ufw
 ```
 
+>[!IMPORTANT]
+>Default configuration file: /etc/default/ufw
+
 ## Basic Commands
 ### Enable/Disable UFW
 ```
@@ -26,6 +29,15 @@ sudo ufw status numbered                 # Show rule numbers
 ```
 
 ## Managing Rules
+>[!WARNING]
+>UFW rules are processed in order from top to bottom.
+
+>[!IMPORTANT]
+>Rules persist across reboots once UFW is enabled.
+
+>[!IMPORTANT]
+>Rule files: /etc/ufw/
+
 ### Allow/Deny Connections
 ```
 sudo ufw allow 22                        # Allow port 22 (SSH)
@@ -85,3 +97,19 @@ sudo ufw allow in on eth0 to any port 80  # Allow on specific interface
 ```
 
 ## Reset and Reload
+```
+sudo ufw reset                            # Reset to defaults (removes all rules)
+sudo ufw reload                           # Reload firewall rules
+```
+
+## Logging
+```
+sudo ufw logging on                       # Enable logging
+sudo ufw logging off                      # Disable logging
+sudo ufw logging low                      # Set log level (low/medium/high/full)
+```
+
+### View logs
+```
+sudo tail -f /var/log/ufw.log
+```
