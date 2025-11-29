@@ -54,8 +54,12 @@ sr0                      xxx:x     1  xxxxx   0  rom
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-storage-architecture.md) you can find the details concerning the disk (storage) partitioning process.
 
 ## Users Management
-### sudo
+### Groups (sudo)
+### Password Policy
 
 ## Services
+### UFW
 ### SSH
-### Cron
+### Script Monitoring (Cron)
+
+## Hosting: WordPress
