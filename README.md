@@ -16,7 +16,7 @@
 
 ## System Architecture
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-installation.md) you can find the details concerning the installation of the OS through VirtualBox.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-installation.md) you can find the details concerning the setup of the system architecture.
 
 ### Virtualisation Software (Hypervisor): VirtualBox
 - **Software:** VirtualBox
