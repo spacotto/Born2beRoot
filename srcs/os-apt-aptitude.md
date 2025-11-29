@@ -36,4 +36,5 @@ Use `aptitude` if you:
 - Face complex dependency conflicts that `apt` can't resolve
 - Want automatic cleanup of unused packages
 
-Common Commands Comparison
+>[!TIP]
+>Both tools use the same package sources and can be used interchangeably on the same system, though it's generally best to stick with one for consistency.
