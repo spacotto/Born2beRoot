@@ -9,7 +9,7 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 
 ## Virtualisation Software (Hypervisor)
 - **Software:** VirtualBox
-- **Version:** 
+- **Version:** 7.0.20
 
 >[!NOTE]
 >Find out more about hypervisors [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md)
