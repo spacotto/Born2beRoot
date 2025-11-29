@@ -66,3 +66,42 @@ sudo systemctl reload apparmor
 ```
 /usr/share/apparmor/extra-profiles/
 ```
+
+## Creating or Modifying Profiles
+- Generate a basic profile for an application:
+```
+sudo aa-genprof /path/to/program
+```
+This interactive tool runs the program, monitors its behaviour, and helps create rules.
+
+- Update an existing profile:
+```
+sudo aa-logprof
+```
+This reviews log entries and suggests profile modifications.
+
+- Edit profiles manually:
+```
+sudo nano /etc/apparmor.d/profile-name
+```
+
+- After editing, reload:
+```
+sudo systemctl reload apparmor
+```
+
+## Basic Profile Syntax
+Profiles define allowed access. Common rules include:
+```
+/path/to/file r,           # read access
+/path/to/file w,           # write access
+/path/to/file rw,          # read and write
+/path/to/file x,           # execute
+/path/to/dir/** r,         # recursive read in directory
+```
+
+Capabilities grant specific privileges:
+```
+capability net_bind_service,  # bind to ports < 1024
+capability dac_override,       # bypass file permissions
+```
