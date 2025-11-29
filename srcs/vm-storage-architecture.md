@@ -40,4 +40,4 @@ sr0                      xxx:x     1  xxxxx   0  rom
 
 ### LVM var--log
 
-## Final Result (lsblk)
+## Final Result (`lsblk`)
