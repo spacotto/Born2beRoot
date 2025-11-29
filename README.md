@@ -12,6 +12,9 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 >Keep in mind this documentation concerns the creation of a **minimalist** VM. I am going to discuss **exclusively** the implementation of the **essential elements**. I am NOT going to address the implementation of UI or other additional features.
 
 ## System Architecture
+>[!IMPORTANT]
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-installation.md) you can find the details concerning the installation of the OS through VirtualBox.
+
 ### Virtualisation Software (Hypervisor): VirtualBox
 - **Software:** VirtualBox
 - **Version:** 7.0.20
@@ -25,9 +28,6 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 
 >[!NOTE]
 >Find out more about OS [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-os.md).
-
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-installation.md) you can find the details concerning the installation of the OS through VirtualBox.
 
 ## Disk Layout & Storage
 ## Partitioning
