@@ -40,11 +40,29 @@
 
 ## Users Management
 ### Groups (sudo)
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the setup of.
+
 ### Password Policy
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the setup of.
 
 ## Services
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the setup of.
+
 ### UFW
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the setup of.
+
 ### SSH
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the setup of.
+
 ### Script Monitoring (Cron)
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the setup of.
 
 ## Hosting: WordPress
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the setup of.
