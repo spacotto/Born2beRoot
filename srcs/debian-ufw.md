@@ -13,7 +13,7 @@ sudo apt install ufw
 ```
 
 >[!IMPORTANT]
->Default configuration file: /etc/default/ufw
+>Default configuration file: `/etc/default/ufw`
 
 ## Basic Commands
 ### Enable/Disable UFW
@@ -36,7 +36,7 @@ sudo ufw status numbered                 # Show rule numbers
 >Rules persist across reboots once UFW is enabled.
 
 >[!IMPORTANT]
->Rule files: /etc/ufw/
+>Rule files: `/etc/ufw/`
 
 ### Allow/Deny Connections
 ```
