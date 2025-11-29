@@ -7,17 +7,7 @@
 >[!CAUTION]
 >Since this project serves as an introduction to virtualisation, I will focus on installing the minimum of services. For this reason, **I will not provide sources concerning the graphical interface**.
 
-# Born2beRoot: Project Features
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-overview.md) you can find more information on **virtualisation** and **VMs**.
-
->[!CAUTION]
->Keep in mind this documentation concerns the creation of a **minimalist** VM. I am going to discuss **exclusively** the implementation of the **essential elements**. I am NOT going to address the implementation of UI or other additional features.
-
-## System Architecture
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-installation.md) you can find the details concerning the setup of the system architecture.
-
+# Born2beRoot: Projects Tools
 ### Virtualisation Software (Hypervisor): VirtualBox
 - **Software:** VirtualBox
 - **Version:** 7.0.20
@@ -32,24 +22,19 @@
 >[!NOTE]
 >Find out more about OS [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-os.md).
 
-## Storage Architecture
-```
-# lsblk
-NAME                     MAJ:MIN  RM   SIZE  RO  TYPE  MOUNTPOINTS
-sda                      xxx:x     0  xxxxx   0  disk
-├─sda1                   xxx:x     0  xxxxx   0  part  /boot
-├─sda2                   xxx:x     0  xxxxx   0  part
-└─sda5                   xxx:x     0  xxxxx   0  part
-  └─sda5_crypt           xxx:x     0  xxxxx   0  crypt  
-    ├─LVMGroup-root      xxx:x     0  xxxxx   0  lvm   /
-    ├─LVMGroup-swap      xxx:x     0  xxxxx   0  lvm   [SWAP]
-    ├─LVMGroup-home      xxx:x     0  xxxxx   0  lvm   /home
-    ├─LVMGroup-var       xxx:x     0  xxxxx   0  lvm   /var
-    ├─LVMGroup-srv       xxx:x     0  xxxxx   0  lvm   /srv
-    ├─LVMGroup-tmp       xxx:x     0  xxxxx   0  lvm   /tmp
-    └─LVMGroup-var--log  xxx:x     0  xxxxx   0  lvm   /var/log
-sr0                      xxx:x     1  xxxxx   0  rom
-```
+# Born2beRoot: Project Features
+>[!IMPORTANT]
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-overview.md) you can find more information on **virtualisation** and **VMs**.
+
+>[!CAUTION]
+>Keep in mind this documentation concerns the creation of a **minimalist** VM. I am going to discuss **exclusively** the implementation of the **essential elements**. I am NOT going to address the implementation of UI or other additional features.
+
+## Installation
+### System Architecture
+>[!IMPORTANT]
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-system-architecture.md) you can find the details concerning the setup of the system architecture.
+
+### Storage Architecture
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-storage-architecture.md) you can find the details concerning the disk (storage) partitioning process.
 
