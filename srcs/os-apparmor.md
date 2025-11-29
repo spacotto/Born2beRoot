@@ -29,18 +29,22 @@ This shows loaded profiles and their enforcement modes.
 ```
 sudo aa-status
 ```
+
 - Put a profile in complain mode.
 ```
 sudo aa-complain /path/to/program
 ```
+
 - Put a profile in enforce mode.
 ```
 sudo aa-enforce /path/to/program
 ```
+
 - Disable a profile.
 ```
 sudo aa-disable /path/to/program
 ```
+
 - Reload all profiles.
 ```
 sudo systemctl reload apparmor
@@ -51,10 +55,12 @@ sudo systemctl reload apparmor
 ```
 /etc/apparmor.d/
 ```
+
 - Disabled profiles (symlinked here)
 ```
 /etc/apparmor.d/disable/
 ```
+
 - Additional available profiles
 ```
 /usr/share/apparmor/extra-profiles/
