@@ -1,6 +1,6 @@
 # About Storage Architecture
 >[!WARNING]
->Despite being part of the [System Architecture](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-system-architecture.md) (aka installation process), I have decided to dedicate to the Storage Architecture a separated file due to the amount of information concerning this matter.
+>Despite being part of the [System Architecture](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-system-architecture.md) (aka installation process), I have decided to dedicate a separate section to the Storage Architecture (aka the partitioning) due to the amount of information concerning this matter.
 
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-partitioning.md) you can find more details on what partitioning is.
@@ -23,3 +23,21 @@ sda                      xxx:x     0  xxxxx   0  disk
     └─LVMGroup-var--log  xxx:x     0  xxxxx   0  lvm   /var/log
 sr0                      xxx:x     1  xxxxx   0  rom
 ```
+
+## Logical Volume Manager (LVM)
+
+### LVM root
+
+### LVM swap
+
+### LVM home
+
+### LVM var
+
+### LVM srv
+
+### LVM tmp
+
+### LVM var--log
+
+## Final Result (lsblk)
