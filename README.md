@@ -45,7 +45,7 @@ sda                      xxx:x     0  xxxxx   0  disk
     ├─LVMGroup-srv       xxx:x     0  xxxxx   0  lvm   /srv
     ├─LVMGroup-tmp       xxx:x     0  xxxxx   0  lvm   /tmp
     └─LVMGroup-var--log  xxx:x     0  xxxxx   0  lvm   /var/log
-sr0                      xxx:x     1  xxxxx   0  from
+sr0                      xxx:x     1  xxxxx   0  rom
 ```
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-partitioning.md) you can find the details concerning disk (storage) partitioning process.
