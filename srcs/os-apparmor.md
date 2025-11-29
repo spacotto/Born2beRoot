@@ -121,7 +121,10 @@ sudo grep apparmor /var/log/audit/audit.log
 >[!TIP]
 >If a program breaks after confinement, switch to complain mode, reproduce the issue, then use `aa-logprof` to update the profile.
 
-## Disable AppArmor (Not Recommended)
+## Disable AppArmor
+>[!CAUTION]
+>It is NOT recommended to disable AppArmor!
+
 For a single profile, use:
 ```
 aa-disable
