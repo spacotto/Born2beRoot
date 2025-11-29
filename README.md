@@ -8,15 +8,15 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 >Since this project serves as an introduction to virtualisation, I will focus on installing the minimum of services. For this reason, **I will not provide sources concerning the graphical interface**.
 
 ## Virtualisation Software (Hypervisor)
-**Software:** VirtualBox
-**Version:** 
+- **Software:** VirtualBox
+- **Version:** 
 
 >[!NOTE]
 >Find out more about hypervisors [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md)
 
 ## Operating System (OS)
-**OS:** Debian
-**Version:** 
+- **OS:** Debian
+- **Version:** 13.2.0 (amd64)
 
 >[!NOTE]
 >Find out more about OS [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-os.md)
