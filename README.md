@@ -26,9 +26,8 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 >[!NOTE]
 >Find out more about OS [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-os.md).
 
-## Installation
->[!NOTE]
->Find out more about the VM installation [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-installation.md).
+>[!IMPORTANT]
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-installation.md) you can find the details concerning the installation of the OS through VirtualBox.
 
 ## Disk Layout & Storage
 ## Partitioning
