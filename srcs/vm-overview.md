@@ -5,7 +5,7 @@
 
 The key innovation of virtualisation is the **separation of the operating system and applications from the underlying physical hardware**. This separation is managed by a special layer of software called a **hypervisor** (or virtual machine monitor), which sits between the physical hardware and the virtual machines. The hypervisor allocates and manages the physical resources, distributing them among the various virtual machines as needed.
 
-## About Virtual Machines (VMs)
+## What is a Virtual Machine (VM)?
 A **Virtual Machine (VM)** is the **virtualisation or emulation of a computer system**. It's a software-based computer that runs inside your physical computer. 
 
 Each VM includes its own **virtual hardware** (CPU, memory, hard drive, network interface) and runs a **complete operating system (OS)**, which can be different from the host OS running on the physical machine. When you run a VM, it behaves like a completely independent computer. You can install software, save files, connect to networks, and perform virtually any task you could on a physical machine. The VM is isolated from the host system and other VMs, meaning that if something goes wrong in one VM (like a virus infection or system crash), it doesn't affect the host or other virtual machines.
