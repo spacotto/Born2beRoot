@@ -12,14 +12,14 @@ As part of my 42 journey, I am creating my first Virtual Machine (VM). Since thi
 - **Version:** 7.0.20
 
 >[!NOTE]
->Find out more about hypervisors [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md)
+>Find out more about hypervisors [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md).
 
 ## Operating System (OS)
 - **OS:** Debian
 - **Version:** 13.2.0 (amd64)
 
 >[!NOTE]
->Find out more about OS [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-os.md)
+>Find out more about OS [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-os.md).
 
 ## Features
 >[!CAUTION]
