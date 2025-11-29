@@ -60,3 +60,28 @@ sudo ufw default deny incoming           # Block all incoming
 sudo ufw default allow outgoing          # Allow all outgoing
 sudo ufw default deny outgoing           # Block all outgoing
 ```
+
+## Application Profiles
+```
+sudo ufw app list                        # List available profiles
+sudo ufw app info "Apache Full"          # Show profile details
+sudo ufw allow "Apache Full"             # Allow using profile
+```
+
+## Advanced Rules
+### Rate Limiting (Protect Against Brute Force)
+```
+sudo ufw limit ssh                      # Limit connections to SSH
+```
+
+### Port Ranges
+```
+sudo ufw allow 6000:6007/tcp            # Allow port range
+```
+
+### Interface-Specific Rules
+```
+sudo ufw allow in on eth0 to any port 80  # Allow on specific interface
+```
+
+## Reset and Reload
