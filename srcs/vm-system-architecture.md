@@ -1,4 +1,4 @@
-# VirtualBox: Installation
+# System Architecture
 ## Creating a New VM
 Open VirtualBox > Click on `Machine` > Click on `New`
 ![step1](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm000.png)
