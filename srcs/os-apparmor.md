@@ -17,7 +17,8 @@ Use this command to check if it's running:
 ```
 sudo aa-status
 ```
-This shows loaded profiles and their enforcement modes.
+>[!NOTE]
+>This shows loaded profiles and their enforcement modes.
 
 ## Profile Modes
 - **Enforce mode.** Actively blocks policy violations and logs them.
