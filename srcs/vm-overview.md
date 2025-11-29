@@ -36,7 +36,7 @@ Individuals may use VMs to run legacy applications that require older operating 
 - **Complexity at scale** — Managing many VMs can require additional tools and expertise (e.g., hypervisor management).
 
 ### Summary Table
-| Pros                  | Cons                 |
+| 👍 Pros               | 👎 Cons              |
 | :-------------------- | :------------------- |
 | Cost reduction        | Performance overhead |
 | Security              | Resource demands     |
