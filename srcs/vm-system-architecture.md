@@ -4,9 +4,20 @@ This section is dedicated to the first part of the **installation process**. Her
 >[!IMPORTANT]
 >Before starting, you need to get the [ISO](https://github.com/spacotto/Born2beRoot/blob/main/srcs/iso.md). You can download the ISO [here](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/). I used the `debian-13.2.0-amd64-DVD-1.iso`. If you don't have much space, I recommend downloading it into the `tmp` folder.
 
-## Creating a New VM
-Open VirtualBox > Click on `Machine` > Click on `New`
-![step1](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm000.png)
+## 1. Creating a New VM
+1. Open VirtualBox > Click on `Machine` > Click on `New`
+![create-the-vm](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm000.png)
+
+3. Set up the VM name and the OS (Debian in our case):
+```
+VM Name    # The name you want to use for your VM (like a file name).
+VM Folder  # The folder path where your VM is going to be placed (be sure to have enough space).
+ISO Image  # The ISO image of the OS.
+```
+[vm-name-and-os]
+
+>[CAUTION]
+>Since we want to set up the VM ourselves, we need to **CHECK "Skip Unattended Installation."** In other VirtualBox version they changed from opt-in to opt-out. In the opt-out instance, you have to **UNCHECK "Proceed with Unattended Installation."**
 
 ## Configure Locals
 
