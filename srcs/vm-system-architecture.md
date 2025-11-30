@@ -57,6 +57,9 @@ ISO Image  # The ISO image of the OS.
 >[!IMPORTANT]
 >VirtualBox and QEMU use **dynamic virtual disks**. In other words, A `20GB` virtual disk does not reserve `20GB` physically. Instead, it **expands gradually as data is written**.
 
+### 1.4 Confirm the Summary
+[vm-specs-summary]
+
 ## Configure Locals
 
 ## Configure Network
