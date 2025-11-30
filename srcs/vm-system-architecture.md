@@ -33,6 +33,9 @@ ISO Image  # The ISO image of the OS.
 
 [vm-hardware-specs]
 
+>[!WARNING]
+>Since we are using a VM, **we do not care about allocating resources following the power-of-2 alignment**. Virtualisation is hardware abstraction. In other words, the physical hardware cares about proper binary alignment, the virtualised one does not.
+
 #### RAM
 >[!TIP]
 >I have allocated `4GB` to provide plenty of extra space: it is more than the minimum, and **compatible with the specs of my host machine**.
@@ -50,9 +53,6 @@ ISO Image  # The ISO image of the OS.
 #### Disk Size
 >[!TIP]
 >The minimum recommended size is `10GB`. `20GB` is the optimal, balanced choice. Allocate `30GB` if you never want to think about disk space.
-
->[!NOTE]
->In this instance, we do not care about the powers of 2 since **disk sizes are not addressed in binary blocks**.
 
 >[!IMPORTANT]
 >VirtualBox and QEMU use **dynamic virtual disks**. In other words, A `20GB` virtual disk does not reserve `20GB` physically. Instead, it **expands gradually as data is written**.
