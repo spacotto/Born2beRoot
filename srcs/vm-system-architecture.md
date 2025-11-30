@@ -8,8 +8,8 @@ This section is dedicated to the first part of the **installation process**. Her
 ### 1.1 Start the config process 
 ```
 Open VirtualBox
-Click on < Machine >
-Click on < New >
+Click on [ Machine ]
+Click on [ New ]
 ```
 ![create-the-vm](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm000.png)
 
