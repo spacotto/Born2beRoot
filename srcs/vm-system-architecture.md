@@ -34,11 +34,11 @@ ISO Image  # The ISO image of the OS.
 [vm-hardware-specs]
 
 #### RAM
->[!CAUTION]
->Given the RAM minimum requirements (`512MB`), the recommended RAM (`1GB`), to which we need to add the space for the services (around `1GB`), the recommended total minimum is `2GB`.
-
 >[!TIP]
->I've allocated `4GB` to provide plenty of extra space: it's more than the minimum, and **compatible with the specs of my host machine**. And it is a power of 2 (hardware loves this)!
+>I have allocated `4GB` to provide plenty of extra space: it is more than the minimum, and **compatible with the specs of my host machine**.
+
+>[!CAUTION]
+>Given the RAM minimum requirements (`512MB`), the recommended RAM (`1GB`), to which we need to add the space for the services (around `1GB`), the **recommended total minimum** is `2GB`. Do not go less than that!
 
 #### CPUs
 >[!TIP]
@@ -46,6 +46,16 @@ ISO Image  # The ISO image of the OS.
 
 >[!CAUTION]
 >More than 2 CPUs isn’t useful for this project. And remember: **never allocate 100% of your host’s cores!**
+
+#### Disk Size
+>[!TIP]
+>The minimum recommended size is `10GB`. `20GB` is the optimal, balanced choice. Allocate `30GB` if you never want to think about disk space.
+
+>[!NOTE]
+>In this instance, we do not care about the powers of 2 since **disk sizes are not addressed in binary blocks**.
+
+>[!IMPORTANT]
+>VirtualBox and QEMU use **dynamic virtual disks**. In other words, A `20GB` virtual disk does not reserve `20GB` physically. Instead, it **expands gradually as data is written**.
 
 ## Configure Locals
 
