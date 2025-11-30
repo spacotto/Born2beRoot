@@ -230,4 +230,14 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!TIP]
 >`/var/log` stores persistent system/service logs. Thus, `1GB` should be enough. It is better to allocate it separately to prevent log growth from breaking other partitions.
 
+## 6. Mount point
+
+### 6.1 `home`
+[select-partition]
+[use-as-do-not-use]
+[ext4-journaling-file-system]
+[mount-point-none]
+[select-mount-point]
+[finish-setup]
+
 ## Final Result (`lsblk`)
