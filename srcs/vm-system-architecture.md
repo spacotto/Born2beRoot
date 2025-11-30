@@ -13,7 +13,7 @@ Click on [   New   ]
 ```
 ![create-the-vm](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm000.png)
 
-### 1.2 Configure VM name and OS:
+### 1.2 Configure VM name and OS
 ```
 VM Name    # The name you want to use for your VM (like a file name).
 VM Folder  # The folder path where your VM is going to be placed.
@@ -26,6 +26,10 @@ ISO Image  # The ISO image of the OS.
 
 >[!CAUTION]
 >Since we want to set up the VM ourselves, we need to **CHECK "Skip Unattended Installation."** In other VirtualBox version they changed from opt-in to opt-out. In the opt-out instance, you have to **UNCHECK "Proceed with Unattended Installation."**
+
+### 1.3 Specify Virtual Hardware
+>[!IMPORTANT]
+>[Here](https://www.debian.org/releases/forky/s390x/ch03s04.en.html) you can find the **Minimum Hardware Requirements** for Debian. 
 
 ## Configure Locals
 
