@@ -9,7 +9,7 @@ This section is dedicated to the first part of the **installation process**. Her
 ```
 Open VirtualBox
 Click on [ Machine ]
-Click on [ New ]
+Click on [   New   ]
 ```
 ![create-the-vm](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm000.png)
 
@@ -22,7 +22,7 @@ ISO Image  # The ISO image of the OS.
 [vm-name-and-os]
 
 >[!WARNING]
->Concerning the `VM Folder`, make sure to have enough space to store you VM!
+>When choosing the `VM Folder`, make sure to have enough space to store your VM!
 
 >[!CAUTION]
 >Since we want to set up the VM ourselves, we need to **CHECK "Skip Unattended Installation."** In other VirtualBox version they changed from opt-in to opt-out. In the opt-out instance, you have to **UNCHECK "Proceed with Unattended Installation."**
