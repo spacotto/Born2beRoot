@@ -67,14 +67,13 @@ ISO Image  # The ISO image of the OS.
 
 ### 3.2 Domain Name
 
-### 3.3 Root
+## 4. Set Up Users & Passwords
+### 4.1 Root
 
 #### Root Password
 
-### 3.4 User
+### 4.2 User
 
 #### Real Name & Last Name of the User
 
 #### Account Username & Password
-
-## Set Up Users & Passswords
