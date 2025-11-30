@@ -140,7 +140,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [/dev/mapper/sda5_crypt]
 
-### 5.2 LVM root
+### 5.2 `root`
 [create-logical-volume]
 
 [select-LVMGroup]
@@ -152,7 +152,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!TIP]
 >`4GB` should be large enough to hold (1) the base OS, (2) the installed packages, and (3) the system files in `/` (binaries, configs, libraries). The minimum should be around `3GB`: Debian minimal install (`~500–700 MB`) plus package updates & extra utilities (`~2GB`). `4GB` allows more packages without worrying and leaves plenty of space for the other LVM.
 
-### 5.3 LVM swap
+### 5.3 `swap`
 
 [create-logical-volume]
 
@@ -165,7 +165,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!TIP]
 >Swap exists to extend memory safely. In minimal VMs (like this one), allocate around `2GB`. More swap is not harmful, but rarely necessary. Hibernation is the only reason to make swap larger than RAM.
 
-### 5.4 LVM home
+### 5.4 `home`
 
 [create-logical-volume]
 
@@ -178,7 +178,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!TIP]
 >`/home` stores user data. Thus, the size depends on the expected files and the number of users. For our purposes (testing 1 user), `4GB` is sufficient.
 
-### 5.5 LVM var
+### 5.5 `var`
 
 [create-logical-volume]
 
@@ -188,7 +188,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [allocate-space]
 
-### 5.6 LVM srv
+### 5.6 `srv`
 
 [create-logical-volume]
 
@@ -198,7 +198,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [allocate-space]
 
-### 5.7 LVM tmp
+### 5.7 `tmp`
 
 [create-logical-volume]
 
@@ -208,7 +208,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [allocate-space]
 
-### 5.8 LVM var--log
+### 5.8 `var--log`
 
 [create-logical-volume]
 
