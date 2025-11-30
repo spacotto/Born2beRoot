@@ -6,7 +6,11 @@ This section is dedicated to the first part of the **installation process**. Her
 
 ## 1. Creating a New VM
 ### 1.1 Start the config process 
->Open VirtualBox > Click on `Machine` > Click on `New`
+```
+Open VirtualBox
+Click on < Machine >
+Click on < New >
+```
 ![create-the-vm](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm000.png)
 
 ### 1.2 Configure VM name and OS:
