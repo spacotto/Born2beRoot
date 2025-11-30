@@ -42,7 +42,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [select-sda]
 
 >[!NOTE]
->Now that we have created our primary partition, we can select it from the partition overview list (`pri/log`).
+>Now that we have created our partition table, we can select `pri/log` from the disk partition overview.
 
 ### 2.2 Create a Primary Partition (`sda1`)
 [allocate-sda1]
@@ -79,6 +79,11 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >Now that our primary partition is in place, we can conclude the setup.
 
 ## 3. Logical Partition (`sda5`)
+### 3.1 Select Partition Table (`sda`)
+[select-sda]
+
+>[!NOTE]
+>Once again, we shall select the partition table (`pri/log`) from the disk partition overview.
 
 ## Logical Volume Manager (LVM)
 >[!NOTE]
