@@ -73,6 +73,11 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!NOTE]
 >As previewed in the scheme, mount point shall be `/boot`.
 
+[finish-setup]
+
+>[!NOTE]
+>Now that our primary partition is in place, we can conclude the setup.
+
 ## Logical Volume Manager (LVM)
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-lvm.md) you can find more information concerning the Logical Volume Manager (LVM).
