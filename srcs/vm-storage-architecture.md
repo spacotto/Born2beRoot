@@ -47,6 +47,9 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!NOTE]
 >Now that we have created our primary partition, we can select it from the partition overview list (`pri/log`).
 
+### 2.2 Create a New Partition in `sda1`
+[create-sda1-partition]
+
 ## Logical Volume Manager (LVM)
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-lvm.md) you can find more information concerning the Logical Volume Manager (LVM).
