@@ -154,14 +154,62 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 ### LVM swap
 
+[create-logical-volume]
+
+[select-LVMGroup]
+
+[enter-swap]
+
+[allocate-swap]
+
 ### LVM home
+
+[create-logical-volume]
+
+[select-LVMGroup]
+
+[enter-home]
+
+[allocate-home]
 
 ### LVM var
 
+[create-logical-volume]
+
+[select-LVMGroup]
+
+[enter-var]
+
+[allocate-var]
+
 ### LVM srv
+
+[create-logical-volume]
+
+[select-LVMGroup]
+
+[enter-srv]
+
+[allocate-srv]
 
 ### LVM tmp
 
+[create-logical-volume]
+
+[select-LVMGroup]
+
+[enter-tmp]
+
+[allocate-tmp]
+
 ### LVM var--log
+
+[create-logical-volume]
+
+[select-LVMGroup]
+
+[enter-var--log]
+
+[allocate-var--log]
 
 ## Final Result (`lsblk`)
