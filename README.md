@@ -34,9 +34,17 @@
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-system-architecture.md) you can find the details concerning the setup of the system architecture.
 
-### Storage Architecture
+### Partition Disk
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-storage-architecture.md) you can find the details concerning the disk (storage) partitioning process.
+
+### Configure the package manager
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the package manager configuration.
+
+### Install the GRUB boot loader
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the installation of the GRUB boot loader.
 
 ## Users Management
 ### Groups (sudo)
