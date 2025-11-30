@@ -12,12 +12,15 @@ This section is dedicated to the first part of the **installation process**. Her
 ### 1.2 Configure VM name and OS:
 ```
 VM Name    # The name you want to use for your VM (like a file name).
-VM Folder  # The folder path where your VM is going to be placed (be sure to have enough space).
+VM Folder  # The folder path where your VM is going to be placed.
 ISO Image  # The ISO image of the OS.
 ```
 [vm-name-and-os]
 
->[CAUTION]
+>[!WARNING]
+>Concerning the `VM Folder`, make sure to have enough space to store you VM!
+
+>[!CAUTION]
 >Since we want to set up the VM ourselves, we need to **CHECK "Skip Unattended Installation."** In other VirtualBox version they changed from opt-in to opt-out. In the opt-out instance, you have to **UNCHECK "Proceed with Unattended Installation."**
 
 ## Configure Locals
