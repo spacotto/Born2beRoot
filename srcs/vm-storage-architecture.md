@@ -9,7 +9,7 @@ NAME                     MAJ:MIN  RM   SIZE  RO  TYPE  MOUNTPOINTS
 sda                      xxx:x     0  xxxxx   0  disk               # Physical virtual disk
 ├─sda1                   xxx:x     0  xxxxx   0  part  /boot        # Primary partition (bootloader/kernel)
 ├─sda2                   xxx:x     0  xxxxx   0  part               # Reserved partition (LVM extended area)
-└─sda5                   xxx:x     0  xxxxx   0  part               # Logical partition inside sda2
+└─sda5                   xxx:x     0  xxxxx   0  part               # Logical partition
   └─sda5_crypt           xxx:x     0  xxxxx   0  crypt              # LUKS-encrypted container
     ├─LVMGroup-root      xxx:x     0  xxxxx   0  lvm   /            # Logical Volume: root filesystem
     ├─LVMGroup-swap      xxx:x     0  xxxxx   0  lvm   [SWAP]       # Logical Volume: swap space
@@ -114,6 +114,18 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 >[!NOTE]
 >Now that our logical partition is in place, we can conclude the setup.
+
+## 4. Configure Encrypted Volumes
+
+[configure-encrypted-volumes]
+
+[confirm]
+
+[created-encrypted-volumes]
+
+[/dev/sda5]
+
+[finish-setup]
 
 ## Logical Volume Manager (LVM)
 >[!NOTE]
