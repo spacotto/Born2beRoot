@@ -41,6 +41,11 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [select-partition-table]
 
 ## 2. Primary Partition
+### 2.1 Select Primary Partition
+[select-sda1]
+
+>[!NOTE]
+>Now that we have created our primary partition, we can select it from the partition overview list (`pri/log`).
 
 ## Logical Volume Manager (LVM)
 >[!NOTE]
