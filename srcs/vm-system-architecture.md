@@ -62,6 +62,17 @@ ISO Image  # The ISO image of the OS.
 
 ## 2. Configure Locals
 
-## Configure Network
+## 3. Configure Network
+### 3.1 Hostname
+
+### 3.2 Domain Name
+
+### 3.3 Root Password
+
+### 3.4 
+
+#### 3.4.1 Real Name & Last Name of the User
+
+#### 3.4.2 Account Username & Password
 
 ## Set Up Users & Passswords
