@@ -5,10 +5,11 @@ This section is dedicated to the first part of the **installation process**. Her
 >Before starting, you need to get the [ISO](https://github.com/spacotto/Born2beRoot/blob/main/srcs/iso.md). You can download the ISO [here](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/). I used the `debian-13.2.0-amd64-DVD-1.iso`. If you don't have much space, I recommend downloading it into the `tmp` folder.
 
 ## 1. Creating a New VM
-1. Open VirtualBox > Click on `Machine` > Click on `New`
+### 1.1 Start the config process 
+>Open VirtualBox > Click on `Machine` > Click on `New`
 ![create-the-vm](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm000.png)
 
-3. Set up the VM name and the OS (Debian in our case):
+### 1.2 Configure VM name and OS:
 ```
 VM Name    # The name you want to use for your VM (like a file name).
 VM Folder  # The folder path where your VM is going to be placed (be sure to have enough space).
