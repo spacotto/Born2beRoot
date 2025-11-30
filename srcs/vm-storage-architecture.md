@@ -21,24 +21,26 @@ sda                      xxx:x     0  xxxxx   0  disk
 sr0                      xxx:x     1  xxxxx   0  rom
 ```
 
-# Partition Disks
+## 1. Partition Disks 
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-partitioning.md) you can find more details on what partitioning is.
 
-## 1. Select Manual 
+### 1.1 Select Manual 
 [select-manual]
 
 >[!IMPORTANT]
 >Since our goal is to set up a specific architecture, we shall select the `Manual` option.
 
-## 2. Create New Partition Table
+### 1.2 Create New Partition Table
 [create-new-partition-table]
 
 >[!NOTE]
 >Since we are at the beginning of the setup, we do not have partitions and mount points yet. Thus, we shall select `SCSI3 (0,0,0) (sda)` to start the partitioning process, which **represents the entire device**.
 
-## 3. Select Partition Table
+### 1.3 Select Partition Table
 [select-partition-table]
+
+## 2. Partition
 
 ## Logical Volume Manager (LVM)
 >[!NOTE]
