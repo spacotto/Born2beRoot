@@ -35,7 +35,7 @@ sr0                      xxx:x     1  xxxxx   0  rom
 [create-new-partition-table]
 
 >[!NOTE]
->Since we are at the beginning of the setup, we do not have partitions and mount points yet. Thus, we shall select `SCSI3 (0,0,0) (sda)` to start the partitioning process.
+>Since we are at the beginning of the setup, we do not have partitions and mount points yet. Thus, we shall select `SCSI3 (0,0,0) (sda)` to start the partitioning process. `SCSI3 (0,0,0) (sda)` represents the entire device.
 
 ## Logical Volume Manager (LVM)
 >[!NOTE]
