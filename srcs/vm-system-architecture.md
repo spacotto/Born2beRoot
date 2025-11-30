@@ -60,7 +60,7 @@ ISO Image  # The ISO image of the OS.
 ### 1.4 Confirm the Summary
 [vm-specs-summary]
 
-## Configure Locals
+## 2. Configure Locals
 
 ## Configure Network
 
