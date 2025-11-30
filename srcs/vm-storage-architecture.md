@@ -163,7 +163,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [allocate-space]
 
 >[!TIP]
->Swap exists to extend memory safely. In minimal VMs (like this one), allocate around `2GB`. More swap is not harmful, but rarely necessary. Hibernation is the only reason to make swap larger than RAM.
+>`/swap` exists to extend memory safely. In minimal VMs (like this one), allocate around `2GB`. More swap is not harmful, but rarely necessary. Hibernation is the only reason to make swap larger than RAM.
 
 ### 5.4 `home`
 
@@ -188,6 +188,9 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [allocate-space]
 
+>[!TIP]
+>`/var` stores variable system data. Thus, its size depends on logs, caches, spools, and service files. For a small VM with minimal services, `2GB` is enough.
+
 ### 5.6 `srv`
 
 [create-logical-volume]
@@ -197,6 +200,9 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [enter-name]
 
 [allocate-space]
+
+>[!TIP]
+>`/srv` stores service-specific data. Thus, in this instance, a small allocation (`2GB`) is enough. Anyway, LVM allows resizing later if needed.
 
 ### 5.7 `tmp`
 
@@ -208,6 +214,9 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [allocate-space]
 
+>[!TIP]
+>`/tmp` holds temporary files for the OS and applications. Thus, once again, a small allocation (`1GB`) is enough.
+
 ### 5.8 `var--log`
 
 [create-logical-volume]
@@ -217,5 +226,8 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [enter-name]
 
 [allocate-space]
+
+>[!TIP]
+>`/var/log` stores persistent system/service logs. Thus, `1GB` should be enough. It is better to allocate it separately to prevent log growth from breaking other partitions.
 
 ## Final Result (`lsblk`)
