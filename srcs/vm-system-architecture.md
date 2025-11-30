@@ -25,7 +25,7 @@ ISO Image  # The ISO image of the OS.
 >When choosing the `VM Folder`, make sure to have enough space to store your VM!
 
 >[!CAUTION]
->Since we want to set up the VM ourselves, we need to **CHECK "Skip Unattended Installation."** In other VirtualBox version they changed from opt-in to opt-out. In the opt-out instance, you have to **UNCHECK "Proceed with Unattended Installation."**
+>Since we want to set up the VM ourselves, we need to **CHECK "Skip Unattended Installation."** In other VirtualBox versions, the default changed from opt-in to opt-out. In the opt-out instance, you shall **UNCHECK "Proceed with Unattended Installation."**
 
 ### 1.3 Configure Virtual Hardware
 >[!IMPORTANT]
@@ -41,6 +41,11 @@ ISO Image  # The ISO image of the OS.
 >I've allocated `4GB` to provide plenty of extra space: it's more than the minimum, and **compatible with the specs of my host machine**. And it is a power of 2 (hardware loves this)!
 
 #### CPUs
+>[!TIP]
+>A minimal Debian server with no GUI, no heavy apps, and only basic services runs perfectly **on a single virtual CPU**. I have allocated **2 for extra responsiveness**.
+
+>[!CAUTION]
+>More than 2 CPUs isn’t useful for this project. And remember: **never allocate 100% of your host’s cores!**
 
 ## Configure Locals
 
