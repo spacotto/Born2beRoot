@@ -297,17 +297,17 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 ```
 # lsblk
 NAME                     MAJ:MIN  RM   SIZE  RO  TYPE  MOUNTPOINTS
-sda                        8:0     0  xxxxx   0  disk               # Physical virtual disk
-├─sda1                     8:1     0  xxxxx   0  part  /boot        # Primary partition (bootloader/kernel)
-├─sda2                     8:2     0  xxxxx   0  part               # Reserved partition (LVM extended area)
-└─sda5                   254:0     0  xxxxx   0  part               # Logical partition
-  └─sda5_crypt           254:1     0  xxxxx   0  crypt              # LUKS-encrypted container
-    ├─LVMGroup-root      254:2     0  xxxxx   0  lvm   /            # Logical Volume: root filesystem
-    ├─LVMGroup-swap      254:3     0  xxxxx   0  lvm   [SWAP]       # Logical Volume: swap space
-    ├─LVMGroup-home      254:4     0  xxxxx   0  lvm   /home        # Logical Volume: user home directories
-    ├─LVMGroup-var       254:5     0  xxxxx   0  lvm   /var         # Logical Volume: variable data
-    ├─LVMGroup-srv       254:6     0  xxxxx   0  lvm   /srv         # Logical Volume: service data
-    ├─LVMGroup-tmp       254:7     0  xxxxx   0  lvm   /tmp         # Logical Volume: temporary files
-    └─LVMGroup-var--log  254:8     0  xxxxx   0  lvm   /var/log     # Logical Volume: persistent system logs
-sr0                       11:0     1  xxxxx   0  rom                # Virtual CD-ROM drive (ISO)
+sda                        8:0     0    20G   0  disk               
+├─sda1                     8:1     0   487M   0  part  /boot        
+├─sda2                     8:2     0     1K   0  part               
+└─sda5                   254:0     0  19.5G   0  part               
+  └─sda5_crypt           254:1     0  19.5G   0  crypt              
+    ├─LVMGroup-root      254:2     0   3.7G   0  lvm   /            
+    ├─LVMGroup-swap      254:3     0   1.9G   0  lvm   [SWAP]       
+    ├─LVMGroup-home      254:4     0   3.7G   0  lvm   /home        
+    ├─LVMGroup-var       254:5     0   1.9G   0  lvm   /var         
+    ├─LVMGroup-srv       254:6     0   1.9G   0  lvm   /srv         
+    ├─LVMGroup-tmp       254:7     0   952M   0  lvm   /tmp         
+    └─LVMGroup-var--log  254:8     0   952M   0  lvm   /var/log     
+sr0                       11:0     1  1024M   0  rom                
 ```
