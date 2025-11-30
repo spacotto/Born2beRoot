@@ -145,9 +145,9 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [select-LVMGroup]
 
-[enter-root]
+[enter-name]
 
-[allocate-root]
+[allocate-space]
 
 >[!TIP]
 >`4GB` should be large enough to hold (1) the base OS, (2) the installed packages, and (3) the system files in `/` (binaries, configs, libraries). The minimum should be around `3GB`: Debian minimal install (`~500–700 MB`) plus package updates & extra utilities (`~2GB`). `4GB` allows more packages without worrying and leaves plenty of space for the other LVM.
@@ -158,9 +158,16 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [select-LVMGroup]
 
-[enter-swap]
+[enter-name]
 
-[allocate-swap]
+[allocate-space]
+
+>[!TIP]
+>Swap exists to extend memory safely. In minimal VMs (like this one), allocate around `2GB`. More swap is not harmful, but rarely necessary. Hibernation is the only reason to make swap larger than RAM.
+
+More swap is not harmful, but rarely necessary.
+
+Hibernation is the only reason to make swap larger than RAM.
 
 ### LVM home
 
@@ -168,9 +175,12 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [select-LVMGroup]
 
-[enter-home]
+[enter-name]
 
-[allocate-home]
+[allocate-space]
+
+>[!TIP]
+>`/home` stores user data. Thus, the size depends on the expected files and the number of users. For our purposes (testing 1 user), `4GB` is sufficient.
 
 ### LVM var
 
@@ -178,9 +188,9 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [select-LVMGroup]
 
-[enter-var]
+[enter-name]
 
-[allocate-var]
+[allocate-space]
 
 ### LVM srv
 
@@ -188,9 +198,9 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [select-LVMGroup]
 
-[enter-srv]
+[enter-name]
 
-[allocate-srv]
+[allocate-space]
 
 ### LVM tmp
 
@@ -198,9 +208,9 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [select-LVMGroup]
 
-[enter-tmp]
+[enter-name]
 
-[allocate-tmp]
+[allocate-space]
 
 ### LVM var--log
 
@@ -208,8 +218,8 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [select-LVMGroup]
 
-[enter-var--log]
+[enter-name]
 
-[allocate-var--log]
+[allocate-space]
 
 ## Final Result (`lsblk`)
