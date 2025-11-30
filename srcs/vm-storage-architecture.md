@@ -21,7 +21,7 @@ sda                      xxx:x     0  xxxxx   0  disk               # Physical v
 sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD-ROM drive (ISO)
 ```
 
-## 1. Partition Disks 
+## 1. Partition Disks (`sda`)
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-partitioning.md) you can find more details on what partitioning is.
 
@@ -31,13 +31,13 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!IMPORTANT]
 >Since our goal is to set up a specific architecture, we shall select the `Manual` option.
 
-### 1.2 Create New Partition Table
+### 1.2 Create New Partition Table (`sda`)
 [create-new-partition-table]
 
 >[!NOTE]
 >Since we are at the beginning of the setup, we do not have partitions and mount points yet. Thus, we shall select `SCSI3 (0,0,0) (sda)` to start the partitioning process, which **represents the entire device**.
 
-## 2. Primary Partition
+## 2. Primary Partition (`sda1`)
 ### 2.1 Select Select Partition Table (`sda`)
 [select-sda]
 
