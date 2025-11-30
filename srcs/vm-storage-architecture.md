@@ -31,11 +31,14 @@ sr0                      xxx:x     1  xxxxx   0  rom
 >[!IMPORTANT]
 >Since our goal is to set up a specific architecture, we shall select the `Manual` option.
 
-## 2. Select SCSI3 (0,0,0) (sda)
+## 2. Create New Partition Table
 [create-new-partition-table]
 
 >[!NOTE]
->Since we are at the beginning of the setup, we do not have partitions and mount points yet. Thus, we shall select `SCSI3 (0,0,0) (sda)` to start the partitioning process. `SCSI3 (0,0,0) (sda)` represents the entire device.
+>Since we are at the beginning of the setup, we do not have partitions and mount points yet. Thus, we shall select `SCSI3 (0,0,0) (sda)` to start the partitioning process, which **represents the entire device**.
+
+## 3. Select Partition Table
+[select-partition-table]
 
 ## Logical Volume Manager (LVM)
 >[!NOTE]
