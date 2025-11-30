@@ -127,11 +127,30 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [finish-setup]
 
-## Logical Volume Manager (LVM)
+## 5. Configure Logical Volume Manager (LVM)
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-lvm.md) you can find more information concerning the Logical Volume Manager (LVM).
 
-### LVM root
+[configure-lvm]
+
+### 5.1 LVMGroup
+[create-volume-group]
+
+[enter-LVMGroup]
+
+[/dev/mapper/sda5_crypt]
+
+### 5.2 LVM root
+[create-logical-volume]
+
+[select-LVMGroup]
+
+[enter-root]
+
+[allocate-root]
+
+>[!TIP]
+>`4GB` should be large enough to hold (1) the base OS, (2) the installed packages, and (3) the system files in `/` (binaries, configs, libraries). The minimum should be around `3GB`: Debian minimal install (`~500–700 MB`) plus package updates & extra utilities (`~2GB`). `4GB` allows more packages without worrying and leaves plenty of space for the other LVM.
 
 ### LVM swap
 
