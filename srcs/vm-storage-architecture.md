@@ -92,6 +92,9 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [allocate-sda5]
 
+>[!TIP]
+>Make sda5 use **all disk space available** (aka `max`). This is because, since we have already configured `sda1`, this is the only partition left. Moreover, here is where we are going to add our **LVM** partitions, which are designed to manage flexible allocation. Hence, leaving unallocated disk outside the LVM serves no purpose.
+
 ## Logical Volume Manager (LVM)
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-lvm.md) you can find more information concerning the Logical Volume Manager (LVM).
