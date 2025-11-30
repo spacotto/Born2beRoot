@@ -27,9 +27,20 @@ ISO Image  # The ISO image of the OS.
 >[!CAUTION]
 >Since we want to set up the VM ourselves, we need to **CHECK "Skip Unattended Installation."** In other VirtualBox version they changed from opt-in to opt-out. In the opt-out instance, you have to **UNCHECK "Proceed with Unattended Installation."**
 
-### 1.3 Specify Virtual Hardware
+### 1.3 Configure Virtual Hardware
 >[!IMPORTANT]
 >[Here](https://www.debian.org/releases/forky/s390x/ch03s04.en.html) you can find the **Minimum Hardware Requirements** for Debian. 
+
+[vm-hardware-specs]
+
+#### RAM
+>[!CAUTION]
+>Given the RAM minimum requirements (`512MB`), the recommended RAM (`1GB`), to which we need to add the space for the services (around `1GB`), the recommended total minimum is `2GB`.
+
+>[!TIP]
+>I've allocated `4GB` to provide plenty of extra space: it's more than the minimum, and **compatible with the specs of my host machine**. And it is a power of 2 (hardware loves this)!
+
+#### CPUs
 
 ## Configure Locals
 
