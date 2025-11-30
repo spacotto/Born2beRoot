@@ -268,6 +268,12 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [ext4-journaling-file-system]
 [mount-point-none]
 [select-mount-point]
+[finish-setup]### 6.6 `var`
+[select-partition]
+[use-as-do-not-use]
+[ext4-journaling-file-system]
+[mount-point-none]
+[select-mount-point]
 [finish-setup]
 
 ### 6.6 `var`
@@ -287,4 +293,21 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [enter-/var/log]
 [finish-setup]
 
-## Final Result (`lsblk`)
+## 7. Final Result (`lsblk`)
+```
+# lsblk
+NAME                     MAJ:MIN  RM   SIZE  RO  TYPE  MOUNTPOINTS
+sda                        8:0     0  xxxxx   0  disk               # Physical virtual disk
+├─sda1                     8:1     0  xxxxx   0  part  /boot        # Primary partition (bootloader/kernel)
+├─sda2                     8:2     0  xxxxx   0  part               # Reserved partition (LVM extended area)
+└─sda5                   254:0     0  xxxxx   0  part               # Logical partition
+  └─sda5_crypt           254:1     0  xxxxx   0  crypt              # LUKS-encrypted container
+    ├─LVMGroup-root      254:2     0  xxxxx   0  lvm   /            # Logical Volume: root filesystem
+    ├─LVMGroup-swap      254:3     0  xxxxx   0  lvm   [SWAP]       # Logical Volume: swap space
+    ├─LVMGroup-home      254:4     0  xxxxx   0  lvm   /home        # Logical Volume: user home directories
+    ├─LVMGroup-var       254:5     0  xxxxx   0  lvm   /var         # Logical Volume: variable data
+    ├─LVMGroup-srv       254:6     0  xxxxx   0  lvm   /srv         # Logical Volume: service data
+    ├─LVMGroup-tmp       254:7     0  xxxxx   0  lvm   /tmp         # Logical Volume: temporary files
+    └─LVMGroup-var--log  254:8     0  xxxxx   0  lvm   /var/log     # Logical Volume: persistent system logs
+sr0                       11:0     1  xxxxx   0  rom                # Virtual CD-ROM drive (ISO)
+```
