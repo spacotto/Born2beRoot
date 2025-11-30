@@ -40,7 +40,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 ### 1.3 Select Partition Table
 [select-partition-table]
 
-## 2. Partition
+## 2. Primary Partition
 
 ## Logical Volume Manager (LVM)
 >[!NOTE]
