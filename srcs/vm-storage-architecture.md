@@ -24,6 +24,12 @@ sda                      xxx:x     0  xxxxx   0  disk
 sr0                      xxx:x     1  xxxxx   0  rom
 ```
 
+# Partition Disks
+>[!IMPORTANT]
+>Since our goal is to set up a specific architecture, we shall select the `Manual` option.
+
+[select-manual]
+
 ## Logical Volume Manager (LVM)
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-lvm.md) you can find more information concerning the Logical Volume Manager (LVM).
