@@ -240,4 +240,51 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [select-mount-point]
 [finish-setup]
 
+### 6.2 `root`
+[select-partition]
+[use-as-do-not-use]
+[ext4-journaling-file-system]
+[mount-point-none]
+[select-mount-point]
+[finish-setup]
+
+### 6.3 `srv`
+[select-partition]
+[use-as-do-not-use]
+[ext4-journaling-file-system]
+[mount-point-none]
+[select-mount-point]
+[finish-setup]
+
+### 6.4 `swap`
+[select-partition]
+[use-as-do-not-use]
+[swap-area]
+[finish-setup]
+
+### 6.5 `tmp`
+[select-partition]
+[use-as-do-not-use]
+[ext4-journaling-file-system]
+[mount-point-none]
+[select-mount-point]
+[finish-setup]
+
+### 6.6 `var`
+[select-partition]
+[use-as-do-not-use]
+[ext4-journaling-file-system]
+[mount-point-none]
+[select-mount-point]
+[finish-setup]
+
+### 6.7 `var-log`
+[select-partition]
+[use-as-do-not-use]
+[ext4-journaling-file-system]
+[mount-point-none]
+[enter-manually]
+[enter-/var/log]
+[finish-setup]
+
 ## Final Result (`lsblk`)
