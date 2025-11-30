@@ -93,7 +93,27 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [allocate-sda5]
 
 >[!TIP]
->Make sda5 use **all disk space available** (aka `max`). This is because, since we have already configured `sda1`, this is the only partition left. Moreover, here is where we are going to add our **LVM** partitions, which are designed to manage flexible allocation. Hence, leaving unallocated disk outside the LVM serves no purpose.
+>Make sda5 use **all disk space available** (aka `max`). This is because, since we have already configured `sda1`, this is the only partition left. Moreover, here is where we are going to add our **LVM** partitions, which are designed to manage flexible allocation. Hence, leaving unallocated disk space outside the LVM serves no purpose.
+
+[select-type]
+
+>[!NOTE]
+>Select `Logical`. This is the partition where we want to set up the LVM.
+
+[select-mount-point]
+
+>[!NOTE]
+>As previewed in the scheme, we shall select root (`/`) as the mount point. `sda5` needs to be at the same level as `sda1`.
+
+[select-nothing]
+
+>[!NOTE]
+>But we are not going to mount it yet.
+
+[finish-setup]
+
+>[!NOTE]
+>Now that our logical partition is in place, we can conclude the setup.
 
 ## Logical Volume Manager (LVM)
 >[!NOTE]
