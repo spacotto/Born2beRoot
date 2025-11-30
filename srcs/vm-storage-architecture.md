@@ -37,18 +37,15 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!NOTE]
 >Since we are at the beginning of the setup, we do not have partitions and mount points yet. Thus, we shall select `SCSI3 (0,0,0) (sda)` to start the partitioning process, which **represents the entire device**.
 
-### 1.3 Select Partition Table
-[select-partition-table]
-
 ## 2. Primary Partition
-### 2.1 Select Primary Partition (`sda`)
+### 2.1 Select Select Partition Table (`sda`)
 [select-sda]
 
 >[!NOTE]
 >Now that we have created our primary partition, we can select it from the partition overview list (`pri/log`).
 
-### 2.2 Create a New Partition (`sda1`)
-[create-sda1-partition]
+### 2.2 Create a Primary Partition (`sda1`)
+[create-sda1]
 
 >[!TIP]
 >`512 MB` is the ideal size because the `/boot` partition stores (1) the kernel(s), (2) initramfs images, and (3) the GRUB bootloader files. A typical Debian kernel + initramfs pair takes around `70–90 MB`. With multiple kernels installed (updates keep at least 2), you usually see (1) `~250–300 MB` used at most, and (2) leaving plenty of space for updates and recovery. `512 MB` comfortably avoids `/boot is full` errors during kernel upgrades.
