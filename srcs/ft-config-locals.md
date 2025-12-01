@@ -4,28 +4,19 @@ Configuring the locals is the first step of the OS installation.
 ![installer-menu](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm005.png)
 
 >[!CAUTION]
->Since our goal is to replicate a specific configuration, we need to select `Install` to manually set up everything.
+>Since our goal is to replicate a specific configuration, we need to select `Install` to manually configure everything.
 
-![]()
-![]()
-![]()
-![]()
+## Select a language
+![select-language](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm006.png)
 
-## 2. Configure Locals
+## Select your location
+![select-location](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm007.png)
 
-## 3. Configure Network
-### 3.1 Hostname
+## Configure locales
+![config-locales](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm008.png)
 
-### 3.2 Domain Name
+>[!NOTE]
+>Since I chose English as a language, but I am in France, I need to manually pick `en_US`.
 
-## 4. Set Up Users & Passwords
-### 4.1 Root
-
-#### Root Password
-Confirm the pw (you have to retype it!). Do NOT lose your pws!
-
-### 4.2 User
-
-#### Real Name & Last Name of the User
-
-#### Account Username & Password
+## Configure the keyboard
+![config-keyboard](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm009.png)
