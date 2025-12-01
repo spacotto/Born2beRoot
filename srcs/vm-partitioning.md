@@ -19,6 +19,80 @@ In contrast, **VM-based partitioning** is fully virtualized and transparent to t
 
 VMs do not use physical partitions on the host disk. Instead, they use virtual disks (e.g., `.vmdk` or `.vhdx` files) that are **stored as files** on the host’s filesystem. These virtual disks function as **independent storage units** within the VM, allowing for easy backup, migration, and resizing without affecting the host system.
 
+## Terminology
+### Physical Layer
+- Physical Disk (sda)
+> A storage device recognised by the system (physical drive or virtual disk in VMs). Named sequentially: `sda`, `sdb`, `sdc`, etc. The foundation for all partitions and volumes.
+
+- CD-ROM Drive (`sr0`)
+> Optical drive or virtual ISO mount. Read-only storage device. `sr` = SCSI CD-ROM device.
+
+### Partition Layer
+- Primary Partition (sda1)
+Direct division of the physical disk. Limited to 4 primary partitions per disk (`MBR`). Typically used for boot partition (`/boot`).
+
+- Extended Partition (`sda2`)
+>Special primary partition that acts as a container. Allows creation of multiple logical partitions beyond the 4-partition limit. Cannot store data directly
+
+- Logical Partition (`sda5`)
+>Partition created **inside an extended partition**. Numbered starting from `5` (even if fewer than 4 primary partitions exist). Can be used for **data** or as **base for encryption/LVM**.
+
+### Encryption Layer
+- LUKS Encrypted Container (`sda5_crypt`).
+>**Linux Unified Key Setup**, encryption standard. Sits on top of a partition, encrypting all data within. Must be unlocked with a **passphrase** before accessing contents. Named with `_crypt` suffix by convention.
+
+### LVM Layer (Logical Volume Manager)
+- Volume Group (LVMGroup)
+>Pool of storage space created from one or more physical volumes. Acts as a container for logical volumes. Allows flexible space allocation.
+
+- Logical Volume (LVMGroup-root, LVMGroup-home, etc.)
+>Virtual partition created from volume group space. Can be resized, moved, and snapshotted without unmounting. Mounted to specific directories in the filesystem.
+
+### Common Logical Volumes (LVs)
+- root (`/`)
+>Core system files and installed software
+
+- swap (`[SWAP]`)
+>Virtual memory extension for RAM
+
+- home (`/home`)
+>User personal files and settings
+
+- var (`/var`)
+>Variable data (caches, databases, mail)
+
+- srv (`/srv`)
+>Data served by system services
+
+- tmp (`/tmp`)
+>Temporary files, cleared on reboot
+
+- var--log (`/var/log`)
+>System and application logs
+
+### Device Types
+- disk
+>Physical or virtual storage device
+
+- part
+>Partition on a disk
+
+- crypt
+>Encrypted container
+
+- lvm
+>Logical Volume Manager volume
+
+- rom
+>Read-only optical media
+
+### Typical Setup Flow
+1. Physical disk identified (sda)
+2. Partitioned into boot, extended, and logical partitions
+3. Logical partition encrypted with LUKS
+4. Encrypted space used as LVM physical volume
+5. Logical volumes created for different system directories
+
 ## Sources
 - [GPU partitioning](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/gpu-partitioning)
 - [Understanding Partitioning, BROADCOM](https://techdocs.broadcom.com/us/en/vmware-tanzu/data-solutions/tanzu-gemfire/10-1/gf/developing-partitioned_regions-how_partitioning_works.html)
