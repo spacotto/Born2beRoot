@@ -8,7 +8,7 @@
 
 ## Software Selection
 
->[WARNING]
+>[!WARNING]
 >Since we want to install only the essential services ourselves, we are going to uncheck everything and continue
 
 ![software-selection](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm082.png)
