@@ -1,8 +1,7 @@
-# About Storage Architecture
->[!WARNING]
->Despite being part of the [System Architecture](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-system-architecture.md) (aka installation process), I have decided to dedicate a separate section to the Storage Architecture (aka the partitioning) due to the amount of information concerning this matter.
+# About Disk Partitioning
+This is the third step of the OS installation process. In this instance, our goal is to obtain a specific partition scheme.
 
-**Desired Outcome Sample:**
+**Desired Disk Partitioning Scheme:**
 ```
 # lsblk
 NAME                     MAJ:MIN  RM   SIZE  RO  TYPE  MOUNTPOINTS
