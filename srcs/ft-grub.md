@@ -93,3 +93,69 @@ Remove "quiet" and "splash" from `GRUB_CMDLINE_LINUX_DEFAULT`:
 ```
 GRUB_CMDLINE_LINUX_DEFAULT=""
 ```
+
+## Recovery and Troubleshooting
+### Boot from GRUB Command Line
+If GRUB drops to a command line, you can boot manually:
+```
+grub> ls                              # List available partitions
+grub> set root=(hd0,1)                # Set your boot partition
+grub> linux /vmlinuz root=/dev/sda1
+grub> initrd /initrd.img
+grub> boot
+```
+
+### Boot from Live USB and Reinstall GRUB
+1. Boot from Debian Live USB
+
+2. Mount your root partition:
+```
+sudo mount /dev/sda1 /mnt
+sudo mount --bind /dev /mnt/dev
+sudo mount --bind /proc /mnt/proc
+sudo mount --bind /sys /mnt/sys
+```
+
+3. Chroot and reinstall:
+```
+sudo chroot /mnt
+grub-install /dev/sda
+update-grub
+exit
+```
+
+4. Reboot
+
+### Check GRUB Version
+```
+grub-install --version
+```
+
+### Custom Menu Entries
+To add custom entries, create a file in `/etc/grub.d/`:
+```
+sudo nano /etc/grub.d/40_custom
+```
+
+Example custom entry:
+```
+#!/bin/sh
+exec tail -n +3 $0
+menuentry "My Custom Linux" {
+    set root='hd0,1'
+    linux /vmlinuz-custom root=/dev/sda1
+    initrd /initrd.img-custom
+}
+```
+Make it executable and update:
+```
+sudo chmod +x /etc/grub.d/40_custom
+sudo update-grub
+```
+
+## Good Practices
+- Always run `sudo update-grub` after making configuration changes.
+- Never directly edit `/boot/grub/grub.cfg`: your changes will be overwritten.
+- Use `/dev/sdX` (disk) for grub-install, not `/dev/sdX1` (partition).
+- Keep backups before making major changes to boot configuration.
+- If dual-booting, `os-prober` must be enabled to detect other operating systems.
