@@ -129,14 +129,16 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 [configure-lvm]
 
-### 5.1 LVMGroup
+### 5.1 Create Volume Group (`LVMGroup`)
 [create-volume-group]
 
 [enter-LVMGroup]
 
 [/dev/mapper/sda5_crypt]
 
-### 5.2 `root`
+### 5.2 Create Logical Volumes (LVs)
+
+#### `root`
 [create-logical-volume]
 
 [select-LVMGroup]
@@ -148,7 +150,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!TIP]
 >`4GB` should be large enough to hold (1) the base OS, (2) the installed packages, and (3) the system files in `/` (binaries, configs, libraries). The minimum should be around `3GB`: Debian minimal install (`~500–700 MB`) plus package updates & extra utilities (`~2GB`). `4GB` allows more packages without worrying and leaves plenty of space for the other LVM.
 
-### 5.3 `swap`
+#### `swap`
 
 [create-logical-volume]
 
@@ -161,7 +163,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!TIP]
 >`/swap` exists to extend memory safely. In minimal VMs (like this one), allocate around `2GB`. More swap is not harmful, but rarely necessary. Hibernation is the only reason to make swap larger than RAM.
 
-### 5.4 `home`
+#### `home`
 
 [create-logical-volume]
 
@@ -174,7 +176,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!TIP]
 >`/home` stores user data. Thus, the size depends on the expected files and the number of users. For our purposes (testing 1 user), `4GB` is sufficient.
 
-### 5.5 `var`
+#### `var`
 
 [create-logical-volume]
 
@@ -187,7 +189,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!TIP]
 >`/var` stores variable system data. Thus, its size depends on logs, caches, spools, and service files. For a small VM with minimal services, `2GB` is enough.
 
-### 5.6 `srv`
+#### `srv`
 
 [create-logical-volume]
 
@@ -200,7 +202,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!TIP]
 >`/srv` stores service-specific data. Thus, in this instance, a small allocation (`2GB`) is enough. Anyway, LVM allows resizing later if needed.
 
-### 5.7 `tmp`
+#### `tmp`
 
 [create-logical-volume]
 
@@ -213,7 +215,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!TIP]
 >`/tmp` holds temporary files for the OS and applications. Thus, once again, a small allocation (`1GB`) is enough.
 
-### 5.8 `var--log`
+#### `var-log`
 
 [create-logical-volume]
 
@@ -226,9 +228,9 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!TIP]
 >`/var/log` stores persistent system/service logs. Thus, `1GB` should be enough. It is better to allocate it separately to prevent log growth from breaking other partitions.
 
-## 6. Mount point
+### 5.3 Select Mount Points
 
-### 6.1 `home`
+#### `home`
 [select-partition]
 [use-as-do-not-use]
 [ext4-journaling-file-system]
@@ -236,7 +238,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [select-mount-point]
 [finish-setup]
 
-### 6.2 `root`
+#### `root`
 [select-partition]
 [use-as-do-not-use]
 [ext4-journaling-file-system]
@@ -244,7 +246,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [select-mount-point]
 [finish-setup]
 
-### 6.3 `srv`
+#### `srv`
 [select-partition]
 [use-as-do-not-use]
 [ext4-journaling-file-system]
@@ -252,19 +254,13 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [select-mount-point]
 [finish-setup]
 
-### 6.4 `swap`
+#### `swap`
 [select-partition]
 [use-as-do-not-use]
 [swap-area]
 [finish-setup]
 
-### 6.5 `tmp`
-[select-partition]
-[use-as-do-not-use]
-[ext4-journaling-file-system]
-[mount-point-none]
-[select-mount-point]
-[finish-setup]### 6.6 `var`
+#### `tmp`
 [select-partition]
 [use-as-do-not-use]
 [ext4-journaling-file-system]
@@ -272,7 +268,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [select-mount-point]
 [finish-setup]
 
-### 6.6 `var`
+#### `var`
 [select-partition]
 [use-as-do-not-use]
 [ext4-journaling-file-system]
@@ -280,7 +276,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [select-mount-point]
 [finish-setup]
 
-### 6.7 `var-log`
+#### `var-log`
 [select-partition]
 [use-as-do-not-use]
 [ext4-journaling-file-system]
@@ -289,7 +285,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 [enter-/var/log]
 [finish-setup]
 
-## 7. Final Result (`lsblk`)
+## 6. Final Result (`lsblk`)
 ```
 # lsblk
 NAME                     MAJ:MIN  RM   SIZE  RO  TYPE  MOUNTPOINTS
