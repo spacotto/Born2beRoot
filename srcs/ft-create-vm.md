@@ -1,7 +1,7 @@
 # About Creating a Virtual Machine (VM)
 Text
 
-## 1. Creating a New VM
+## 1. Create New VM
 ```
 Open VirtualBox
 Click on [ Machine ]
@@ -23,7 +23,7 @@ ISO Image  # The ISO image of the OS.
 >[!CAUTION]
 >Since we want to set up the VM ourselves, we need to **CHECK "Skip Unattended Installation."** In other VirtualBox versions, the default changed from opt-in to opt-out. In the opt-out instance, you shall **UNCHECK "Proceed with Unattended Installation."**
 
-## 3 Configure Virtual Hardware
+## 3. Configure Virtual Hardware
 >[!IMPORTANT]
 >[Here](https://www.debian.org/releases/forky/s390x/ch03s04.en.html) you can find the **Minimum Hardware Requirements** for Debian. 
 
@@ -55,7 +55,5 @@ ISO Image  # The ISO image of the OS.
 >[!IMPORTANT]
 >VirtualBox and QEMU use **dynamic virtual disks**. In other words, A `20GB` virtual disk does not reserve `20GB` physically. Instead, it **expands gradually as data is written**.
 
-## 4. Summary
+## 4. Confirm Summary
 ![hardware-summary](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm004.png)
-### 1.4 Confirm the Summary
-[vm-specs-summary]
