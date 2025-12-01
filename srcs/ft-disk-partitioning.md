@@ -19,18 +19,16 @@ sda                      xxx:x     0  xxxxx   0  disk               # Physical v
     └─LVMGroup-var--log  xxx:x     0  xxxxx   0  lvm   /var/log     # Logical Volume: persistent system logs
 sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD-ROM drive (ISO)
 ```
-
-## 1. Partition Disks (`sda`)
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-partitioning.md) you can find more details on what partitioning is.
 
-### 1.1 Select Manual 
+## 1. Create New Partition Table (`sda`)
+
 [select-manual]
 
 >[!IMPORTANT]
 >Since our goal is to set up a specific architecture, we shall select the `Manual` option.
 
-### 1.2 Create New Partition Table (`sda`)
 [create-new-partition-table]
 
 >[!NOTE]
