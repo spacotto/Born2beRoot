@@ -100,15 +100,21 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 ## 4. Configure Encrypted Volumes
 
-[configure-encrypted-volumes]
+![configure-encrypted-volumes](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm033.png)
 
-[confirm]
+![confirm-encryption](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm034.png)
 
-[created-encrypted-volumes]
+![create-encrypted-volumes](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm035.png)
 
-[/dev/sda5]
+>[!NOTE]
+>We want to encrypt the Logical Partition.
 
-[finish-setup]
+![/dev/sda5](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm036.png)
+
+>[!NOTE]
+>Now that we have set up the encryption, we can complete the procedure (confirm with `Finish` after).
+
+![finish-setup](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm037.png)
 
 ## 5. Configure Logical Volume Manager (LVM)
 >[!NOTE]
