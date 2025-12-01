@@ -1,5 +1,6 @@
 # About Creating a Virtual Machine (VM)
-Text
+>[!IMPORTANT]
+>Before starting, you need to get the [ISO](https://github.com/spacotto/Born2beRoot/blob/main/srcs/iso.md). You can download the ISO [here](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/). I used the `debian-13.2.0-amd64-DVD-1.iso`. If you don't have much space, I recommend downloading it into the `tmp` folder.
 
 ## 1. Create New VM
 ```
