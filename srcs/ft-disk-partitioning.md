@@ -28,7 +28,6 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 ![select-manual](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm016.png)
 
-
 >[!NOTE]
 >Since we are at the beginning of the setup, we do not have partitions and mount points yet. Thus, we shall select `SCSI3 (0,0,0) (sda)` to start the partitioning process, which **represents the entire device**.
 
@@ -45,35 +44,35 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!TIP]
 >`512 MB` is the ideal size because the `/boot` partition stores (1) the kernel(s), (2) initramfs images, and (3) the GRUB bootloader files. A typical Debian kernel + initramfs pair takes around `70–90 MB`. With multiple kernels installed (updates keep at least 2), you usually see (1) `~250–300 MB` used at most, and (2) leaving plenty of space for updates and recovery. `512 MB` comfortably avoids `/boot is full` errors during kernel upgrades.
 
-![allocate-sda1](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm020.png)
-
 >[!CAUTION]
 >Don’t go below `200 MB`! This leads to frequent issues with kernel updates.
 
-[select-type]
+![allocate-sda1](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm020.png)
 
 >[!NOTE]
 >Select `Primary`. This is the partition where we want to install the OS (Debian).
 
-[select-beginning]
+![select-type](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm021.png)
 
 >[!NOTE]
 >The partition shall be created at the beginning of the disk as requested by the scheme we want to obtain.
 
-[select-mount-point]
+![select-beginning](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm022.png)
 
 >[!NOTE]
 >As previewed in the scheme, we shall select root (`/`) as the mount point.
 
-[select-boot]
+![select-mount-point](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm023.png)
 
 >[!NOTE]
 >As previewed in the scheme, mount point shall be `/boot`.
 
-[finish-setup]
+![select-boot](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm024.png)
 
 >[!NOTE]
->Now that our primary partition is in place, we can conclude the setup.
+>Now that our primary partition is in place, we can finish the setup.
+
+![finish-setup](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm025.png)
 
 ## 3. Logical Partition (`sda5`)
 ### 3.1 Select Partition Table (`sda`)
