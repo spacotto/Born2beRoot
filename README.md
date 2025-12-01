@@ -34,7 +34,7 @@
 >[!IMPORTANT]
 >[Here]() you can find the details concerning the configuration of the locals.
 
-### System Architecture
+### Configure the Network
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-system-architecture.md) you can find the details concerning the setup of the system architecture.
 
