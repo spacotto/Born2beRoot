@@ -71,6 +71,7 @@ ISO Image  # The ISO image of the OS.
 ### 4.1 Root
 
 #### Root Password
+Confirm the pw (you have to retype it!). Do NOT lose your pws!
 
 ### 4.2 User
 
