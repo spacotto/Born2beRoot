@@ -71,40 +71,32 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 ![finish-setup](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm025.png)
 
-## 3. Logical Partition (`sda5`)
-### 3.1 Select Partition Table (`sda`)
-[select-sda]
-
+## 3. Create Logical Partition (`sda5`)
 >[!NOTE]
 >Once again, we shall select the partition table (`pri/log`) from the disk partition overview.
 
-### 3.2 Create a Logical Partition (`sda5`)
-[create-sda5]
+![select-sda](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm026.png)
 
-[allocate-sda5]
+![create-sda5](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm027.png)
 
 >[!TIP]
 >Make sda5 use **all disk space available** (aka `max`). This is because, since we have already configured `sda1`, this is the only partition left. Moreover, here is where we are going to add our **LVM** partitions, which are designed to manage flexible allocation. Hence, leaving unallocated disk space outside the LVM serves no purpose.
 
-[select-type]
+![allocate-sda5](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm028.png)
 
 >[!NOTE]
 >Select `Logical`. This is the partition where we want to set up the LVM.
 
-[select-mount-point]
+![select-type](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm029.png)
 
 >[!NOTE]
->As previewed in the scheme, we shall select root (`/`) as the mount point. `sda5` needs to be at the same level as `sda1`.
+>We are not going to mount it yet.
 
-[select-nothing]
+![select-mount-point](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm030.png)
 
->[!NOTE]
->But we are not going to mount it yet.
+![select-nothing](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm031.png)
 
-[finish-setup]
-
->[!NOTE]
->Now that our logical partition is in place, we can conclude the setup.
+![finish-setup](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm032.png)
 
 ## 4. Configure Encrypted Volumes
 
