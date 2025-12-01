@@ -29,6 +29,10 @@
 >[!CAUTION]
 >Keep in mind this documentation concerns the creation of a **minimalist** VM. I am going to discuss **exclusively** the implementation of the **essential elements**. I am NOT going to address the implementation of UI or other additional features.
 
+## Create a Virtual Machine
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the VM creation.
+
 ## Installation
 ### Configure Locals
 >[!IMPORTANT]
