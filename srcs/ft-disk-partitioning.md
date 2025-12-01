@@ -127,19 +127,27 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-lvm.md) you can find more information concerning the Logical Volume Manager (LVM).
 
-[configure-lvm]
+![configure-lvm](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm042.png)
+
+![confirm-warining](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm043.png)
 
 ### 5.1 Create Volume Group (`LVMGroup`)
-[create-volume-group]
+>[!NOTE]
+>As requested by the scheme, to create the Logic Volumes, we need to create a Volume Group within the encrypted partition.
 
-[enter-LVMGroup]
+![create-volume-group](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm044.png)
 
-[/dev/mapper/sda5_crypt]
+![enter-LVMGroup](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm045.png)
+
+![/dev/mapper/sda5_crypt](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm046.png)
 
 ### 5.2 Create Logical Volumes (LVs)
+>[!NOTE]
+>Now we shall create all our Logical Volumes (LVs): we need to repeat this step for every LV we want to create.
+
+![create-logical-volume](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm047.png)
 
 #### `root`
-[create-logical-volume]
 
 [select-LVMGroup]
 
