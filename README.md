@@ -44,7 +44,7 @@
 
 ### Partition Disk
 >[!IMPORTANT]
->[Here]() you can find the details concerning the disk (storage) partitioning process.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-disk-partitioning.md) you can find the details concerning the disk (storage) partitioning process.
 
 ### Configure the package manager
 >[!IMPORTANT]
