@@ -112,9 +112,16 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 ![/dev/sda5](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm036.png)
 
 >[!NOTE]
->Now that we have set up the encryption, we can complete the procedure (confirm with `Finish` after).
+>Now that we have set up the encryption, we can complete the procedure (confirm with `Finish`).
 
 ![finish-setup](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm037.png)
+
+![erasing-data](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm040.png)
+
+>[!CAUTION]
+>You will need this password every time you need to access your encrypted partition. DO NOT LOSE IT!
+
+![encryption-pw](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm041.png)
 
 ## 5. Configure Logical Volume Manager (LVM)
 >[!NOTE]
