@@ -211,6 +211,15 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >`/var/log` stores persistent system/service logs. Thus, `1GB` should be enough. It is better to allocate it separately to prevent log growth from breaking other partitions.
 
 ### 5.3 Select Mount Points
+>[!NOTE]
+>Now that our LVM is configured, we need to mount the partitions.
+
+![LVM-summary](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm062.png)
+
+>[!IMPORTANT]
+>For each partition, we are going to select:
+>- How to use the partition (`Use as` > Select from the list)
+>- Mount Point
 
 #### `home`
 [select-partition]
