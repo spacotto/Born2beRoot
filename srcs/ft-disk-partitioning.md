@@ -219,7 +219,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[!IMPORTANT]
 >For each partition, we are going to select:
 >- How to use the partition (`Use as` > Select from the list)
->- Mount Point
+>- Mount Point (`Mount Point` > Select from the list)
 
 #### `home`
 [select-partition]
