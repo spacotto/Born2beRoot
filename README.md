@@ -40,11 +40,11 @@
 
 ### Configure the Network
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-system-architecture.md) you can find the details concerning the setup of the system architecture.
+>[Here]() you can find the details concerning the setup of the system architecture.
 
 ### Partition Disk
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-storage-architecture.md) you can find the details concerning the disk (storage) partitioning process.
+>[Here]() you can find the details concerning the disk (storage) partitioning process.
 
 ### Configure the package manager
 >[!IMPORTANT]
