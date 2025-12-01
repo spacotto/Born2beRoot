@@ -176,7 +176,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 #### `var`
 
-![enter-name](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm54.png)
+![enter-name](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm054.png)
 
 ![allocate-space](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm055.png)
 
