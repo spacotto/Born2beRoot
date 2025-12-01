@@ -221,62 +221,44 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >- How to use the partition (`Use as` > Select from the list)
 >- Mount Point (`Mount Point` > Select from the list)
 
+![select-partition](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm063.png)
+
 #### `home`
-[select-partition]
-[use-as-do-not-use]
-[ext4-journaling-file-system]
-[mount-point-none]
-[select-mount-point]
-[finish-setup]
+![partition-config](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm068.png)
 
 #### `root`
-[select-partition]
-[use-as-do-not-use]
-[ext4-journaling-file-system]
-[mount-point-none]
-[select-mount-point]
-[finish-setup]
+![partition-config](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm069.png)
 
 #### `srv`
-[select-partition]
-[use-as-do-not-use]
-[ext4-journaling-file-system]
-[mount-point-none]
-[select-mount-point]
-[finish-setup]
+![partition-config](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm070.png)
 
 #### `swap`
-[select-partition]
-[use-as-do-not-use]
-[swap-area]
-[finish-setup]
+>[!CAUTION]
+>For `swap`, you need to set up the `swap area` and nothing more. 
+
+![partition-config](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm071.png)
 
 #### `tmp`
-[select-partition]
-[use-as-do-not-use]
-[ext4-journaling-file-system]
-[mount-point-none]
-[select-mount-point]
-[finish-setup]
+![partition-config](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm072.png)
 
 #### `var`
-[select-partition]
-[use-as-do-not-use]
-[ext4-journaling-file-system]
-[mount-point-none]
-[select-mount-point]
-[finish-setup]
+![partition-config](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm073.png)
 
 #### `var-log`
-[select-partition]
-[use-as-do-not-use]
-[ext4-journaling-file-system]
-[mount-point-none]
-[enter-manually]
-[enter-/var/log]
-[finish-setup]
+>[!CAUTION]
+>Since `var-log` is a custom partition, we need to manually select the mount point.
 
-## 6. Final Result (`lsblk`)
+![partition-config](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm074.png)
+
+![partition-config](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm075.png)
+
+![partition-config](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm076.png)
+
+## 6. Final Result
+![finish-config](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm077.png)
+
+>[!TIP]
+>Once you have finished the setup, you can run the `lsblk` command in the terminal to check the partitioning scheme. You should obtain something like this:
 ```
 # lsblk
 NAME                     MAJ:MIN  RM   SIZE  RO  TYPE  MOUNTPOINTS
