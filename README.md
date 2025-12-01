@@ -36,11 +36,11 @@
 ## Installation
 ### Configure Locals
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-config-locals.md) you can find the details concerning the configuration of the locals.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-config-locals.md) you can find the details concerning locals configuration.
 
 ### Configure the Network
 >[!IMPORTANT]
->[Here]() you can find the details concerning the setup of the system architecture.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-config-network.md) you can find the details concerning the network configuration.
 
 ### Partition Disk
 >[!IMPORTANT]
