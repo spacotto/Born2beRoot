@@ -149,89 +149,63 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 #### `root`
 
-[select-LVMGroup]
+![enter-name](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm048.png)
 
-[enter-name]
-
-[allocate-space]
+![allocate-space](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm049.png)
 
 >[!TIP]
 >`4GB` should be large enough to hold (1) the base OS, (2) the installed packages, and (3) the system files in `/` (binaries, configs, libraries). The minimum should be around `3GB`: Debian minimal install (`~500–700 MB`) plus package updates & extra utilities (`~2GB`). `4GB` allows more packages without worrying and leaves plenty of space for the other LVM.
 
 #### `swap`
 
-[create-logical-volume]
+![enter-name](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm050.png)
 
-[select-LVMGroup]
-
-[enter-name]
-
-[allocate-space]
+![allocate-space](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm051.png)
 
 >[!TIP]
 >`/swap` exists to extend memory safely. In minimal VMs (like this one), allocate around `2GB`. More swap is not harmful, but rarely necessary. Hibernation is the only reason to make swap larger than RAM.
 
 #### `home`
 
-[create-logical-volume]
+![enter-name](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm052.png)
 
-[select-LVMGroup]
-
-[enter-name]
-
-[allocate-space]
+![allocate-space](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm053.png)
 
 >[!TIP]
 >`/home` stores user data. Thus, the size depends on the expected files and the number of users. For our purposes (testing 1 user), `4GB` is sufficient.
 
 #### `var`
 
-[create-logical-volume]
+![enter-name](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm54.png)
 
-[select-LVMGroup]
-
-[enter-name]
-
-[allocate-space]
+![allocate-space](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm055.png)
 
 >[!TIP]
 >`/var` stores variable system data. Thus, its size depends on logs, caches, spools, and service files. For a small VM with minimal services, `2GB` is enough.
 
 #### `srv`
 
-[create-logical-volume]
+![enter-name](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm056.png)
 
-[select-LVMGroup]
-
-[enter-name]
-
-[allocate-space]
+![allocate-space](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm057.png)
 
 >[!TIP]
 >`/srv` stores service-specific data. Thus, in this instance, a small allocation (`2GB`) is enough. Anyway, LVM allows resizing later if needed.
 
 #### `tmp`
 
-[create-logical-volume]
+![enter-name](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm058.png)
 
-[select-LVMGroup]
-
-[enter-name]
-
-[allocate-space]
+![allocate-space](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm059.png)
 
 >[!TIP]
 >`/tmp` holds temporary files for the OS and applications. Thus, once again, a small allocation (`1GB`) is enough.
 
 #### `var-log`
 
-[create-logical-volume]
+![enter-name](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm060.png)
 
-[select-LVMGroup]
-
-[enter-name]
-
-[allocate-space]
+![allocate-space](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm061.png)
 
 >[!TIP]
 >`/var/log` stores persistent system/service logs. Thus, `1GB` should be enough. It is better to allocate it separately to prevent log growth from breaking other partitions.
