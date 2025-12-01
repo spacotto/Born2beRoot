@@ -14,8 +14,11 @@ This is the second OS installation step.
 >[!IMPORTANT]
 >Besides `root`, you need to create at least one user: you. To do so, you need to provide your name and last name, choose a username, and set up a password account.
 
+### Name & Last Name
 ![name](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm013.png)
 
+### Username
 ![username](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm014.png)
 
+### Password
 ![password](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm015.png)
