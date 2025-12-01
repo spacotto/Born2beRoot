@@ -23,16 +23,14 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-partitioning.md) you can find more details on what partitioning is.
 
 ## 1. Create New Partition Table (`sda`)
-
-![select-manual](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm016.png)
-
 >[!IMPORTANT]
 >Since our goal is to set up a specific architecture, we shall select the `Manual` option.
+![select-manual](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm016.png)
 
-![create-new-partition-table](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm017.png)
 
 >[!NOTE]
 >Since we are at the beginning of the setup, we do not have partitions and mount points yet. Thus, we shall select `SCSI3 (0,0,0) (sda)` to start the partitioning process, which **represents the entire device**.
+![create-new-partition-table](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm017.png)
 
 ## 2. Primary Partition (`sda1`)
 ### 2.1 Select Select Partition Table (`sda`)
