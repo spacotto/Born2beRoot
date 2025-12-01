@@ -31,7 +31,7 @@
 
 ## Create a Virtual Machine
 >[!IMPORTANT]
->[Here]() you can find the details concerning the VM creation.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-create-vm.md) you can find the details concerning the VM creation.
 
 ## Installation
 ### Configure Locals
