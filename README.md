@@ -33,7 +33,7 @@
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-create-vm.md) you can find the details concerning the VM creation.
 
-## Installation
+## OS Installation
 ### Configure Locals
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-config-locals.md) you can find the details concerning locals configuration.
