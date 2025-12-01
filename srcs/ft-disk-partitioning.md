@@ -60,12 +60,9 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 ![select-beginning](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm022.png)
 
 >[!NOTE]
->As previewed in the scheme, we shall select root (`/`) as the mount point.
+>As previewed in the scheme, the mount point shall be `/boot`.
 
 ![select-mount-point](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm023.png)
-
->[!NOTE]
->As previewed in the scheme, mount point shall be `/boot`.
 
 ![select-boot](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm024.png)
 
