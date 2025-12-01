@@ -21,69 +21,69 @@ VMs do not use physical partitions on the host disk. Instead, they use virtual d
 
 ## Terminology
 ### Physical Layer
-- Physical Disk (sda)
-> A storage device recognised by the system (physical drive or virtual disk in VMs). Named sequentially: `sda`, `sdb`, `sdc`, etc. The foundation for all partitions and volumes.
+Physical Disk (`sda`)
+>A storage device recognised by the system (physical drive or virtual disk in VMs). Named sequentially: `sda`, `sdb`, `sdc`, etc. The foundation for all partitions and volumes.
 
-- CD-ROM Drive (`sr0`)
-> Optical drive or virtual ISO mount. Read-only storage device. `sr` = SCSI CD-ROM device.
+CD-ROM Drive (`sr0`)
+>Optical drive or virtual ISO mount. Read-only storage device. `sr` = SCSI CD-ROM device.
 
 ### Partition Layer
-- Primary Partition (sda1)
-Direct division of the physical disk. Limited to 4 primary partitions per disk (`MBR`). Typically used for boot partition (`/boot`).
+Primary Partition (`sda1`)
+>Direct division of the physical disk. Limited to 4 primary partitions per disk (`MBR`). Typically used for boot partition (`/boot`).
 
-- Extended Partition (`sda2`)
+Extended Partition (`sda2`)
 >Special primary partition that acts as a container. Allows creation of multiple logical partitions beyond the 4-partition limit. Cannot store data directly
 
-- Logical Partition (`sda5`)
+Logical Partition (`sda5`)
 >Partition created **inside an extended partition**. Numbered starting from `5` (even if fewer than 4 primary partitions exist). Can be used for **data** or as **base for encryption/LVM**.
 
 ### Encryption Layer
-- LUKS Encrypted Container (`sda5_crypt`).
+LUKS Encrypted Container (`sda5_crypt`).
 >**Linux Unified Key Setup**, encryption standard. Sits on top of a partition, encrypting all data within. Must be unlocked with a **passphrase** before accessing contents. Named with `_crypt` suffix by convention.
 
 ### LVM Layer (Logical Volume Manager)
-- Volume Group (LVMGroup)
+Volume Group (LVMGroup)
 >Pool of storage space created from one or more physical volumes. Acts as a container for logical volumes. Allows flexible space allocation.
 
-- Logical Volume (LVMGroup-root, LVMGroup-home, etc.)
+Logical Volume (LVMGroup-root, LVMGroup-home, etc.)
 >Virtual partition created from volume group space. Can be resized, moved, and snapshotted without unmounting. Mounted to specific directories in the filesystem.
 
 ### Common Logical Volumes (LVs)
-- root (`/`)
+root (`/`)
 >Core system files and installed software
 
-- swap (`[SWAP]`)
+swap (`[SWAP]`)
 >Virtual memory extension for RAM
 
-- home (`/home`)
+home (`/home`)
 >User personal files and settings
 
-- var (`/var`)
+var (`/var`)
 >Variable data (caches, databases, mail)
 
-- srv (`/srv`)
+srv (`/srv`)
 >Data served by system services
 
-- tmp (`/tmp`)
+tmp (`/tmp`)
 >Temporary files, cleared on reboot
 
-- var--log (`/var/log`)
+var--log (`/var/log`)
 >System and application logs
 
 ### Device Types
-- disk
+disk
 >Physical or virtual storage device
 
-- part
+part
 >Partition on a disk
 
-- crypt
+crypt
 >Encrypted container
 
-- lvm
+lvm
 >Logical Volume Manager volume
 
-- rom
+rom
 >Read-only optical media
 
 ### Typical Setup Flow
