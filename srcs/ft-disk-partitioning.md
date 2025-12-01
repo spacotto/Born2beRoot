@@ -143,7 +143,7 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 ### 5.2 Create Logical Volumes (LVs)
 >[!NOTE]
->Now we shall create all our Logical Volumes (LVs): we need to repeat this step for every LV we want to create.
+>Now we shall create all our Logical Volumes (LVs) and assign them to LVMGroup: we need to repeat these 2 steps for every LV we want to create.
 
 ![create-logical-volume](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm047.png)
 
