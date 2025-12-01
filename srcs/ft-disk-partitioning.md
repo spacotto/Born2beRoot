@@ -34,17 +34,15 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 ![create-new-partition-table](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm017.png)
 
-## 2. Primary Partition (`sda1`)
-### 2.1 Select Select Partition Table (`sda`)
-[select-sda]
-
+## 2. Create Primary Partition (`sda1`)
 >[!NOTE]
->Now that we have created our partition table, we can select `pri/log` from the disk partition overview.
+>Now that we have created our partition table, we can select `pri/log` from the disk partition overview and create the primary partition.
 
-### 2.2 Create a Primary Partition (`sda1`)
-[create-sda1]
+![select-sda](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm018.png)
 
-[allocate-sda1]
+![create-sda1](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm019.png)
+
+![allocate-sda1](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm020.png)
 
 >[!TIP]
 >`512 MB` is the ideal size because the `/boot` partition stores (1) the kernel(s), (2) initramfs images, and (3) the GRUB bootloader files. A typical Debian kernel + initramfs pair takes around `70–90 MB`. With multiple kernels installed (updates keep at least 2), you usually see (1) `~250–300 MB` used at most, and (2) leaving plenty of space for updates and recovery. `512 MB` comfortably avoids `/boot is full` errors during kernel upgrades.
