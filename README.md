@@ -46,13 +46,13 @@
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-disk-partitioning.md) you can find the details concerning the disk (storage) partitioning process.
 
-### Configure the package manager
+### Configure the package manager & Software Selection
 >[!IMPORTANT]
->[Here]() you can find the details concerning the package manager configuration.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-config-pckg-mngr.md) you can find the details concerning the package manager configuration and the software selection.
 
 ### Install the GRUB boot loader
 >[!IMPORTANT]
->[Here]() you can find the details concerning the installation of the GRUB boot loader.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-grub.md) you can find the details concerning the installation of GRUB boot loader.
 
 ## Users Management
 ### Groups (sudo)
