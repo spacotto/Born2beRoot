@@ -36,7 +36,7 @@
 ## Installation
 ### Configure Locals
 >[!IMPORTANT]
->[Here]() you can find the details concerning the configuration of the locals.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-config-locals.md) you can find the details concerning the configuration of the locals.
 
 ### Configure the Network
 >[!IMPORTANT]
