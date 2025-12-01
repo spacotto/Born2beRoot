@@ -55,3 +55,41 @@ GRUB_DEFAULT=0                                                         # Boot fi
 GRUB_DEFAULT=saved                                                     # Remember last booted entry
 GRUB_DEFAULT="Advanced options>Debian GNU/Linux, with Linux 6.1.0-10"  # Specific entry by name
 ```
+
+## Common Tasks
+### Update GRUB Configuration
+After editing `/etc/default/grub` or installing a new kernel:
+```
+sudo update-grub
+```
+
+### Install/Reinstall GRUB
+To install GRUB to a disk (e.g., /dev/sda):
+```
+sudo grub-install /dev/sda
+sudo update-grub
+```
+
+### List Available Boot Entries
+```
+grep menuentry /boot/grub/grub.cfg
+```
+
+### Change Boot Order
+Edit `/etc/default/grub` and set `GRUB_DEFAULT` to the desired entry number (counting from 0), then run:
+```
+sudo update-grub
+```
+
+### Hide GRUB Menu
+To skip the boot menu and boot immediately:
+```
+GRUB_TIMEOUT=0
+GRUB_TIMEOUT_STYLE=hidden
+```
+
+### Show More Verbose Boot
+Remove "quiet" and "splash" from `GRUB_CMDLINE_LINUX_DEFAULT`:
+```
+GRUB_CMDLINE_LINUX_DEFAULT=""
+```
