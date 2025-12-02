@@ -55,6 +55,12 @@
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-grub.md) you can find the details concerning the installation of GRUB boot loader.
 
 ## Users Management
+>[!CAUTION]
+>Before starting to interact with your new VM terminal, I recommend checking what shell you are using. You can find this out by running the following command in the terminal:
+>```
+>echo $0
+>```
+
 ### `sudo`
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-sudo.md) you can find the details concerning the setup of `sudo` command.
