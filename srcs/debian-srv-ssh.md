@@ -5,24 +5,26 @@
 ## Installation on Debian 13
 SSH is typically installed and configured in two parts: the **server** (where you want to connect to) and the **client** (the machine you are connecting *from*).
 
-1. Installing the SSH Client (for connecting to other machines)
+1. Install the SSH Client (for connecting to other machines).
+>[!WARNING]
+>The client is usually installed by default on Debian. If it's not, you can install it using the following command:
+>```
+>sudo apt-get update
+>sudo apt-get install openssh-client
+>```
 
-The client is usually installed by default on Debian. If it's not, you can install it using the following command:
-
-```bash
-sudo apt update
-sudo apt install openssh-client
+2. **Install the SSH Server (to allow remote connections to your machine).** To allow other machines to connect to your Debian 13 system, install the server package, which includes the sshd daemon:
 ```
-
-2. Installing the SSH Server (to allow remote connections to your machine)
-To allow other machines to connect to your Debian 13 system, install the server package, which includes the sshd daemon:
 sudo apt update
 sudo apt install openssh-server
+```
+>[!NOTE]
+>The SSH service will start automatically after installation. You can check its status with:
+>```
+>sudo systemctl status ssh
+>```
 
-The SSH service will start automatically after installation. You can check its status with:
-sudo systemctl status ssh
-
-Basic Usage
+## Basic Usage
 The standard command structure for connecting is:
 ssh [username]@[hostname_or_IP_address]
 
