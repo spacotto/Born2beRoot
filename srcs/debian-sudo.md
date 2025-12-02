@@ -36,6 +36,10 @@ deb http://deb.debian.org/debian/ trixie contrib main non-free firmware
 ```
 
 ## Essential `sudo` Commands
+Add user to `sudo` group as `root`
+```
+sudo usermod -aG sudo username
+```
 
 Execute the specified `<command>` with root privileges (after prompting for the user's password):
 ```
