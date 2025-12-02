@@ -28,6 +28,13 @@ sudo deluser spacotto
 >fatal: The user `xxx` does not exist.   # You will see the username instead of xxx
 >```
 
+## List Users
+```
+getent passwd | grep -vE "nologin|false"
+```
+>[!NOTE]
+>This command gets every item related to a password and ignores all the items that do not have a login.
+
 ## Create Group
 ```
 sudo addgroup <group>
