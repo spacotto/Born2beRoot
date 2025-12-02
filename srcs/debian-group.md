@@ -103,5 +103,9 @@ sudo:x:27:spacotto
 >[!TIP]
 >If you want to display only the list, you can run:
 >```
->getent group sudo | cut -d: -f4
+>getent group <group> | cut -d: -f4
+>```
+>For example:
+>```
+>getent sudo <group> | cut -d: -f4
 >```
