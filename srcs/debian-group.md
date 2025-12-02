@@ -30,7 +30,7 @@ sudo deluser spacotto
 
 ## List Users
 ```
-getent passwd | grep -vE "nologin|false"
+getent passwd | grep -vE "nologin|false | cut -d: -f1"
 ```
 >[!NOTE]
 >This command gets every item related to a password and ignores all the items that do not have a login.
