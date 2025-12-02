@@ -21,6 +21,16 @@ apt install sudo
 reboot    # After logging back in, you should be able to execute administrative commands using sudo.
 ```
 
+### Installation Troubleshooting
+You might get an error like this one:
+```
+Please use apt-cdrom to make this CD-ROM recognized by APT. apt-get update cannot be used to add new CD-ROMs
+```
+If this happens, switch to root (if you didn't already) and open the following file:
+```
+nano
+```
+
 ## Add user to the `sudo` group
 You can add users to the `sudo` group by running this command in the termianl.
 ```
