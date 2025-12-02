@@ -40,3 +40,40 @@ Healthchecks.io Pattern (works with any similar service):
 >[!NOTE]
 >The service expects regular pings. Missing pings trigger alerts.
 
+## Setting Up a Local Monitoring Service
+### Install Monitoring Tools
+```
+apt update
+apt install monitoring-plugins mailutils
+```
+
+### Create a Monitoring Script
+Save as `/usr/local/bin/cron-monitor.sh`:
+```
+#!/bin/bash
+
+SCRIPT="$1"
+LOG="/var/log/cron-monitor.log"
+ALERT_EMAIL="admin@example.com"
+
+echo "$(date): Running $SCRIPT" >> "$LOG"
+
+if $SCRIPT >> "$LOG" 2>&1; then
+    echo "$(date): SUCCESS - $SCRIPT" >> "$LOG"
+    exit 0
+else
+    echo "$(date): FAILED - $SCRIPT" >> "$LOG"
+    echo "Cron job failed: $SCRIPT" | mail -s "Cron Failure Alert" "$ALERT_EMAIL"
+    exit 1
+fi
+```
+
+### Make executable
+```
+chmod 700 /usr/local/bin/cron-monitor.sh    # chmod +x gives the same result
+```
+
+### Use in Crontab
+```
+0 2 * * * /usr/local/bin/cron-monitor.sh /path/to/your-script.sh
+```
