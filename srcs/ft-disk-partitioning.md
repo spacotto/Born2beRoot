@@ -123,6 +123,17 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 
 ![encryption-pw](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm041.png)
 
+>[!TIP]
+>You can simulate the random strong password generation by running this command in the terminal:
+>```
+>< /dev/urandom tr -dc "[:alnum:]" | fold -w 20 | head -n 1 > root-password.txt
+>```
+>
+>Output example:
+>```
+>nvHKGcS8UOZusFzsgfxQ
+>```
+
 ## 5. Configure Logical Volume Manager (LVM)
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-lvm.md) you can find more information concerning the Logical Volume Manager (LVM).
