@@ -76,7 +76,7 @@
 ## Services
 ### SSH
 >[!IMPORTANT]
->[Here]() you can find the details concerning the setup of SSH.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-srv-ssh.md) you can find the details concerning the setup of SSH.
 
 ### UFW
 >[!IMPORTANT]
@@ -84,7 +84,7 @@
 
 ### Script Monitoring (Cron)
 >[!IMPORTANT]
->[Here]() you can find the details concerning the setup of the Monitoring Script and Cron service.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-srv-cron.md) you can find the details concerning the setup of the Monitoring Script and Cron service.
 
 ## Hosting: WordPress
 >[!IMPORTANT]
