@@ -10,6 +10,17 @@ This is the second OS installation step.
 ## 3. Configure Root
 ![root-pw](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm012.png)
 
+You can simulate the random strong password generation by running this command in the terminal:
+```
+< /dev/urandom tr -dc "[:alnum:]" | fold -w 16 | head -n 1 > root-password.txt
+```
+Output example:
+```
+gl0pmJlptF5p21O9
+```
+>[!NOTE]
+>Find out more about Strong Password Policy [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/password-policy.md).
+
 ## 4. Configure User
 >[!IMPORTANT]
 >Besides `root`, you need to create at least one user: you. To do so, you need to provide your name and last name, choose a username, and set up a password account.
