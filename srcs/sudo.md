@@ -23,7 +23,7 @@ apt-get install sudo
 
 4. **Add your user to the `sudo` group.**
 ```
-usermod -aG sudo <username>    # Replace <username> with your actual username
+usermod -aG sudo <username>    # Replace <username> with the target username
 ```
 >[!NOTE]
 >- The `-a` flag means "append."
