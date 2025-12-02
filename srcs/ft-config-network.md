@@ -19,7 +19,7 @@ Output example:
 gl0pmJlptF5p21O9
 ```
 >[!NOTE]
->Find out more about Strong Password Policy [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/password-policy.md).
+>Find out more about Strong Password Policy & Generation [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/password-policy.md).
 
 ## 4. Configure User
 >[!IMPORTANT]
