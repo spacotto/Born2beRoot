@@ -55,26 +55,30 @@
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-grub.md) you can find the details concerning the installation of GRUB boot loader.
 
 ## Users Management
-### Groups (sudo)
+### `sudo`
 >[!IMPORTANT]
->[Here]() you can find the details concerning the setup of.
+>[Here]() you can find the details concerning the setup of `sudo` command.
+
+### Groups
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the setup of groups management.
 
 ### Password Policy
 >[!IMPORTANT]
->[Here]() you can find the details concerning the setup of.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/password-policy.md) you can find the details concerning the Strong Password Policy.
 
 ## Services
 ### UFW
 >[!IMPORTANT]
->[Here]() you can find the details concerning the setup of.
+>[Here]() you can find the details concerning the setup of UFW.
 
 ### SSH
 >[!IMPORTANT]
->[Here]() you can find the details concerning the setup of.
+>[Here]() you can find the details concerning the setup of SSH.
 
 ### Script Monitoring (Cron)
 >[!IMPORTANT]
->[Here]() you can find the details concerning the setup of.
+>[Here]() you can find the details concerning the setup of the Monitoring Script and Cron service.
 
 ## Hosting: WordPress
 >[!IMPORTANT]
