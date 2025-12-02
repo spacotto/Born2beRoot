@@ -1,4 +1,4 @@
-# About Users Management
+# About Users & Groups Management
 
 ## Create User
 ```
@@ -34,8 +34,6 @@ getent passwd | grep -vE "nologin|false"
 ```
 >[!NOTE]
 >This command gets every item related to a password and ignores all the items that do not have a login.
-
-# About Groups Management
 
 ## Create Group
 ```
