@@ -6,22 +6,23 @@
 >It originally stood for `superuser do`, as that was all it did, and this remains its most common usage. However, the official **Sudo project page** lists it as `su 'do'`. The current Linux manual pages define `su` as `substitute user`, making the modern meaning of sudo `substitute user, do`, because `sudo` can **run a command as other users as well** (not only `root`).
 
 ## Install `sudo` on Debian 13
->[!IMPORTANT]
->All the following commands are shell commands. To use bash instead, remove `-get` after `apt`.
-
-1. **Log in as root.** Access the system console or SSH terminal and log in using the `root` username and password.
-
-2. **Update package lists.**
+1. **Log in as root.** Access the system console or SSH terminal and log in using the `root` username and password. If you are connected with another user, you can switch to `root` by running the following command in the terminal:
 ```
-apt update
+su  # You will have to enter the root password.
 ```
 
-3. **Install the `sudo` package.**
+2. **Install the `sudo` package.**
 ```
 apt install sudo
 ```
 
-4. **Add your user to the `sudo` group.**
+3. **Reboot or log out and log back in.** For the group change to take effect for your user, you must log out of your current session and log back in, or simply **reboot** the system:
+```
+reboot    # After logging back in, you should be able to execute administrative commands using sudo.
+```
+
+## Add user to the `sudo` group
+You can add users to the `sudo` group by running this command in the termianl.
 ```
 usermod -aG sudo <username>    # Replace <username> with the target username
 ```
@@ -29,11 +30,6 @@ usermod -aG sudo <username>    # Replace <username> with the target username
 >- The `-a` flag means "append."
 >- The `-G` flag specifies the group to append to.
 >- The `sudo` group grants users the permission to use the `sudo` command.
-
-5. **Reboot or log out and log back in.** For the group change to take effect for your user, you must log out of your current session and log back in, or simply **reboot** the system:
-```
-reboot    # After logging back in, you should be able to execute administrative commands using sudo.
-```
 
 >[!TIP]
 >You can check the users belonging to the `sudo` group by running this command in the terminal:
