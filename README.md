@@ -65,7 +65,7 @@
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-sudo.md) you can find the details concerning the setup of `sudo` command.
 
-### Groups
+### Users & Groups
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-group.md) you can find the details concerning the setup of group management.
 
