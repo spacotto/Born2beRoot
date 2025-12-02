@@ -72,26 +72,13 @@ ssh-keygen -t ed25519  # You'll be prompted for a passphrase (always use a stron
 >```
 >This command securely transfers your public key to the remote server and configures the authorized_keys file. You will need to enter your password one last time to complete this process.
 
-## Essential Security (Server Configuration)
->[!IMPORTANT]
->The main configuration file for the SSH server is located at `/etc/ssh/sshd_config`.
-
-`PermitRootLogin` (Recommended Value: no)
->Prevents direct login as the root user. Connect with a regular user and then use su or sudo.
-
-`PasswordAuthentication` (Recommended Value: no)
->Disables password-based login after you have set up public key authentication.
-
-`Port` (Recommended Value: [Non-standard port])
->Changing the port from 22 helps reduce automated attack attempts (script kiddies).
-
+## Server Configuration
 >[!CAUTION]
 >Remember to restart the SSH service after any configuration changes:
 >```
 >sudo systemctl restart ssh
 >```
 
-## Change Configuration
 1. Switch to root privileges:
 ```
 su
@@ -102,4 +89,30 @@ su
 nano /etc/ssh/sshd_config
 ```
 
-3. Change the port
+3. Make the necessary changes
+
+4. Save changes (nano):
+```
+Ctrl+X
+Y
+Enter
+```
+
+### Essential Security
+>[!IMPORTANT]
+>The main configuration file for the SSH server is located at `/etc/ssh/sshd_config`.
+
+Prevent direct login as the root user:
+```
+PermitRootLogin no    # Connect with a regular user and then use `su` or `sudo`
+```
+
+Disables password-based login after you have set up public key authentication:
+```
+PasswordAuthentication no
+```
+
+Changing the port from 22 to a **non-standard port** helps reduce automated attack attempts (script kiddies):
+```
+Port 4242  # It is 22 by default
+```
