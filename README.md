@@ -70,7 +70,7 @@
 ## Services
 ### UFW
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ufw.md) you can find the details concerning the setup of UFW.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-srv-ufw.md) you can find the details concerning the setup of UFW.
 
 ### SSH
 >[!IMPORTANT]
