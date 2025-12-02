@@ -15,8 +15,8 @@ SSH is typically installed and configured in two parts: the **server** (where yo
 
 2. **Install the SSH Server (to allow remote connections to your machine).** To allow other machines to connect to your Debian 13 system, install the server package, which includes the sshd daemon:
 ```
-sudo apt update
-sudo apt install openssh-server
+sudo apt-get update
+sudo apt-get install openssh-server
 ```
 >[!NOTE]
 >The SSH service will start automatically after installation. You can check its status with:
@@ -26,31 +26,46 @@ sudo apt install openssh-server
 
 ## Basic Usage
 The standard command structure for connecting is:
+```
 ssh [username]@[hostname_or_IP_address]
-
- * username: The account you want to log into on the remote machine.
- * hostname_or_P_address: The network address of the remote machine.
+# username: The account you want to log into on the remote machine.
+# hostname_or_P_address: The network address of the remote machine.
+```
 Example:
+```
 ssh user_alice@192.168.1.10
+```
 
 When connecting for the first time, you'll be prompted to verify and accept the remote host's key fingerprint. This adds the host to your $HOME/.ssh/known_hosts file.
-⚙️ Key Concepts 
- * Port 22: The standard TCP port that the SSH daemon (sshd) listens on. This can be changed for security reasons in the server's configuration file.
- * Authentication: SSH supports two main methods:
-   * Password Authentication: The user provides their system password.
-   * Public Key Authentication: This is the more secure and recommended method. It involves a pair of keys:
-     * Private Key: Kept secret on the client machine.
-     * Public Key: Stored on the server in the ~/.ssh/authorized_keys file.
-Generating an SSH Key Pair
-Use the ssh-keygen utility on your client machine to create the key pair:
-ssh-keygen -t ed25519
 
- * You'll be prompted for a passphrase. Always use a strong passphrase to protect your private key.
-Copying the Public Key to the Server
-The easiest way to set up key-based login is with ssh-copy-id:
-ssh-copy-id user_alice@192.168.1.10
+## Key Concepts 
+### Port 22
+The standard TCP port that the SSH daemon (sshd) listens on. This can be changed for security reasons in the server's configuration file.
 
-This command securely transfers your public key to the remote server and configures the authorized_keys file. You will need to enter your password one last time to complete this process.
+### Authentication
+SSH supports two main methods: (1) Password Authentication and (2) Public Key Authentication.
+
+#### Password Authentication
+The user provides their system password.
+
+#### Public Key Authentication.
+This is the more secure and recommended method.
+
+It involves a pair of keys:
+1. **Private Key.** Kept secret on the client machine.
+2. **Public Key.** Stored on the server in the `~/.ssh/authorized_keys` file.
+
+Use the ssh-keygen utility on your client machine to generate an SSH key pair:
+```
+ssh-keygen -t ed25519  # You'll be prompted for a passphrase (always use a strong passphrase to protect your private key).
+```
+
+>[!TIP]
+>The easiest way to set up key-based login is with ssh-copy-id:
+>```
+>ssh-copy-id user_alice@192.168.1.10
+>```
+>This command securely transfers your public key to the remote server and configures the authorized_keys file. You will need to enter your password one last time to complete this process.
 
 ## Essential Security (Server Configuration)
 >[!IMPORTANT]
