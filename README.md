@@ -64,9 +64,6 @@
 >[Here]() you can find the details concerning the setup of.
 
 ## Services
->[!IMPORTANT]
->[Here]() you can find the details concerning the setup of.
-
 ### UFW
 >[!IMPORTANT]
 >[Here]() you can find the details concerning the setup of.
