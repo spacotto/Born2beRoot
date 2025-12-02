@@ -9,15 +9,17 @@ This is the second OS installation step.
 
 ## 3. Configure Root
 ![root-pw](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm012.png)
+>[!TIP]
+>You can simulate the random strong password generation by running this command in the terminal:
+>```
+>< /dev/urandom tr -dc "[:alnum:]" | fold -w 16 | head -n 1 > root-password.txt
+>```
+>
+>Output example:
+>```
+>gl0pmJlptF5p21O9
+>```
 
-You can simulate the random strong password generation by running this command in the terminal:
-```
-< /dev/urandom tr -dc "[:alnum:]" | fold -w 16 | head -n 1 > root-password.txt
-```
-Output example:
-```
-gl0pmJlptF5p21O9
-```
 >[!NOTE]
 >Find out more about Strong Password Policy & Generation [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/password-policy.md).
 
