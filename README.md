@@ -7,7 +7,7 @@
 >[!CAUTION]
 >Since this project serves as an introduction to virtualisation, I will focus on installing the minimum of services. For this reason, **I will not provide sources concerning the graphical interface**.
 
-# Born2beRoot: Projects Tools
+# Born2beRoot: Project Tools
 ### Virtualisation Software (Hypervisor): VirtualBox
 - **Software:** VirtualBox
 - **Version:** 7.0.20
