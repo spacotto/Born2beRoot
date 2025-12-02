@@ -134,6 +134,9 @@ sr0                      xxx:x     1  xxxxx   0  rom                # Virtual CD
 >nvHKGcS8UOZusFzsgfxQ
 >```
 
+>[!NOTE]
+>Find out more about Strong Password Policy & Generation [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/password-policy.md).
+
 ## 5. Configure Logical Volume Manager (LVM)
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-lvm.md) you can find more information concerning the Logical Volume Manager (LVM).
