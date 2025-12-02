@@ -74,13 +74,13 @@
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/password-policy.md) you can find the details concerning the Strong Password Policy.
 
 ## Services
-### UFW
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-srv-ufw.md) you can find the details concerning the setup of UFW.
-
 ### SSH
 >[!IMPORTANT]
 >[Here]() you can find the details concerning the setup of SSH.
+
+### UFW
+>[!IMPORTANT]
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-srv-ufw.md) you can find the details concerning the setup of UFW.
 
 ### Script Monitoring (Cron)
 >[!IMPORTANT]
