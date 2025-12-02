@@ -38,7 +38,7 @@ deb http://deb.debian.org/debian/ trixie contrib main non-free firmware
 ## Add user to the `sudo` group
 You can add users to the `sudo` group by running this command in the termianl.
 ```
-usermod -aG sudo <username>    # Replace <username> with the target username
+sudo usermod -aG sudo <username>    # Replace <username> with the target username
 ```
 >[!NOTE]
 >- The `-a` flag means "append."
