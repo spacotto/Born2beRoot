@@ -1,10 +1,17 @@
-# About Package Manager Configuration & Software Selection
+# About Package Manager Configuration
+>[!NOTE]
+>Debian uses `apt` (Advanced Package Tool) and `dpkg` as its core package management systems. `apt` handles package installation, updates, and dependencies, while `dpkg` works at a lower level with individual `.deb` files.
+
+>[!IMPORTANT]
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-apt-aptitude.md) you can find out more details about `apt` and `aptitude`.
 
 ## Configure the package manager
 
 ![skip-scan](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm079.png)
 
 ![network-mirror](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm080.png)
+
+# About Software Selection
 
 ## Software Selection
 
