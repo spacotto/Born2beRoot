@@ -13,12 +13,12 @@
 
 2. **Update package lists.**
 ```
-apt-get update
+apt update
 ```
 
 3. **Install the `sudo` package.**
 ```
-apt-get install sudo
+apt install sudo
 ```
 
 4. **Add your user to the `sudo` group.**
