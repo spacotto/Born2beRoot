@@ -31,28 +31,28 @@
 
 ## Create a Virtual Machine
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-create-vm.md) you can find the details concerning the VM creation.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-creation.md) you can find the details concerning the VM creation.
 
-## OS Installation
+## Debian Installation
 ### Configure Locals
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-config-locals.md) you can find the details concerning locals configuration.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-config-locals.md) you can find the details concerning locals configuration.
 
 ### Configure the Network
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-config-network.md) you can find the details concerning the network configuration.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-config-network.md) you can find the details concerning the network configuration.
 
 ### Partition Disk
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-disk-partitioning.md) you can find the details concerning the disk (storage) partitioning process.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-disk-partitioning.md) you can find the details concerning the disk (storage) partitioning process.
 
 ### Configure the package manager & Software Selection
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-config-pckg-mngr.md) you can find the details concerning the package manager configuration and the software selection.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-config-pckg.md) you can find the details concerning the package manager configuration and the software selection.
 
 ### Install the GRUB boot loader
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/ft-grub.md) you can find the details concerning the installation of GRUB boot loader.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-grub.md) you can find the details concerning the installation of GRUB boot loader.
 
 ## Users Management
 ### `sudo`
