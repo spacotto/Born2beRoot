@@ -35,6 +35,20 @@ usermod -aG sudo <username>    # Replace <username> with the target username
 reboot    # After logging back in, you should be able to execute administrative commands using sudo.
 ```
 
+>[!TIP]
+>You can check the users belonging to the `sudo` group by running this command in the terminal:
+>```
+>getent group sudo
+>```
+>Output example:
+>```
+>sudo:x:27:spacotto
+>```
+>If you want to display only the list, you can run:
+>```
+>getent group sudo | cut -d: -f4
+>```
+
 ## Essential `sudo` Commands
 
 Execute the specified `<command>` with root privileges (after prompting for the user's password):
