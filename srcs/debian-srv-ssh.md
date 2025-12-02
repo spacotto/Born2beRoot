@@ -90,3 +90,16 @@ ssh-keygen -t ed25519  # You'll be prompted for a passphrase (always use a stron
 >```
 >sudo systemctl restart ssh
 >```
+
+## Change Configuration
+1. Switch to root privileges:
+```
+su
+```
+
+2. Open the configuration file:
+```
+nano /etc/ssh/sshd_config
+```
+
+3. Change the port
