@@ -1,7 +1,6 @@
 # About Groups & Users Management
 
 # Create a User
-Run the following command in the terminal and write the desired username instead of <username>:
 ```
 sudo adduser <username>
 ```
@@ -16,7 +15,6 @@ sudo adduser spacotto
 >```
 
 # Create a Group
-Run the following command in the terminal and write the desired group name instead of <group>:
 ```
 sudo addgroup <group>
 ```
@@ -29,3 +27,15 @@ sudo addgroup user42
 >```
 >fatal: The group `xxx` already exists.    # You will see the group name instead of xxx
 >```
+
+## Add a User to Group
+```
+sudo add <user> <group>
+```
+>[!TIP]
+>Run the following command to check that the user was successfully added to the group.
+>```
+>getent group <group> <user>
+>```
+
+## Check Group Members List
