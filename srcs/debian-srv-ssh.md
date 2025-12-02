@@ -17,11 +17,16 @@ SSH is typically installed and configured in two parts: the **server** (where yo
 ```
 sudo apt update
 sudo apt install openssh-server
+# Confirm with Y if asked
 ```
->[!NOTE]
->The SSH service will start automatically after installation. You can check its status with:
+>[!TIP]
+>The SSH service will start automatically after installation. You can check its status by running this:
 >```
 >sudo systemctl status ssh
+>```
+>Or this:
+>```
+>sudo service ssh status
 >```
 
 ## Basic Usage
