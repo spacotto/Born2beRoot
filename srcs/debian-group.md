@@ -16,8 +16,17 @@ sudo adduser spacotto
 
 ## Remove User
 ```
-sudo deluser username 
+sudo deluser <username> 
 ```
+For example:
+```
+sudo deluser spacotto
+```
+>[!TIP]
+>If you want to make sure the user was successfully removed, run the same command. If the user was removed without issues, you will see the following error message:
+>```
+>fatal: The user `xxx` does not exist.   # You will see the username instead of xxx
+>```
 
 ## Create Group
 ```
@@ -34,6 +43,18 @@ sudo addgroup user42
 >```
 
 ## Remove Group
+```
+sudo delgroup <group> 
+```
+For example:
+```
+sudo delgroup user42
+```
+>[!TIP]
+>If you want to make sure the group was successfully removed, run the same command. If the group was removed without issues, you will see the following error message:
+>```
+>warn: The group `xxx` does not exist.   # You will see the group name instead of xxx
+>```
 
 ## Add User to Group
 ```
@@ -44,6 +65,7 @@ sudo add <user> <group>
 >```
 >getent group <group> <user>
 >```
+
 ## Check User Groups
 
 ## Check Group Members List
