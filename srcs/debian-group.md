@@ -1,6 +1,6 @@
 # About Groups & Users Management
 
-## Create a User
+## Create User
 ```
 sudo adduser <username>
 ```
@@ -14,7 +14,12 @@ sudo adduser spacotto
 >fatal: The user `xxx` already exists.   # You will see the username instead of xxx
 >```
 
-## Create a Group
+## Remove User
+```
+sudo deluser username 
+```
+
+## Create Group
 ```
 sudo addgroup <group>
 ```
@@ -28,7 +33,9 @@ sudo addgroup user42
 >fatal: The group `xxx` already exists.    # You will see the group name instead of xxx
 >```
 
-## Add a User to Group
+## Remove Group
+
+## Add User to Group
 ```
 sudo add <user> <group>
 ```
@@ -37,6 +44,7 @@ sudo add <user> <group>
 >```
 >getent group <group> <user>
 >```
+## Check User Groups
 
 ## Check Group Members List
 You can check the users belonging to a specific group by running this command in the terminal:
