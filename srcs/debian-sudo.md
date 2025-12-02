@@ -28,7 +28,11 @@ Please use apt-cdrom to make this CD-ROM recognized by APT. apt-get update canno
 ```
 If this happens, switch to root (if you didn't already) and open the following file:
 ```
-nano
+nano /etc/apt/sources.list 
+```
+Then, hide the 1st line with `#`, and add the following line:
+```
+deb http://deb.debian.org/debian/ trixie contrib main non-free firmware
 ```
 
 ## Add user to the `sudo` group
