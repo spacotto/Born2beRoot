@@ -57,7 +57,7 @@
 ## Users Management
 ### `sudo`
 >[!IMPORTANT]
->[Here]() you can find the details concerning the setup of `sudo` command.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/sudo.md) you can find the details concerning the setup of `sudo` command.
 
 ### Groups
 >[!IMPORTANT]
