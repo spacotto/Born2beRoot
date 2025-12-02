@@ -67,6 +67,18 @@ sudo add <user> <group>
 >```
 
 ## Check User Groups
+You can check the groups a user belongs to by running the following command in the terminal:
+```
+groups <username>
+```
+For example:
+```
+groups spacotto
+```
+Output example:
+```
+spacotto: spacotto cdrom floppy sudo audio dip video plugdev users natdev user42
+```
 
 ## Check Group Members List
 You can check the users belonging to a specific group by running this command in the terminal:
