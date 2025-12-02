@@ -10,7 +10,7 @@
 
 2. **Update package lists.**
 ```
-apt update
+apt-get update  # shell command
 ```
 
 3. **Install the `sudo` package.**
