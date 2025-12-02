@@ -35,30 +35,6 @@ Then, hide the 1st line with `#`, and add the following line:
 deb http://deb.debian.org/debian/ trixie contrib main non-free firmware
 ```
 
-## Add user to the `sudo` group
-You can add users to the `sudo` group by running this command in the termianl.
-```
-sudo usermod -aG sudo <username>    # Replace <username> with the target username
-```
->[!NOTE]
->- The `-a` flag means "append."
->- The `-G` flag specifies the group to append to.
->- The `sudo` group grants users the permission to use the `sudo` command.
-
->[!TIP]
->You can check the users belonging to the `sudo` group by running this command in the terminal:
->```
->getent group sudo
->```
->Output example:
->```
->sudo:x:27:spacotto
->```
->If you want to display only the list, you can run:
->```
->getent group sudo | cut -d: -f4
->```
-
 ## Essential `sudo` Commands
 
 Execute the specified `<command>` with root privileges (after prompting for the user's password):
