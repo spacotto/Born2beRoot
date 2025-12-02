@@ -35,3 +35,16 @@ This is the second OS installation step.
 
 ### Password
 ![password](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm015.png)
+>[!TIP]
+>You can simulate the random strong password generation by running this command in the terminal:
+>```
+>< /dev/urandom tr -dc "[:alnum:]" | fold -w 16 | head -n 1 > root-password.txt
+>```
+>
+>Output example:
+>```
+>niGRMvKP3NidHMGU
+>```
+
+>[!NOTE]
+>Find out more about Strong Password Policy & Generation [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/password-policy.md).
