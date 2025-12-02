@@ -6,16 +6,19 @@
 >It originally stood for `superuser do`, as that was all it did, and this remains its most common usage. However, the official **Sudo project page** lists it as `su 'do'`. The current Linux manual pages define `su` as `substitute user`, making the modern meaning of sudo `substitute user, do`, because `sudo` can **run a command as other users as well** (not only `root`).
 
 ## Install `sudo` on Debian 13
+>[!IMPORTANT]
+>All the following commands are shell commands. To use bash instead, remove `-get` after `apt`.
+
 1. **Log in as root.** Access the system console or SSH terminal and log in using the `root` username and password.
 
 2. **Update package lists.**
 ```
-apt-get update  # shell command
+apt-get update
 ```
 
 3. **Install the `sudo` package.**
 ```
-apt install sudo
+apt-get install sudo
 ```
 
 4. **Add your user to the `sudo` group.**
