@@ -73,6 +73,9 @@ sudo add <user> <group>
 >getent group <group> <user>
 >```
 
+>[!IMPORTANT]
+>Go [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-sudo.md) for more info on how to add users to `sudo` group as `root`.
+
 ## Check User Groups
 You can check the groups a user belongs to by running the following command in the terminal:
 ```
