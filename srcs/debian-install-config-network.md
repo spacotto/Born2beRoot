@@ -2,9 +2,15 @@
 This is the second OS installation step.
 
 ## 1. Configure Hostname
+>[!NOTE]
+>The hostname is the **name of your computer on a network**.
+
 ![config-hostname](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm010.png)
 
 ## 2. Configure Domain Name
+>[!NOTE]
+>The domain name is the network domain your system belongs to.
+
 ![config-domain](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm011.png)
 
 ## 3. Configure Root
