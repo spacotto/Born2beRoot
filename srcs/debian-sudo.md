@@ -18,7 +18,7 @@ apt install sudo
 
 3. **Reboot or log out and log back in.** For the group change to take effect for your user, you must log out of your current session and log back in, or simply **reboot** the system:
 ```
-reboot    # After logging back in, you should be able to execute administrative commands using sudo.
+sudo reboot    # sudo or su > reboot since root can't reboot
 ```
 
 ### Installation Troubleshooting
