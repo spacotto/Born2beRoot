@@ -3,7 +3,7 @@
 >A cron monitoring service **tracks scheduled jobs and alerts** you when they fail to run, run unsuccessfully, or produce unexpected output.
 
 ## Basic Monitoring Approaches
-###1. Email Notifications (Built-in)
+### 1. Email Notifications (Built-in)
 Cron automatically emails output to the user. Configure in crontab:
 ```
 MAILTO=admin@example.com
