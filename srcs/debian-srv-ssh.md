@@ -50,12 +50,21 @@ ssh-copy-id user_alice@192.168.1.10
 
 This command securely transfers your public key to the remote server and configures the authorized_keys file. You will need to enter your password one last time to complete this process.
 
-🛡️ Essential Security (Server Configuration)
-The main configuration file for the SSH server is located at /etc/ssh/sshd_config.
-| Setting | Recommended Value | Description |
-|---|---|---|
-| PermitRootLogin | no | Prevents direct login as the root user. Connect with a regular user and then use su or sudo. |
-| PasswordAuthentication | no | Disables password-based login after you have set up public key authentication. |
-| Port | [Non-standard port] | Changing the port from 22 helps reduce automated attack attempts (script kiddies). |
-Remember to restart the SSH service after any configuration changes:
-sudo systemctl restart ssh
+## Essential Security (Server Configuration)
+>[!IMPORTANT]
+>The main configuration file for the SSH server is located at `/etc/ssh/sshd_config`.
+
+`PermitRootLogin` (Recommended Value: no)
+>Prevents direct login as the root user. Connect with a regular user and then use su or sudo.
+
+`PasswordAuthentication` (Recommended Value: no)
+>Disables password-based login after you have set up public key authentication.
+
+`Port` (Recommended Value: [Non-standard port])
+>Changing the port from 22 helps reduce automated attack attempts (script kiddies).
+
+>[!CAUTION]
+>Remember to restart the SSH service after any configuration changes:
+>```
+>sudo systemctl restart ssh
+>```
