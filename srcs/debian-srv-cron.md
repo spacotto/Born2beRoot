@@ -3,7 +3,8 @@
 >A cron monitoring service **tracks scheduled jobs and alerts** you when they fail to run, run unsuccessfully, or produce unexpected output.
 
 ## Basic Monitoring Approaches
-1. **Email Notifications (Built-in).** Cron automatically emails output to the user. Configure in crontab:
+###1. Email Notifications (Built-in)
+Cron automatically emails output to the user. Configure in crontab:
 ```
 MAILTO=admin@example.com
 ```
@@ -13,7 +14,8 @@ MAILTO=admin@example.com
 >0 2 * * * /path/to/script.sh > /dev/null 2>&1
 >```
 
-2. **Logging to Files.** Add logging to your cron jobs:
+### 2. Logging to Files
+Add logging to your cron jobs:
 ```
 0 2 * * * /path/to/script.sh >> /var/log/myscript.log 2>&1
 ```
@@ -29,7 +31,8 @@ MAILTO=admin@example.com
 >}
 >```
 
-3. **External Monitoring Services.** Healthchecks.io Pattern (works with any similar service):
+### 3. External Monitoring Services
+Healthchecks.io Pattern (works with any similar service):
 ```
 # Successful run notification
 0 2 * * * /path/to/script.sh && curl -m 10 --retry 5 https://hc-ping.com/YOUR-UUID
