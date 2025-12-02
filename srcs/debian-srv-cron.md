@@ -41,13 +41,13 @@ Healthchecks.io Pattern (works with any similar service):
 >The service expects regular pings. Missing pings trigger alerts.
 
 ## Setting Up a Local Monitoring Service
-### Install Monitoring Tools
+### 1. Install Monitoring Tools
 ```
 apt update
 apt install monitoring-plugins mailutils
 ```
 
-### Create a Monitoring Script
+### 2. Create a Monitoring Script
 Save as `/usr/local/bin/cron-monitor.sh`:
 ```
 #!/bin/bash
@@ -68,12 +68,12 @@ else
 fi
 ```
 
-### Make executable
+### 3. Make executable
 ```
 chmod 700 /usr/local/bin/cron-monitor.sh    # chmod +x gives the same result
 ```
 
-### Use in Crontab
+### 4. Use in Crontab
 ```
 0 2 * * * /usr/local/bin/cron-monitor.sh /path/to/your-script.sh
 ```
