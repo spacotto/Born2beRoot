@@ -1,19 +1,18 @@
 # About SSH
-**Secure Shell (SSH)** is a cryptographic network protocol used to operate network services securely over an unsecured network. The most common applications are **remote command-line login** and **remote command execution**. It provides strong authentication and secure encrypted communication.
+>[!IMPORTANT]
+>**Secure Shell (SSH)** is a **cryptographic network protocol** used to operate network services securely over an unsecured network. The most common applications are **remote command-line login** and **remote command execution**. It provides strong authentication and secure, encrypted communication.
 
----
-
-### Installation on Debian 13
-
+## Installation on Debian 13
 SSH is typically installed and configured in two parts: the **server** (where you want to connect to) and the **client** (the machine you are connecting *from*).
 
-#### 1. Installing the SSH Client (for connecting to other machines)
+1. Installing the SSH Client (for connecting to other machines)
 
 The client is usually installed by default on Debian. If it's not, you can install it using the following command:
 
 ```bash
 sudo apt update
 sudo apt install openssh-client
+```
 
 2. Installing the SSH Server (to allow remote connections to your machine)
 To allow other machines to connect to your Debian 13 system, install the server package, which includes the sshd daemon:
