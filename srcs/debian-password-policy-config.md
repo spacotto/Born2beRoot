@@ -12,31 +12,31 @@ nano /etc/login.defs
 #### Expiration date
 Set the number of days after which the users shall change their passwords:
 ```
-PASS_MAX_DAYS xxx
+PASS_MAX_DAYS  xxx
 ```
 For example:
 ```
-PASS_MAX_DAYS 30  # The users shall change the pw every 30 days
+PASS_MAX_DAYS  30  # Users shall change the pw every 30 days
 ```
 
 #### Minimum password age
-Set the minimum number of days allowed before the password can be changed:
+Set the minimum number of days allowed between password changes:
 ```
-PASS_MIN_DAYS xxx
+PASS_MIN_DAYS  xxx
 ```
 For example:
 ```
-PASS_MIN_DAYS 2
+PASS_MIN_DAYS  2  # Users shall wait at least 2 days before changing a password again
 ```
 
-#### Expiration date
-Set the number of days before password expiration to show warning.
+#### Expiration warning
+Set the number of days a warning is given before a password expires:
 ```
-PASS_WARN_AGE xxx
+PASS_WARN_AGE  xxx
 ```
 For example:
 ```
-PASS_WARN_AGE 7
+PASS_WARN_AGE  7  # The user will receive a warning 7 days before the password expiration date
 ```
 
 ## Password Complexity Configuration
