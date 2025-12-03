@@ -51,6 +51,14 @@ nano /etc/pam.d/common-password
 ```
 
 ### 3. Set up password validity parameters
+You shall add the following additional parameters on the line (after retry 3):
+```
+password  requisite  pam_pwquality.so retry=3
+```
+
+>[!TIP]
+>If you want to test the parameters, I recommend changing the last parameter from `retry=3` to `retry=9999`.
+
 #### Length
 ```
 minlen=10  # The password must be at least 10 characters long
