@@ -46,7 +46,7 @@ Healthchecks.io Pattern (works with any similar service):
 
 ### 1. Create a Monitoring Script
 ```
----
+sudo nano /usr/local/bin/monitoring.sh
 ```
 
 ### 2. Configure the script
@@ -136,10 +136,38 @@ echo "$MESSAGE" | wall
 
 ### 3. Make the script executable
 ```
-chmod 700 <script path>    # chmod +x gives the same result
+chmod 700 sudo nano /usr/local/bin/monitoring.sh    # chmod +x gives the same result
 ```
 
-### 4. Use in Crontab
+### 4. Test if the script works
 ```
----
+sudo /usr/local/bin/monitoring.sh
 ```
+
+### 4. Set up cron
+Open crontab as `root`
+```
+sudo crontab -e
+```
+>[!NOTE]
+>Run the cron job as `root` to access all system information:
+>- For the physical CPU count to work correctly, your VM needs to expose CPU topology information
+>- The sudo command count uses `journalctl`, which requires appropriate permissions
+>- The script uses standard Debian utilities that should already be installed
+
+Add timer setting:
+```
+*/10 * * * * /usr/local/bin/monitoring.sh | wall    # Display every 10m
+```
+
+>[!TIP]
+>You can force the script output by running this command:
+>```
+>watch -n 600 /usr/local/bin/monitoring.sh    # 600 = 60s * 10 (aka you force the 10m)
+>```
+
+>[!TIP]
+>If you don't want to broadcast everywhere and keep a log file instead, you can change the timer setting as follows:
+>```
+>*/10 * * * * /usr/local/bin/monitoring.sh >> /var/log/monitoring.log
+>```
