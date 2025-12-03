@@ -52,21 +52,86 @@ Healthchecks.io Pattern (works with any similar service):
 ### 2. Configure the script
 ```
 #!/bin/bash
-# ARCHITECTURE
 
-# CPU
+# System Monitoring Script
+# Displays system information
 
-# RAM
+# OS Architecture and Kernel Version
+ARCH=$(uname -a)
 
-# STORAGE
+# CPU Stats
+PCPU=$(grep "physical id" /proc/cpuinfo | sort -u | wc -l)               # Physical Processors
+VCPU=$(grep "^processor" /proc/cpuinfo | wc -l)                          # Virtual Processors
+CPU_LOAD=$(top -bn1 | grep '^%Cpu' | awk '{printf("%.1f%%"), $2 + $4}')  # CPU Load (%)
 
-# LAST REBOOT
+# RAM Stats
+# Current available RAM and its utilization rate (%)
+RAM_TOTAL=$(free -m | awk '/Mem:/ {print $2}')
+RAM_USED=$(free -m | awk '/Mem:/ {print $3}')
+RAM_PERCENT=$(free | awk '/Mem:/ {printf("%.2f"), $3/$2*100}')
 
-# LVM
+# Disk Stats
+# Current available storage and its utilization rate (%)
+DISK_TOTAL=$(df -BG --total | grep total | awk '{print $2}')
+DISK_USED=$(df -BM --total | grep total | awk '{print $3}')
+DISK_PERCENT=$(df --total | grep total | awk '{print $5}')
 
-# CONNECTIONS
+# Last Reboot (Date & Time)
+LAST_BOOT=$(who -b | awk '{print $3, $4}')
 
-wall: ""
+# LVM Status
+LVM_ACTIVE=$(if [ $(lsblk | grep "lvm" | wc -l) -gt 0 ]; then echo "active"; else echo "inactive"; fi)
+
+# Active TCP Connections
+TCP_CONN=$(ss -t | grep ESTAB | wc -l)
+
+# Logged in Users
+USER_COUNT=$(who | wc -l)
+
+# Network Information (IPv4 & MAC)
+IP_ADDR=$(hostname -I | awk '{print $1}')
+MAC_ADDR=$(ip link show | grep "link/ether" | awk '{print $2}' | head -n1)
+
+# Sudo Commands Count
+# Number of commands executed with the sudo program
+SUDO_CMDS=$(journalctl _COMM=sudo 2>/dev/null | grep COMMAND | wc -l)
+
+# Message to display
+MESSAGE="
+==============================================================
+                   SYSTEM MONITORING REPORT
+==============================================================
+
+Date:            $(date '+%Y-%m-%d %H:%M:%S')
+
+Architecture:    $ARCH
+
+Physical CPUs:   $PCPU
+Virtual CPUs:    $VCPU
+CPU Load:        $CPU_LOAD
+
+Memory Usage:    ${RAM_USED}MB / ${RAM_TOTAL}MB (${RAM_PERCENT}%)
+
+Disk Usage:      ${DISK_USED} / ${DISK_TOTAL} (${DISK_PERCENT})
+
+Last Boot:       $LAST_BOOT
+
+LVM Active:      $LVM_ACTIVE
+
+TCP Connections: $TCP_CONN
+
+Users Logged In: $USER_COUNT
+
+IPv4 Address:    $IP_ADDR
+MAC Address:     $MAC_ADDR
+
+Sudo Commands:   $SUDO_CMDS
+
+==============================================================
+"
+
+# Broadcast to all terminals
+echo "$MESSAGE" | wall
 ```
 
 ### 3. Make the script executable
