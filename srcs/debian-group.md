@@ -103,6 +103,16 @@ Output example:
 ```
 sudo:x:27:spacotto
 ```
+>[!IMPORTANT]
+>You can also request the member lists from multiple groups:
+>```
+>getent group <group1> <group2> <group3>
+>```
+>For example:
+>```
+>getent group sudo user42 lehavre42
+>```
+
 >[!TIP]
 >If you want to display only the list, you can run:
 >```
