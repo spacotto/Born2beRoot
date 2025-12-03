@@ -68,7 +68,7 @@ ssh-keygen -t ed25519  # You'll be prompted for a passphrase (always use a stron
 >[!TIP]
 >The easiest way to set up key-based login is with ssh-copy-id:
 >```
->ssh-copy-id user_alice@192.168.1.10
+>ssh-copy-id user_localhost@192.168.1.10
 >```
 >This command securely transfers your public key to the remote server and configures the authorized_keys file. You will need to enter your password one last time to complete this process.
 
@@ -110,6 +110,12 @@ Enter
 >Alternative command:
 >```
 >sudo service ssh status
+>```
+
+>[!IMPORTANT]
+>Use this command to connect via SSH:
+>```
+>ssh user@localhost -p 4241
 >```
 
 ### Essential Security
