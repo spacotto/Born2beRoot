@@ -13,6 +13,12 @@ This is the second OS installation step.
 
 ![config-domain](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm011.png)
 
+>[!IMPORTANT]
+>[Here](https://wiki.debian.org/Hostname) you can find the official Debian documentation about hostnames.
+
+>[!IMPORTANT]
+>[Here](https://www.cyberciti.biz/faq/debian-change-hostname-permanently/) you can find a guide on how to check and change the hostname
+
 ## 3. Configure Root
 ![root-pw](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm012.png)
 >[!TIP]
