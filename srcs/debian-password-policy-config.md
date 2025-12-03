@@ -2,6 +2,18 @@
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/password-policy.md) you can find the details concerning the Strong Password Policy.
 
+## Password Expiration Configuration
+### 1. Create login definitions file
+```
+nano /etc/login.defs
+```
+
+### 2. Setup parameters
+```
+```
+
+## Password Complexity Configuration
+
 ## `sudo` Configuration
 ### 1. Switch to Root
 ```
