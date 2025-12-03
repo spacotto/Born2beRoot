@@ -3,7 +3,7 @@
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/password-policy.md) you can find the details concerning the Strong Password Policy.
 
 ## Password Expiration Configuration
-### 1. Create login definitions file
+### 1. Open login definitions file
 ```
 nano /etc/login.defs
 ```
