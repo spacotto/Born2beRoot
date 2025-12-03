@@ -1,5 +1,5 @@
 # About Password Policy Configuration
->[IMPORTANT]
+>[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/password-policy.md) you can find the details concerning the Strong Password Policy.
 
 ## Switch to Root
