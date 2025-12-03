@@ -65,7 +65,7 @@ sudo delgroup user42
 
 ## Add User to Group
 ```
-sudo add <user> <group>
+sudo adduser <user> <group>
 ```
 >[!TIP]
 >Run the following command to check that the user was successfully added to the group.
