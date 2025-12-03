@@ -120,5 +120,5 @@ sudo:x:27:spacotto
 >```
 >For example:
 >```
->getent sudo <group> | cut -d: -f4
+>getent group sudo | cut -d: -f4
 >```
