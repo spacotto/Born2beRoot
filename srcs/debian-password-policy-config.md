@@ -1,4 +1,4 @@
-# About Password Policy Configuration
+# About Password Policy Implementation
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/password-policy.md) you can find the details concerning the Strong Password Policy.
 
