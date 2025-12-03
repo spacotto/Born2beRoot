@@ -24,7 +24,7 @@ sudo reboot    # sudo or su > reboot since root can't reboot
 ### Installation Troubleshooting
 You might get an error like this one:
 ```
-Please use apt-cdrom to make this CD-ROM recognized by APT. apt-get update cannot be used to add new CD-ROMs
+Media change: please insert the disc labeled 'xxx' in the drive 'path' and press [Enter]
 ```
 If this happens, switch to root (if you didn't already) and open the following file:
 ```
