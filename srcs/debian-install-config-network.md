@@ -7,17 +7,17 @@ This is the second OS installation step.
 
 ![config-hostname](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm010.png)
 
-## 2. Configure Domain Name
->[!NOTE]
->The domain name is the network domain your system belongs to.
-
-![config-domain](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm011.png)
-
 >[!IMPORTANT]
 >[Here](https://wiki.debian.org/Hostname) you can find the official Debian documentation about hostnames.
 
 >[!IMPORTANT]
 >[Here](https://www.cyberciti.biz/faq/debian-change-hostname-permanently/) you can find a guide on how to check and change the hostname
+
+## 2. Configure Domain Name
+>[!NOTE]
+>The domain name is the network domain your system belongs to.
+
+![config-domain](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm011.png)
 
 ## 3. Configure Root
 ![root-pw](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm012.png)
