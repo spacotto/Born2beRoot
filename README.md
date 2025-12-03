@@ -82,9 +82,9 @@
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-srv-ufw.md) you can find the details concerning the setup of UFW.
 
-### Script Monitoring (Cron)
+### Monitoring Script
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-srv-cron.md) you can find the details concerning the setup of the Monitoring Script and Cron service.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-srv-monitor.md) you can find the details concerning the setup of the Monitoring Script and Cron service.
 
 ## Hosting: WordPress
 >[!IMPORTANT]
