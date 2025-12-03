@@ -20,13 +20,23 @@ PASS_MAX_DAYS 30  # The users shall change the pw every 30 days
 ```
 
 #### Minimum password age
-Set the minimum number of days allowed before the modification of a password:
+Set the minimum number of days allowed before the password can be changed:
 ```
 PASS_MIN_DAYS xxx
 ```
 For example:
 ```
 PASS_MIN_DAYS 2
+```
+
+#### Expiration date
+Set the number of days before password expiration to show warning.
+```
+PASS_WARN_AGE xxx
+```
+For example:
+```
+PASS_WARN_AGE 7
 ```
 
 ## Password Complexity Configuration
