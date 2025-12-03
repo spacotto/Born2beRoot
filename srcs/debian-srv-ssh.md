@@ -46,6 +46,11 @@ When connecting for the first time, you'll be prompted to verify and accept the 
 ## Key Concepts 
 ### Port 22
 The standard TCP port that the SSH daemon (sshd) listens on. This can be changed for security reasons in the server's configuration file.
+>[!TIP]
+>Display SSH-related ports by running the following command:
+>```
+>sudo ss -tlp | grep ssh | cut -d: -f2
+>```
 
 ### Authentication
 SSH supports two main methods: (1) Password Authentication and (2) Public Key Authentication.
