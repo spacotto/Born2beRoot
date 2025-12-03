@@ -73,12 +73,6 @@ ssh-keygen -t ed25519  # You'll be prompted for a passphrase (always use a stron
 >This command securely transfers your public key to the remote server and configures the authorized_keys file. You will need to enter your password one last time to complete this process.
 
 ## Server Configuration
->[!CAUTION]
->Remember to restart the SSH service after any configuration changes:
->```
->sudo systemctl restart ssh
->```
-
 1. Switch to root privileges:
 ```
 su
@@ -97,6 +91,26 @@ Ctrl+X
 Y
 Enter
 ```
+
+>[!CAUTION]
+>Remember to restart the SSH service after any configuration changes:
+>```
+>sudo systemctl restart ssh
+>```
+>Alternative command:
+>```
+>sudo service ssh restart
+>```
+
+>[!TIP]
+>Check the service status with
+>```
+>sudo systemctl status ssh
+>```
+>Alternative command:
+>```
+>sudo service ssh status
+>```
 
 ### Essential Security
 >[!IMPORTANT]
