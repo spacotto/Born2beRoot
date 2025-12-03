@@ -36,6 +36,9 @@ deb http://deb.debian.org/debian/ trixie contrib main non-free firmware
 ```
 
 ## Essential `sudo` Commands
+>[!IMPORTANT]
+>Check `man sudo` for the complete list of commands.
+
 Add user to `sudo` group as `root`
 ```
 sudo usermod -aG sudo username
