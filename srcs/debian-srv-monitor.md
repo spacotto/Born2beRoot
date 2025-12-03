@@ -51,7 +51,22 @@ Healthchecks.io Pattern (works with any similar service):
 
 ### 2. Configure the script
 ```
----
+#!/bin/bash
+# ARCHITECTURE
+
+# CPU
+
+# RAM
+
+# STORAGE
+
+# LAST REBOOT
+
+# LVM
+
+# CONNECTIONS
+
+wall: ""
 ```
 
 ### 3. Make the script executable
@@ -61,4 +76,5 @@ chmod 700 <script path>    # chmod +x gives the same result
 
 ### 4. Use in Crontab
 ```
----```
+---
+```
