@@ -54,6 +54,11 @@ List the commands the user is allowed (and forbidden) to run on the current host
 sudo -l
 ```
 
+Print the sudo version string as well as the version string of any configured plugins:q
+```
+sudo -V
+```
+
 Extend the time limit for which you can run `sudo` without re-entering your password (a "keep-alive" for your credentials):
 ```
 sudo -v
