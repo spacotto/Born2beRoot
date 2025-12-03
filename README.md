@@ -69,9 +69,9 @@
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-group.md) you can find the details concerning the setup of group management.
 
-### Password Policy
+### Password Policy Implementation
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/password-policy.md) you can find the details concerning the Strong Password Policy.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-password-policy-config.md) you can find the details concerning the Strong Password Policy.
 
 ## Services
 ### SSH
