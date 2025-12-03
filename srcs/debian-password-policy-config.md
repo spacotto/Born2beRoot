@@ -40,6 +40,37 @@ PASS_WARN_AGE  7  # The user will receive a warning 7 days before the password e
 ```
 
 ## Password Complexity Configuration
+### 1. Install password quality library
+```
+sudo apt install libpam-pwquality
+```
+
+### 2. Open PAM configuration file
+```
+nano /etc/pam.d/common-password
+```
+
+### 3. Set up password validity parameters
+#### Length
+```
+minlen=10  # The password must be at least 10 characters long
+```
+
+#### Characters
+```
+# The password must contain an uppercase letter, a lowercase letter, and a number
+```
+
+#### Consecutive identical characters
+```
+# The password must NOT contain more than 3 consecutive identical characters
+```
+
+#### Vocabulary restrictions
+```
+# The password must NOT include the name of the user
+```
+
 
 ## `sudo` Configuration
 ### 1. Switch to Root
