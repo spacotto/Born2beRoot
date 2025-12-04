@@ -64,7 +64,7 @@ Restart Lighttpd:
 sudo systemctl restart lighttpd
 ```
 
-## Step: Create WordPress Database
+## Step 5: Create WordPress Database
 ```
 sudo mysql -u root -p
 ```
@@ -77,7 +77,7 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
-## Step: Download and Install WordPress
+## Step 6: Download and Install WordPress
 ```
 cd /tmp
 wget https://wordpress.org/latest.tar.gz
@@ -87,7 +87,7 @@ sudo chown -R www-data:www-data /var/www/html/wordpress
 sudo chmod -R 755 /var/www/html/wordpress
 ```
 
-## Step: Configure Lighttpd for WordPress
+## Step 7: Configure Lighttpd for WordPress
 Create or edit the Lighttpd configuration:
 ```
 sudo nano /etc/lighttpd/lighttpd.conf
@@ -114,7 +114,7 @@ sudo lighttpd-enable-mod rewrite
 sudo systemctl restart lighttpd
 ```
 
-## Step: Configure WordPress
+## Step 8: Configure WordPress
 Create WordPress Configuration
 ```
 cd /var/www/html/wordpress
@@ -138,7 +138,7 @@ sudo find /var/www/html/wordpress -type d -exec chmod 755 {} \;
 sudo find /var/www/html/wordpress -type f -exec chmod 644 {} \;
 ```
 
-## Step: Set Up Firewall
+## Step 9: Set Up Firewall
 ```
 sudo apt install ufw -y
 sudo ufw allow OpenSSH
@@ -147,14 +147,14 @@ sudo ufw allow 443/tcp
 sudo ufw enable
 ```
 
-## Step: Complete WordPress Installation
+## Step 10: Complete WordPress Installation
 Visit `http://your-server-ip` in your browser and follow the WordPress installation wizard:
 1. Select language
 2. Enter site title, username, password, and email
 3. Click "Install WordPress"
 4. Log in to admin panel at /wp-admin
 
-## Step: Install SSL Certificate (Optional)
+## Step 11: Install SSL Certificate (Optional)
 ```
 sudo apt install certbot -y
 sudo systemctl stop lighttpd
