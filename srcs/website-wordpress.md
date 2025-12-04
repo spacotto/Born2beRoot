@@ -60,3 +60,18 @@ WordPress has five default roles with different permissions:
 3. **Author**: Write and publish own posts
 4. **Contributor**: Write posts but can't publish
 5. **Subscriber**: Only manage their profile
+
+## Maintenance
+### Updates
+Regularly update WordPress core, themes, and plugins at Dashboard → Updates. Always backup before major updates.
+
+### Backups
+Use a backup plugin or your host's backup service. Back up both files and database regularly.
+
+### Security Tips
+- Use strong passwords and two-factor authentication
+- Keep everything updated
+- Install a security plugin
+- Use SSL/HTTPS
+- Limit login attempts
+- Remove unused themes and plugins
