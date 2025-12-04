@@ -146,3 +146,45 @@ $HTTP["remoteip"] == "192.168.1.0/24" {
   url.access-deny = ( "" )
 }
 ```
+
+## Testing Configuration
+Before restarting, test your configuration:
+```
+sudo lighttpd -t -f /etc/lighttpd/lighttpd.conf
+```
+
+## Performance Tuning
+```
+server.max-connections = 1024
+server.max-keep-alive-requests = 128
+server.max-keep-alive-idle = 30
+server.event-handler = "linux-sysepoll"
+server.network-backend = "write"
+```
+
+## Common Issues
+### Port already in use
+Check if another service is using port 80 with: 
+```
+sudo netstat -tulpn | grep :80
+```
+
+### Permission denied
+Ensure lighttpd user has read access to document root and write access to log directories
+
+### Configuration syntax errors
+Run the test command to identify issues
+
+## Log Files
+```
+/var/log/lighttpd/error.log    # Error log
+/var/log/lighttpd/access.log   # Access log
+```
+View logs in real-time:
+```
+sudo tail -f /var/log/lighttpd/error.log
+```
+
+## Additional Resources
+- [Official documentation](https://redmine.lighttpd.net/projects/lighttpd/wiki)
+- [Configuration examples](https://redmine.lighttpd.net/projects/lighttpd/wiki/Docs_Configuration)
