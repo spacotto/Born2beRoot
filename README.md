@@ -87,7 +87,7 @@
 
 ### Users & Groups Management
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-group.md) you can find the details concerning the setup of group management.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-network.md) you can find the details concerning the setup of group management.
 
 ### Monitoring Script
 >[!IMPORTANT]
