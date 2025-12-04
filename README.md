@@ -2,7 +2,7 @@
 >This is a work in progress.
 
 >[!NOTE]
->As part of my 42 journey, I am creating my first Virtual Machine (VM). Since this project does not produce source code or traditional archives to add to my portfolio, I have chosen to provide comprehensive documentation. This documentation is intended to serve both as a personal reference and as a resource for others who are embarking on similar VM setup tasks, providing clear, step-by-step instructions and lessons learned throughout the process.
+>As part of my 42 journey, I am creating my first Server in a Virtual Machine (VM). Since this project does not produce source code or traditional archives to add to my portfolio, I have chosen to provide comprehensive documentation. This documentation is intended to serve both as a personal reference and as a resource for others who are embarking on similar VM setup tasks, providing clear, step-by-step instructions and lessons learned throughout the process.
 
 >[!CAUTION]
 >Since this project serves as an introduction to virtualisation, I will focus on installing the minimum of services. For this reason, **I will not provide sources concerning the graphical interface**.
@@ -27,7 +27,7 @@
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-overview.md) you can find more information on **virtualisation** and **VMs**.
 
 >[!CAUTION]
->Keep in mind this documentation concerns the creation of a **minimalist** VM. I am going to discuss **exclusively** the implementation of the **essential elements**. I am NOT going to address the implementation of UI or other additional features.
+>Keep in mind this documentation concerns the creation of a **minimalist** VM and server. I am going to discuss **exclusively** the implementation of the **essential elements**. I am NOT going to address the implementation of UI or other additional features.
 
 ## Create a Virtual Machine
 >[!IMPORTANT]
@@ -67,7 +67,7 @@
 
 ### `sudo` Installation 
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-sudo.md) you can find the details concerning the setup of `sudo` command.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-sudo.md) you can find the details concerning the setup of `sudo` command.
 
 ### AppArmor
 >[!IMPORTANT]
@@ -83,11 +83,11 @@
 
 ### Strong Password Policy Implementation
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-password-policy-config.md) you can find the details concerning the implementation of the Strong Password Policy.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-password-policy-config.md) you can find the details concerning the implementation of the Strong Password Policy.
 
 ### Users & Groups Management
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-group.md) you can find the details concerning the setup of group management.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-group.md) you can find the details concerning the setup of group management.
 
 ### Monitoring Script
 >[!IMPORTANT]
