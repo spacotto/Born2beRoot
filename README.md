@@ -93,26 +93,6 @@
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-monitoring-script.md) you can find the details concerning the setup of the Monitoring Script and Cron service.
 
-## Hosting
+### Website Hosting: WordPress, lighttpd, MariaDB, PHP
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-website-hosting.md) you can find the details concerning the setup of a website on a Debian server.
-
-### WordPress
->[!IMPORTANT]
->[Here]() you can find the details concerning WordPress.
-
-### lighttpd
->[!IMPORTANT]
->[Here]() you can find the details concerning lighttpd.
-
-### MariaDB
->[!IMPORTANT]
->[Here]() you can find the details concerning MariaDB.
-
-### PHP
->[!IMPORTANT]
->[Here]() you can find the details concerning PHP.
-
-### ???
->[!IMPORTANT]
->[Here]() you can find the details concerning the setup of.
