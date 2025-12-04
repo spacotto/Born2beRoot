@@ -76,6 +76,11 @@ sudo adduser <user> <group>
 >[!IMPORTANT]
 >Go [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-sudo.md) for more info on how to add users to `sudo` group as `root`.
 
+## Remove User from Group
+```
+sudo deluser <user> <group>
+```
+
 ## Check User Groups
 You can check the groups a user belongs to by running the following command in the terminal:
 ```
