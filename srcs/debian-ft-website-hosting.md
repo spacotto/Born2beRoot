@@ -6,7 +6,7 @@
 
 ## Host WordPress on Debian VM
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-wordpress.md) you can find more details about WordPress.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-wordpress.md) you can find more details concerning WordPress.
 
 ### Step 1: Update System
 ```
@@ -15,6 +15,9 @@ sudo apt upgrade -y
 ```
 
 ### Step 2: Install Lighttpd
+>[!IMPORTANT]
+>Here you can find more details concerning Lighttpd.
+
 ```
 sudo apt install lighttpd -y
 sudo systemctl enable lighttpd
@@ -22,6 +25,9 @@ sudo systemctl start lighttpd
 ```
 
 ### Step 3: Install MariaDB
+>[!IMPORTANT]
+>Here you can find more details concerning MariaDB.
+
 ```
 sudo apt install mariadb-server -y
 sudo systemctl enable mariadb
@@ -36,6 +42,9 @@ sudo mysql_secure_installation
 >4. remove test database
 
 ### Step 4: Install PHP
+>[!IMPORTANT]
+>Here you can find more details concerning PHP.
+
 ```
 sudo apt install php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-zip php-imagick -y
 sudo systemctl enable php8.2-fpm
