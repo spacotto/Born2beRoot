@@ -88,3 +88,61 @@ mod_fastcgi         # FastCGI support for PHP, Python, etc.
 mod_accesslog       # Access logging
 mod_auth            # Authentication
 ```
+
+## Virtual Hosts
+```
+$HTTP["host"] == "example.com" {
+  server.document-root = "/var/www/example.com"
+  accesslog.filename = "/var/log/lighttpd/example.com-access.log"
+}
+
+$HTTP["host"] == "another.com" {
+  server.document-root = "/var/www/another.com"
+}
+```
+
+## SSL/TLS Configuration
+```
+$SERVER["socket"] == ":443" {
+  ssl.engine = "enable"
+  ssl.pemfile = "/etc/lighttpd/certs/server.pem"
+  ssl.ca-file = "/etc/lighttpd/certs/ca.crt"
+}
+```
+
+## URL Rewriting
+Enable mod_rewrite and configure:
+```
+url.rewrite-once = (
+  "^/(.*)\.php$" => "/index.php/$1"
+)
+```
+
+## PHP Support with FastCGI
+Enable `mod_fastcgi`:
+```
+fastcgi.server = ( ".php" =>
+  ((
+    "bin-path" => "/usr/bin/php-cgi",
+    "socket" => "/tmp/php.socket",
+    "max-procs" => 2,
+    "bin-environment" => (
+      "PHP_FCGI_CHILDREN" => "4",
+      "PHP_FCGI_MAX_REQUESTS" => "10000"
+    )
+  ))
+)
+```
+
+## Directory Listings
+```
+dir-listing.activate = "enable"
+dir-listing.encoding = "utf-8"
+```
+
+## Access Control
+```
+$HTTP["remoteip"] == "192.168.1.0/24" {
+  url.access-deny = ( "" )
+}
+```
