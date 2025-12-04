@@ -16,7 +16,7 @@ sudo apt upgrade -y
 
 ### Step 2: Install Lighttpd
 >[!IMPORTANT]
->Here you can find more details concerning Lighttpd.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-lighttpd.md#basic-configuration) you can find more details concerning Lighttpd.
 
 ```
 sudo apt install lighttpd -y
