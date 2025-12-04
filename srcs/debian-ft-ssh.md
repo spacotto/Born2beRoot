@@ -38,7 +38,7 @@ ssh [username]@[hostname_or_IP_address]
 ```
 Example:
 ```
-ssh user_alice@192.168.1.10
+ssh spacotto@spacotto42
 ```
 
 When connecting for the first time, you'll be prompted to verify and accept the remote host's key fingerprint. This adds the host to your $HOME/.ssh/known_hosts file.
@@ -47,9 +47,9 @@ When connecting for the first time, you'll be prompted to verify and accept the 
 ### Port 22
 The standard TCP port that the SSH daemon (sshd) listens on. This can be changed for security reasons in the server's configuration file.
 >[!TIP]
->Display SSH-related ports by running the following command:
+>Display the allowed ports by running the following command:
 >```
->sudo ss -tlp | grep ssh | cut -d: -f2
+>sudo ufw status
 >```
 
 ### Authentication
