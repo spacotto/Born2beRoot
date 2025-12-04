@@ -26,7 +26,7 @@ sudo systemctl start lighttpd
 
 ### Step 3: Install MariaDB
 >[!IMPORTANT]
->Here you can find more details concerning MariaDB.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-mariadb.md) you can find more details concerning MariaDB.
 
 ```
 sudo apt install mariadb-server -y
