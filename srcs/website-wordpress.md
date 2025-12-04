@@ -21,10 +21,27 @@ Access the admin dashboard at `yoursite.com/wp-admin`. This is where you manage 
 
 **Pages** are static content (About, Contact, Services). They exist outside the chronological flow and can be hierarchical.
 
-**Themes**
+### Themes
 Themes control your site's **appearance**. You can install free themes from the WordPress repository or purchase premium themes. Change themes at Appearance → Themes without losing content.
 
-**Plugins**
+### Plugins
 Plugins add **functionality** to WordPress. Install from `Plugins → Add New`. Essential plugins often include SEO tools, security, backups, and contact forms.
 
 ## Content Management
+### Creating Content
+1. Navigate to Posts
+2. Add New or Pages
+3. Add New
+
+The block editor (Gutenberg) lets you add content blocks like paragraphs, images, headings, and more.
+
+Common blocks: Paragraph, Image, Heading, List, Quote, Button, Columns, Gallery.
+
+### Media Library
+Upload images, videos, and documents at `Media → Library`. WordPress automatically creates multiple image sizes for responsive design.
+
+### Categories and Tags
+**Categories** are hierarchical groupings for posts (like folders).
+
+**Tags** are non-hierarchical keywords for specific topics.
+
