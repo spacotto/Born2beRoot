@@ -120,7 +120,7 @@ Enter
 >[!IMPORTANT]
 >Use this command to connect via SSH:
 >```
->ssh user@localhost -p 4241
+>ssh user@localhost -p <port number id>
 >```
 
 ### Essential Security
