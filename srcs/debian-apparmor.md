@@ -15,6 +15,10 @@ sudo apt install apparmor-utils apparmor-profiles apparmor-profiles-extra
 ## Status
 Use this command to check if it's running:
 ```
+sudo systemctl status apparmor
+```
+Alternative command:
+```
 sudo aa-status
 ```
 >[!NOTE]
@@ -26,11 +30,6 @@ sudo aa-status
 - **Unconfined.** No restrictions applied.
 
 ## Common Commands
-- View status and loaded profiles.
-```
-sudo aa-status
-```
-
 - Put a profile in complain mode.
 ```
 sudo aa-complain /path/to/program
