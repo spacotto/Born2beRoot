@@ -54,38 +54,63 @@
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-grub.md) you can find the details concerning the installation of GRUB boot loader.
 
-## Users Management
+## Server Features (Services, Packages, Utilities)
 >[!CAUTION]
 >Before starting to interact with your new VM terminal, I recommend checking what shell you are using. You can find this out by running the following command in the terminal:
 >```
 >echo $0
 >```
 
-### `sudo`
+### Package Manager: `apt` and `aptitude`
+>[!IMPORTANT]
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-apt-aptitude.md) you can find the details concerning `apt` and `aptitude`.
+
+### `sudo` Installation 
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-sudo.md) you can find the details concerning the setup of `sudo` command.
 
-### Users & Groups
+### AppArmor
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-group.md) you can find the details concerning the setup of group management.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-apparmor.md) you can find the details concerning the setup of SSH.
 
-### Password Policy Implementation
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-password-policy-config.md) you can find the details concerning the Strong Password Policy.
-
-## Services
 ### SSH
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-srv-ssh.md) you can find the details concerning the setup of SSH.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-ssh.md) you can find the details concerning the setup of SSH.
 
 ### UFW
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-srv-ufw.md) you can find the details concerning the setup of UFW.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-ufw.md) you can find the details concerning the setup of UFW.
+
+### Strong Password Policy Implementation
+>[!IMPORTANT]
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-password-policy-config.md) you can find the details concerning the implementation of the Strong Password Policy.
+
+### Users & Groups Management
+>[!IMPORTANT]
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-group.md) you can find the details concerning the setup of group management.
 
 ### Monitoring Script
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-srv-monitor.md) you can find the details concerning the setup of the Monitoring Script and Cron service.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-monitoring-script.md) you can find the details concerning the setup of the Monitoring Script and Cron service.
 
-## Hosting: WordPress
+## Hosting
+
+### WordPress
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the setup of.
+
+### lighttpd
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the setup of.
+
+### MariaDB
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the setup of.
+
+### PHP
+>[!IMPORTANT]
+>[Here]() you can find the details concerning the setup of.
+
+### ???
 >[!IMPORTANT]
 >[Here]() you can find the details concerning the setup of.
