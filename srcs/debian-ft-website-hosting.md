@@ -179,6 +179,29 @@ sudo lighttpd-enable-mod ssl
 sudo systemctl start lighttpd
 ```
 
+## Troublshooting
+### PHP files downloading instead of executing
+Check if FastCGI-PHP is enabled:
+```
+sudo lighttpd-enable-mod fastcgi-php
+sudo systemctl restart lighttpd
+```
+
+### Permission errors
+Reset WordPress permissions:
+```
+sudo chown -R www-data:www-data /var/www/html/wordpress
+```
+
+### Can't access site
+Check if Lighttpd is running:
+```
+sudo systemctl status lighttpd
+```
+
+### Database connection error
+Verify credentials in `wp-config.php` and `MariaDB` user privileges.
+
 ## Security Tips
 - Keep WordPress, themes, and plugins updated
 - Use strong passwords for database and admin account
@@ -190,3 +213,33 @@ define('DISALLOW_FILE_EDIT', true);
 ```
 - Limit login attempts
 - Keep PHP and MariaDB updated
+
+## Maintenance
+Restart Lighttpd:
+```
+sudo systemctl restart lighttpd
+```
+Restart PHP-FPM:
+```
+sudo systemctl restart php8.2-fpm
+```
+Backup database:
+```
+mysqldump -u wpuser -p wordpress > wordpress_backup_$(date +%Y%m%d).sql
+```
+Backup WordPress files:
+```
+sudo tar -czf wordpress_files_$(date +%Y%m%d).tar.gz /var/www/html/wordpress
+```
+Update system:
+```
+sudo apt update && sudo apt upgrade -y
+```
+Check Lighttpd configuration:
+```
+sudo lighttpd -t -f /etc/lighttpd/lighttpd.conf
+```
+View Lighttpd logs:
+```
+sudo tail -f /var/log/lighttpd/error.log
+```
