@@ -5,6 +5,9 @@
 - Basic command line knowledge
 
 ## Host WordPress on Debian VM
+>[!IMPORTANT]
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-wordpress.md) you can find more details about WordPress.
+
 ### Step 1: Update System
 ```
 sudo apt update
