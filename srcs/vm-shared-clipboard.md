@@ -3,10 +3,8 @@
 ## Prerequisites
 - VirtualBox 7.0.20 installed on Ubuntu
 - Debian VM running in VirtualBox
-- Guest Additions installed in the Debian VM
 
-## Sharing Instructions
-### Step 1: Install Guest Additions (if not already installed)
+## Step 1: Install Guest Additions (if not already installed)
 In your Debian VM:
 ```
 sudo apt update
@@ -23,7 +21,7 @@ sudo /mnt/VBoxLinuxAdditions.run
 sudo reboot
 ```
 
-### Step 2: Enable Shared Clipboard
+## Step 2: Enable Shared Clipboard
 Configure while VM is running:
 1. Go to Devices → Shared Clipboard
 2. Select your preferred mode:
@@ -38,7 +36,7 @@ Configure while VM is powered off:
 4. Click OK
 5. Start the VM
 
-### Step 3: Verify It Works
+## Step 3: Verify It Works
 Copy text on Ubuntu host and paste in Debian VM or vice versa
 
 ## Troubleshooting
