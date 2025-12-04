@@ -43,7 +43,7 @@ sudo mysql_secure_installation
 
 ### Step 4: Install PHP
 >[!IMPORTANT]
->Here you can find more details concerning PHP.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-php.md) you can find more details concerning PHP.
 
 ```
 sudo apt install php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-zip php-imagick -y
