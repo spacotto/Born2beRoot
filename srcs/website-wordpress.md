@@ -10,7 +10,7 @@ WordPress requires a web host with PHP and MySQL. Most hosts offer one-click ins
 2. Create a MySQL database
 3. Upload files via FTP
 4. Run the installation script at yoursite.com/wp-admin/install.php
-5. Enter database details and create admin account
+5. Enter database details and create an admin account
 
 ### Dashboard
 Access the admin dashboard at `yoursite.com/wp-admin`. This is where you manage all content and settings.
@@ -66,7 +66,7 @@ WordPress has five default roles with different permissions:
 Regularly update WordPress core, themes, and plugins at Dashboard → Updates. Always backup before major updates.
 
 ### Backups
-Use a backup plugin or your host's backup service. Back up both files and database regularly.
+Use a backup plugin or your host's backup service. Back up both files and the database regularly.
 
 ### Security Tips
 - Use strong passwords and two-factor authentication
@@ -95,3 +95,32 @@ Key directories:
 /wp-content/uploads/    # Media files
 /wp-config.php          # Configuration file (database credentials)
 ```
+
+## Development Basics
+### Child Themes
+Create a child theme to customize without losing changes during parent theme updates. Requires style.css with theme header and `functions.php`.
+
+### Hooks
+WordPress uses hooks for customisation:
+- Actions: Execute code at specific points
+- Filters: Modify data before display
+
+### The Loop
+The Loop displays posts. Most theme templates use it to iterate through and display content.
+
+## Best Practices
+- Keep login credentials secure
+- Regular backups before changes
+- Test plugins/themes on the staging site first
+- Optimise images before uploading
+- Use caching for performance
+- Choose reputable theme/plugin sources
+- Remove inactive plugins and themes
+- Monitor site speed and uptime
+
+## Resources
+- Official Documentation: wordpress.org/documentation
+- Support Forums: wordpress.org/support
+- Developer Reference: developer.wordpress.org
+- Theme Directory: wordpress.org/themes
+- Plugin Directory: wordpress.org/plugins
