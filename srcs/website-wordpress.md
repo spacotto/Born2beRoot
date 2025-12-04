@@ -14,3 +14,17 @@ WordPress requires a web host with PHP and MySQL. Most hosts offer one-click ins
 
 ### Dashboard
 Access the admin dashboard at `yoursite.com/wp-admin`. This is where you manage all content and settings.
+
+## Core Concepts
+### Posts vs Pages
+**Posts** are timely content displayed in reverse chronological order (blog entries, news). They have categories and tags.
+
+**Pages** are static content (About, Contact, Services). They exist outside the chronological flow and can be hierarchical.
+
+**Themes**
+Themes control your site's **appearance**. You can install free themes from the WordPress repository or purchase premium themes. Change themes at Appearance → Themes without losing content.
+
+**Plugins**
+Plugins add **functionality** to WordPress. Install from `Plugins → Add New`. Essential plugins often include SEO tools, security, backups, and contact forms.
+
+## Content Management
