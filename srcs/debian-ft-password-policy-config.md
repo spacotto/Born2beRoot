@@ -49,34 +49,34 @@ password  requisite  pam_pwquality.so retry=3
 
 #### Length
 ```
-minlen=10  # The password must be at least 10 characters long
+minlen=10                           # The password must be at least 10 characters long
 ```
 
 #### Characters
 ```
-ucredit=-1 dcredit=-1 lcredit=-1  # The password must contain an uppercase letter, a lowercase letter, and a number
+ucredit=-1 lcredit=-1 dcredit=-1    # The password must contain an uppercase letter, a lowercase letter, and a number
 ```
 
 #### Consecutive Identical Characters
 ```
-maxrepeat=3  # The password must NOT contain more than 3 consecutive identical characters
+maxrepeat=3                          # The password must NOT contain more than 3 consecutive identical characters
 ```
 
 #### Vocabulary Restrictions
 ```
-reject_username  # The password must NOT include the name of the user
+reject_username                      # The password must NOT include the name of the user
 ```
 
 #### Repetitions Restrictions
 ```
-# difok=7  # The password must have at least 7 characters that are not part of the former password
+# difok=7                            # The password must have at least 7 characters that are not part of the former password
 ```
 >[!CAUTION]
 >I recommend NOT applying this rule to `root`.
 
 #### Enforce Policy For Root
 ```
-enforce_for_root  # The password policy shall apply to root as well
+enforce_for_root                     # The password policy shall apply to root as well
 ```
 
 ## `sudo` Configuration
