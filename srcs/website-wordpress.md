@@ -45,3 +45,18 @@ Upload images, videos, and documents at `Media → Library`. WordPress automatic
 
 **Tags** are non-hierarchical keywords for specific topics.
 
+## Essential Settings
+### Permalinks
+`Settings → Permalinks` controls URL structure. 
+"Post name" structure (`yoursite.com/post-title`) is recommended for SEO.
+
+### Reading Settings
+`Settings → Reading` determines your homepage (latest posts or static page) and how many posts appear per page.
+
+## User Roles
+WordPress has five default roles with different permissions:
+1. **Administrator**: Full access to everything
+2. **Editor**: Manage and publish all posts/pages
+3. **Author**: Write and publish own posts
+4. **Contributor**: Write posts but can't publish
+5. **Subscriber**: Only manage their profile
