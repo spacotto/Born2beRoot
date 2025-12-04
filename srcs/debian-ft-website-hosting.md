@@ -4,20 +4,21 @@
 - Domain name (optional, but recommended)
 - Basic command line knowledge
 
-## Step 1: Update System
+## Host WordPress on Debian VM
+### Step 1: Update System
 ```
 sudo apt update
 sudo apt upgrade -y
 ```
 
-## Step 2: Install Lighttpd
+### Step 2: Install Lighttpd
 ```
 sudo apt install lighttpd -y
 sudo systemctl enable lighttpd
 sudo systemctl start lighttpd
 ```
 
-## Step 3: Install MariaDB
+### Step 3: Install MariaDB
 ```
 sudo apt install mariadb-server -y
 sudo systemctl enable mariadb
@@ -31,7 +32,7 @@ sudo mysql_secure_installation
 >3. disallow remote root login
 >4. remove test database
 
-## Step 4: Install PHP
+### Step 4: Install PHP
 ```
 sudo apt install php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-zip php-imagick -y
 sudo systemctl enable php8.2-fpm
@@ -40,7 +41,7 @@ sudo systemctl start php8.2-fpm
 >[!NOTE]
 >PHP version may vary (8.1, 8.2, etc.). Adjust commands accordingly.
 
-## Step: Configure Lighttpd for PHP
+### Step: Configure Lighttpd for PHP
 Enable FastCGI modules:
 ```
 sudo lighttpd-enable-mod fastcgi
@@ -64,7 +65,7 @@ Restart Lighttpd:
 sudo systemctl restart lighttpd
 ```
 
-## Step 5: Create WordPress Database
+### Step 5: Create WordPress Database
 ```
 sudo mysql -u root -p
 ```
@@ -77,7 +78,7 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
-## Step 6: Download and Install WordPress
+### Step 6: Download and Install WordPress
 ```
 cd /tmp
 wget https://wordpress.org/latest.tar.gz
@@ -87,7 +88,7 @@ sudo chown -R www-data:www-data /var/www/html/wordpress
 sudo chmod -R 755 /var/www/html/wordpress
 ```
 
-## Step 7: Configure Lighttpd for WordPress
+### Step 7: Configure Lighttpd for WordPress
 Create or edit the Lighttpd configuration:
 ```
 sudo nano /etc/lighttpd/lighttpd.conf
@@ -114,7 +115,7 @@ sudo lighttpd-enable-mod rewrite
 sudo systemctl restart lighttpd
 ```
 
-## Step 8: Configure WordPress
+### Step 8: Configure WordPress
 Create WordPress Configuration
 ```
 cd /var/www/html/wordpress
@@ -138,7 +139,7 @@ sudo find /var/www/html/wordpress -type d -exec chmod 755 {} \;
 sudo find /var/www/html/wordpress -type f -exec chmod 644 {} \;
 ```
 
-## Step 9: Set Up Firewall
+### Step 9: Set Up Firewall
 ```
 sudo apt install ufw -y
 sudo ufw allow OpenSSH
@@ -147,14 +148,14 @@ sudo ufw allow 443/tcp
 sudo ufw enable
 ```
 
-## Step 10: Complete WordPress Installation
+### Step 10: Complete WordPress Installation
 Visit `http://your-server-ip` in your browser and follow the WordPress installation wizard:
 1. Select language
 2. Enter site title, username, password, and email
 3. Click "Install WordPress"
 4. Log in to admin panel at /wp-admin
 
-## Step 11: Install SSL Certificate (Optional)
+### Step 11: Install SSL Certificate (Optional)
 ```
 sudo apt install certbot -y
 sudo systemctl stop lighttpd
