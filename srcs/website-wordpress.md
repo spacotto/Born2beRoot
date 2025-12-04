@@ -75,3 +75,23 @@ Use a backup plugin or your host's backup service. Back up both files and databa
 - Use SSL/HTTPS
 - Limit login attempts
 - Remove unused themes and plugins
+
+## Troubleshooting
+### White Screen of Death
+Usually caused by plugin/theme conflicts or memory limits. 
+Disable plugins via FTP by renaming the plugins folder.
+
+### 404 Errors
+Go to `Settings → Permalinks` and click `Save Changes` to regenerate rewrite rules.
+
+### Locked Out
+Reset password via database or FTP by uploading a password reset script.
+
+## File Structure
+Key directories:
+```
+/wp-content/themes/     # Theme files
+/wp-content/plugins/    # Plugin files
+/wp-content/uploads/    # Media files
+/wp-config.php          # Configuration file (database credentials)
+```
