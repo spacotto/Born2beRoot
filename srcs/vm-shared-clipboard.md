@@ -1,4 +1,6 @@
 # Sharing Clipboard Between Ubuntu Host and Debian VM in VirtualBox
+>[!CAUTION]
+>This work only if you have a GUI (Graphical User Interface)!
 
 ## Prerequisites
 - VirtualBox 7.0.20 installed on Ubuntu
