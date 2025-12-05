@@ -52,7 +52,6 @@ sudo nano /usr/local/bin/monitoring.sh
 ### 2. Configure the script
 ```
 #!/bin/bash
-
 # System Monitoring Script
 # Displays system information
 
@@ -80,7 +79,12 @@ DISK_PERCENT=$(df --total | grep total | awk '{print $5}')
 LAST_BOOT=$(who -b | awk '{print $3, $4}')
 
 # LVM Status
-LVM_STATUS=$(if [ $(lsblk | grep "lvm" | wc -l) -gt 0 ]; then echo "active"; else echo "inactive"; fi)
+LVM_STATUS=""
+if [ $(lsblk | grep "lvm" | wc -l) -gt 0 ]; then 
+    LVM_STATUS="ACTIVE"
+else 
+    LVM_STATUS="INACTIVE"
+fi
 
 # Active TCP Connections
 TCP_CONN=$(ss -t | grep ESTAB | wc -l)
@@ -96,41 +100,29 @@ MAC_ADDR=$(ip link show | grep "link/ether" | awk '{print $2}' | head -n1)
 # Number of commands executed with the sudo program
 SUDO_CMDS=$(journalctl _COMM=sudo 2>/dev/null | grep COMMAND | wc -l)
 
-# Message to display
+# Broadcast to all terminals
 MESSAGE="
 ==============================================================================
-                           SYSTEM MONITORING REPORT
+                            SYSTEM MONITORING REPORT
+                              $(date '+%Y-%m-%d  %H:%M:%S')
 ==============================================================================
+♦ ARCHITECTURE ♦ $ARCH
 
-Date:            $(date '+%Y-%m-%d %H:%M:%S')
-
-Architecture:    $ARCH
-
-Physical CPUs:   $PCPU
-Virtual CPUs:    $VCPU
-CPU Load:        $CPU_LOAD
-
-Memory Usage:    ${RAM_USED}MB / ${RAM_TOTAL}MB (${RAM_PERCENT}%)
-
-Disk Usage:      ${DISK_USED} / ${DISK_TOTAL} (${DISK_PERCENT})
-
-Last Boot:       $LAST_BOOT
-
-LVM Status:      $LVM_STATUS
-
-TCP Connections: $TCP_CONN
-
-Users Logged In: $USER_COUNT
-
-IPv4 Address:    $IP_ADDR
-MAC Address:     $MAC_ADDR
-
-Sudo Commands:   $SUDO_CMDS
+                          Physical CPUs: $PCPU
+                           Virtual CPUs: $VCPU
+                               CPU Load: $CPU_LOAD
+                           Memory Usage: ${RAM_USED}MB / ${RAM_TOTAL}MB (${RAM_PERCENT}%)
+                             Disk Usage: ${DISK_USED} / ${DISK_TOTAL} (${DISK_PERCENT})
+                              Last Boot: $LAST_BOOT
+                             LVM Status: $LVM_STATUS
+                        TCP Connections: $TCP_CONN
+                        Users Logged In: $USER_COUNT
+                           IPv4 Address: $IP_ADDR
+                            MAC Address: $MAC_ADDR
+                          Sudo Commands: $SUDO_CMDS
 
 ==============================================================================
 "
-
-# Broadcast to all terminals
 echo "$MESSAGE" | wall
 ```
 
