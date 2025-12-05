@@ -80,7 +80,7 @@ DISK_PERCENT=$(df --total | grep total | awk '{print $5}')
 LAST_BOOT=$(who -b | awk '{print $3, $4}')
 
 # LVM Status
-LVM_ACTIVE=$(if [ $(lsblk | grep "lvm" | wc -l) -gt 0 ]; then echo "active"; else echo "inactive"; fi)
+LVM_STATUS=$(if [ $(lsblk | grep "lvm" | wc -l) -gt 0 ]; then echo "active"; else echo "inactive"; fi)
 
 # Active TCP Connections
 TCP_CONN=$(ss -t | grep ESTAB | wc -l)
@@ -116,7 +116,7 @@ Disk Usage:      ${DISK_USED} / ${DISK_TOTAL} (${DISK_PERCENT})
 
 Last Boot:       $LAST_BOOT
 
-LVM Active:      $LVM_ACTIVE
+LVM Status:      $LVM_STATUS
 
 TCP Connections: $TCP_CONN
 
