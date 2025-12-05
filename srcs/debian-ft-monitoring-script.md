@@ -136,7 +136,7 @@ echo "$MESSAGE" | wall
 
 ### 3. Make the script executable
 ```
-chmod 700 sudo nano /usr/local/bin/monitoring.sh    # chmod +x gives the same result
+chmod 700 /usr/local/bin/monitoring.sh    # chmod +x gives the same result
 ```
 
 ### 4. Test if the script works
