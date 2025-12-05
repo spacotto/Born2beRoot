@@ -17,7 +17,8 @@ Devices → Insert Guest Additions CD Image
 Mount and install:
 ```
 sudo mount /dev/cdrom /mnt
-sudo /mnt/VBoxLinuxAdditions.run
+cd /mnt
+sudo ./VBoxLinuxAdditions.run
 sudo reboot
 ```
 
