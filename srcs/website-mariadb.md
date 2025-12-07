@@ -158,3 +158,85 @@ innodb_buffer_pool_size
 ```
 sudo systemctl restart mariadb
 ```
+
+## Common Data Types
+
+- Numeric: INT, BIGINT, DECIMAL, FLOAT, DOUBLE
+- String: VARCHAR(n), CHAR(n), TEXT, MEDIUMTEXT, LONGTEXT
+- Date/Time: DATE, TIME, DATETIME, TIMESTAMP
+- Binary: BLOB, MEDIUMBLOB, LONGBLOB
+- Other: ENUM, JSON (MariaDB 10.2+)
+
+## Joins
+- Inner join:
+```
+SELECT users.username, orders.order_id
+FROM users
+INNER JOIN orders ON users.id = orders.user_id;
+```
+- Left join:
+```
+SELECT users.username, orders.order_id
+FROM users
+LEFT JOIN orders ON users.id = orders.user_id;
+```
+
+## Transactions
+```
+START TRANSACTION;
+UPDATE accounts SET balance = balance - 100 WHERE id = 1;
+UPDATE accounts SET balance = balance + 100 WHERE id = 2;
+COMMIT;
+```
+Rollback if something goes wrong:
+```
+ROLLBACK;
+```
+
+## Performance Tips
+- Use indexes on columns frequently used in `WHERE`, `JOIN`, and `ORDER BY` clauses
+- Avoid using `SELECT *` in production code
+- Use `EXPLAIN` to analyse query performance:
+```
+EXPLAIN SELECT * FROM users WHERE username = 'john';
+```
+- Optimise tables periodically:
+```
+OPTIMIZE TABLE users;
+```
+- Monitor slow queries by enabling the slow query log
+
+## Security Best Practices
+- Never use the root account for applications
+- Create specific users with minimal required privileges
+- Use strong passwords
+- Keep MariaDB updated
+- Disable remote root login
+- Use SSL/TLS for connections over networks
+- Regularly backup your databases
+
+## Useful Commands
+- Check MariaDB version:
+```
+SELECT VERSION();
+```
+- Show current user:
+```
+SELECT USER();
+```
+- Show process list:
+```
+SHOW PROCESSLIST;
+```
+- Show table status:
+```
+SHOW TABLE STATUS FROM mydb;
+```
+- Check table for errors:
+```
+CHECK TABLE users;
+```
+- Repair a table:
+```
+REPAIR TABLE users;
+```
