@@ -141,3 +141,53 @@ Changing the port from 22 to a **non-standard port** helps reduce automated atta
 ```
 Port 4242  # It is 22 by default
 ```
+
+## Connect Host and VM through SSH
+### Find VM's IP Address
+On the VM, run:
+```
+ip addr show
+```
+or
+```
+hostname -I
+```
+Look for the IP address (e.g., `192.168.1.100`).
+
+### Connect from Host
+Basic connection:
+```
+ssh username@vm_ip_address
+```
+>[!NOTE]
+>You'll be prompted for the user's password.
+
+### SSH Key Authentication (Recommended)
+1. Generate SSH key on host (if you don't have one):
+```
+ssh-keygen -t ed25519    # Press Enter to accept defaults.
+```
+2. Copy key to VM:
+```
+ssh-copy-id username@vm_ip_address
+```
+3. Connect without password:
+```
+ssh username@vm_ip_address
+```
+
+### Troubleshooting
+#### Connection refused
+Check if SSH service is running on VM:
+```
+sudo systemctl status ssh    # Or sshd
+```
+#### Firewall blocking
+Allow SSH through firewall on VM:
+```
+sudo ufw allow ssh
+```
+#### Different port
+```
+ssh -p 2222 username@vm_ip_address
+```
