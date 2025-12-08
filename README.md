@@ -113,3 +113,4 @@ As part of my 42 journey, I am creating my first Server in a Virtual Machine (VM
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-website-hosting.md) you can find the details concerning the setup of a website on a Debian server.
 
 ## Resources
+- [**Debian 13 (Trixie) Documentation**](https://www.debian.org/releases/trixie/release-notes/)
