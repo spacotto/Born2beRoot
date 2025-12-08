@@ -2,7 +2,7 @@
 >This is a work in progress.
 
 # Born2beRoot
-_This project has been created as part of the 42 curriculum by spacotto_
+_This project has been created as part of the 42 curriculum by spacotto._
 
 ## Description
 As part of my 42 journey, I am creating my first Server in a Virtual Machine (VM). Since this project does not produce source code or traditional archives, I shall provide comprehensive documentation.
