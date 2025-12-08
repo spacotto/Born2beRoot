@@ -51,10 +51,10 @@ sudo mariadb-secure-installation        # This will trigger the WARNING mentione
 Follow these steps to secure MariaDB:
 ```
 Enter root password
-Switch to unix_socket authentication?        # Enter N
-Change the root password?                    # Enter N
-Remove anonymous users?                      # Enter Y
-Disallow root login remotely?                # Enter Y
+Switch to unix_socket authentication?        # Enter N (You already have your root account protected, so you can safely answer 'n'.)
+Change the root password?                    # Enter N (You already have your root account protected, so you can safely answer 'n'.)
+Remove anonymous users?                      # Enter Y (By default, a MariaDB installation has an anonymous user, allowing anyone to log into MariaDB without having to have a user account created for them. This is intended only for testing, and to make the installation go a bit smoother.  You should remove them before moving into a production environment.)
+Disallow root login remotely?                # Enter Y (Normally, root should only be allowed to connect from 'localhost'. This ensures that someone cannot guess at the root password from the network.)
 Remove test database and access to it?       # Enter Y
 Reload privilege tables now?                 # Enter Y
 ```
