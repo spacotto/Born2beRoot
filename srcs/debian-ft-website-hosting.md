@@ -44,16 +44,20 @@ sudo systemctl enable mariadb
 sudo systemctl start mariadb
 sudo mariadb-secure-installation        # This will trigger the WARNING mentioned below
 ```
->[!NOTE]
->Follow the prompts to secure MariaDB:
->1. set root password
->2. remove anonymous users
->3. disallow remote root login
->4. remove test database
 
 >[!WARNING]
 >MariaDB is secure by default in Debian. Running this script is useless at best, and misleading at worst. This script will be removed in a future MariaDB release in Debian. Please read `mariadb-server.README.Debian` for details.
 
+Follow these steps to secure MariaDB:
+```
+Enter root password
+Switch to unix_socket authentication?        # Enter N
+Change the root password?                    # Enter N
+Remove anonymous users?                      # Enter Y
+Disallow root login remotely?                # Enter Y
+Remove test database and access to it?       # Enter Y
+Reload privilege tables now?                 # Enter Y
+```
 
 ### Step 4: Install PHP
 >[!IMPORTANT]
