@@ -73,7 +73,19 @@ This aims to teach essential skills in operating system installation, partitioni
 | Interface           | CLI only (simple commands)                       | CLI and GUI tools available                            |
 
 ## VirtualBox vs UTM
--
+| Aspect              | VirtualBox                                       | UTM                                                    |
+| : ----------------- | :----------------------------------------------- | :----------------------------------------------------- |
+| Platform Support    | Windows, Linux, Intel Mac                        | macOS (especially Apple Silicon)                       |
+| Apple Silicon       | Not supported                                    | Native support, optimized performance                  |
+| Maturity            | Highly mature, industry standard                 | Relatively new, growing ecosystem                      |
+| Cost                | Free and open-source                             | Free and open-source                                   |
+| Performance         | Excellent on supported platforms                 | Excellent on Apple Silicon, uses QEMU                  |
+| Features            | Extensive (snapshots, shared folders, etc.)      | Growing feature set, simpler interface                 |
+| Documentation       | Extensive, decades of resources                  | Less documentation, smaller community                  |
+| Ease of Use         | User-friendly GUI, well-established              | Clean modern interface, intuitive                      |
+| Snapshots           | Robust snapshot system                           | Supports snapshots                                     |
+| Community           | Very large, widespread adoption                  | Smaller but growing                                    |
+| Resource Usage      | Can be resource-intensive                        | Lightweight, efficient on M-series chips               |
 
 # Instructions
 >[!CAUTION]
