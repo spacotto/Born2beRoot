@@ -34,7 +34,7 @@ sudo mv wordpress/ html
 sudo chmod -R 755 html
 ```
 
-### Step 3: Install MariaDB
+### Step 4: Install MariaDB
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-mariadb.md) you can find more details concerning MariaDB.
 
@@ -59,7 +59,7 @@ Remove test database and access to it?       # Enter Y (By default, MariaDB come
 Reload privilege tables now?                 # Enter Y (Reloading the privilege tables will ensure that all changes made so far will take effect immediately.)
 ```
 
-### Step 4: Install PHP
+### Step 5: Install PHP
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-php.md) you can find more details concerning PHP.
 
@@ -95,7 +95,7 @@ Restart Lighttpd:
 sudo systemctl restart lighttpd
 ```
 
-### Step 5: Create WordPress Database
+### Step 6: Create WordPress Database
 ```
 sudo mysql -u root -p
 ```
@@ -108,7 +108,7 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
-### Step 6: Download and Install WordPress
+### Step 7: Download and Install WordPress
 ```
 cd /tmp
 wget https://wordpress.org/latest.tar.gz
@@ -118,7 +118,7 @@ sudo chown -R www-data:www-data /var/www/html/wordpress
 sudo chmod -R 755 /var/www/html/wordpress
 ```
 
-### Step 7: Configure Lighttpd for WordPress
+### Step 8: Configure Lighttpd for WordPress
 Create or edit the Lighttpd configuration:
 ```
 sudo nano /etc/lighttpd/lighttpd.conf
@@ -145,7 +145,7 @@ sudo lighttpd-enable-mod rewrite
 sudo systemctl restart lighttpd
 ```
 
-### Step 8: Configure WordPress
+### Step 9: Configure WordPress
 Create WordPress Configuration
 ```
 cd /var/www/html/wordpress
@@ -169,7 +169,7 @@ sudo find /var/www/html/wordpress -type d -exec chmod 755 {} \;
 sudo find /var/www/html/wordpress -type f -exec chmod 644 {} \;
 ```
 
-### Step 9: Set Up Firewall
+### Step 10: Set Up Firewall
 ```
 sudo apt install ufw -y
 sudo ufw allow OpenSSH
@@ -178,7 +178,7 @@ sudo ufw allow 443/tcp
 sudo ufw enable
 ```
 
-### Step 10: Complete WordPress Installation
+### Step 11: Complete WordPress Installation
 Visit `http://your-server-ip` in your browser and follow the WordPress installation wizard:
 1. Select language
 2. Enter site title, username, password, and email
