@@ -46,7 +46,17 @@ This aims to teach essential skills in operating system installation, partitioni
 >Find out more about my OS choice [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/os-choice.md).
 
 ## AppArmor vs SELinux
--
+| Aspect              | AppArmor                                         | SELinux                                                |
+| :------------------ | :----------------------------------------------- | :----------------------------------------------------- |
+| Complexity          | Simple to configure and understand               | Complex policy language, steep learning curve          |
+| Security Model      | Path-based (uses file paths)                     | Label-based (uses security contexts)                   |
+| Default On          | Debian and Ubuntu                                | Rocky, RHEL, Fedora                                    |
+| Granularity         | Less granular control                            | Highly granular, comprehensive security                |
+| Learning Curve      | Gentle, beginner-friendly                        | Steep, requires significant learning                   |
+| Troubleshooting     | Easier to debug and fix issues                   | Difficult to troubleshoot, cryptic errors              |
+| Security Robustness | Can be bypassed with hardlinks/symlinks          | More robust, label-based system                        |
+| Industry Use        | Common in Debian-based systems                   | Industry standard in enterprise environments           |
+| Profile Creation    | More intuitive, human-readable                   | Requires understanding of policy language              |
 
 ## UFW vs firewalld
 -
