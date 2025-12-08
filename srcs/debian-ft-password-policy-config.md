@@ -106,7 +106,7 @@ Defaults  passwd_tries=3
 #### Wrong sudo password error message
 An error message occurs when a wrong password is entered when using sudo:
 ```
-Defaults  error_message="Invalid sudo password: try again."
+Defaults  badpass_message="Invalid sudo password: try again."
 ```
 
 #### sudo commands log
