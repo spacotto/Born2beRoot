@@ -32,7 +32,7 @@ nano /etc/apt/sources.list
 ```
 Then, hide the 1st line with `#`, and add the following line:
 ```
-deb http://deb.debian.org/debian/ trixie contrib main non-free firmware
+deb https://deb.debian.org/debian/ trixie contrib main non-free-firmware
 ```
 
 ## Essential `sudo` Commands
