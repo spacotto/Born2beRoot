@@ -5,9 +5,6 @@
 - Basic command line knowledge
 
 ## Host WordPress on Debian VM
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-wordpress.md) you can find more details concerning WordPress.
-
 ### Step 1: Update System
 ```
 sudo apt update
@@ -22,6 +19,19 @@ sudo apt upgrade -y
 sudo apt install lighttpd -y
 sudo systemctl enable lighttpd
 sudo systemctl start lighttpd
+```
+### Step 3: Install WordPress
+>[!IMPORTANT]
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-wordpress.md) you can find more details concerning WordPress.
+
+```
+sudo apt install wget zip                                  # Use wget to retrieve files, create mirrors of websites, and handle downloads in the background
+cd /var/www/
+sudo wget https://en.wordpress.org/latest-en_GB.zip        # This is the English version: change the parameters according to your language needs
+sudo unzip latest-en_GB.zip
+sudo mv html/ html_old/
+sudo mv wordpress/ html
+sudo chmod -R 755 html
 ```
 
 ### Step 3: Install MariaDB
