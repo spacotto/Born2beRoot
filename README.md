@@ -74,7 +74,7 @@ This aims to teach essential skills in operating system installation, partitioni
 
 ## VirtualBox vs UTM
 | Aspect              | VirtualBox                                       | UTM                                                    |
-| : ----------------- | :----------------------------------------------- | :----------------------------------------------------- |
+| :------------------ | :----------------------------------------------- | :----------------------------------------------------- |
 | Platform Support    | Windows, Linux, Intel Mac                        | macOS (especially Apple Silicon)                       |
 | Apple Silicon       | Not supported                                    | Native support, optimized performance                  |
 | Maturity            | Highly mature, industry standard                 | Relatively new, growing ecosystem                      |
