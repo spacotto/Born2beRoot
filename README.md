@@ -42,6 +42,9 @@ This aims to teach essential skills in operating system installation, partitioni
 | Use Case           | General purpose, education, servers                  | Enterprise production environments                   |
 | Community          | Large, diverse community                             | Growing community, backed by enterprise users        |
 
+### Why Debian
+I chose Debian 13 (Trixie) over Rocky Linux because, as a beginner, I wanted a system that is simple to set up, well-documented, and widely supported by the community. Debian is known for its stability and ease of use, making it ideal for learning the basics of Linux without being overwhelmed by complexity. Moreover, since I'm not specifically interested in working with Red Hat Enterprise Linux (RHEL) environments or their derivatives, Rocky Linux's enterprise focus didn't match my needs. Debian 13 lets me explore, learn, and customise my VM with confidence, while providing plenty of helpful resources for newcomers.
+
 >[!NOTE]
 >Find out more about my OS choice [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/os-choice.md).
 
