@@ -14,14 +14,15 @@ This aims to teach essential skills in operating system installation, partitioni
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-overview.md) you can find more information on **virtualisation** and **VMs**.
 
-## Virtualisation Software (Hypervisor): VirtualBox
+## My Choices
+### Virtualisation Software (Hypervisor): VirtualBox
 - **Software:** VirtualBox
 - **Version:** 7.0.20
 
 >[!NOTE]
 >Find out more about hypervisors [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md).
 
-## Operating System (OS): Debian (Trixie)
+### Operating System (OS): Debian (Trixie)
 - **OS:** Debian
 - **Version:** 13.2.0 (amd64)
 
@@ -30,7 +31,16 @@ This aims to teach essential skills in operating system installation, partitioni
 
 # Project description
 ## Debian vs Rocky Linux
--
+| Aspect             | Debian                                               | Rocky Linux                                          |
+| :----------------- | :--------------------------------------------------- | :--------------------------------------------------- |
+| Stability          | Highly stable, focuses on thoroughly tested packages | Enterprise-grade stability, RHEL binary compatible   |
+| Documentation      | Extensive, beginner-friendly resources               | Strong enterprise documentation, RedHat-based guides |
+| Package Management | APT – intuitive and widely used                      | DNF/YUM – powerful but less familiar to beginners    |
+| Package Repository | Massive repository, wide software availability       | Smaller but curated for enterprise use               |
+| Learning Curve     | Gentle, great for beginners                          | Steeper, more enterprise-focused                     |
+| Update Cycle       | Packages may be older (stability focus)              | Conservative updates with enterprise focus           |
+| Use Case           | General purpose, education, servers                  | Enterprise production environments                   |
+| Community          | Large, diverse community                             | Growing community, backed by enterprise users        |
 
 ## AppArmor vs SELinux
 -
