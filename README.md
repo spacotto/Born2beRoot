@@ -42,6 +42,9 @@ This aims to teach essential skills in operating system installation, partitioni
 | Use Case           | General purpose, education, servers                  | Enterprise production environments                   |
 | Community          | Large, diverse community                             | Growing community, backed by enterprise users        |
 
+>[!NOTE]
+>Find out more about my OS choice [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/os-choice.md).
+
 ## AppArmor vs SELinux
 -
 
