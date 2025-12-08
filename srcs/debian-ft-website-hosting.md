@@ -65,11 +65,17 @@ Reload privilege tables now?                 # Enter Y (Reloading the privilege 
 
 ```
 sudo apt install php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-zip php-imagick -y
-sudo systemctl enable php8.2-fpm
-sudo systemctl start php8.2-fpm
+sudo systemctl enable php8.4-fpm
+sudo systemctl start php8.4-fpm
 ```
 >[!NOTE]
 >PHP version may vary (8.1, 8.2, etc.). Adjust commands accordingly.
+
+>[!TIP]
+>Check your PHP version by running this command:
+>```
+>php -v
+>```
 
 ### Step: Configure Lighttpd for PHP
 Enable FastCGI modules:
