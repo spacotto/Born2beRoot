@@ -14,6 +14,7 @@ This aims to teach essential skills in operating system installation, partitioni
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-overview.md) you can find more information on **virtualisation** and **VMs**.
 
+# Project description
 ## My Choices
 ### Virtualisation Software (Hypervisor): VirtualBox
 - **Software:** VirtualBox
@@ -29,7 +30,6 @@ This aims to teach essential skills in operating system installation, partitioni
 >[!NOTE]
 >Find out more about OS [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-os.md).
 
-# Project description
 ## Debian vs Rocky Linux
 | Aspect             | Debian                                               | Rocky Linux                                          |
 | :----------------- | :--------------------------------------------------- | :--------------------------------------------------- |
