@@ -97,15 +97,15 @@ sudo systemctl restart lighttpd
 
 ### Step 6: Create WordPress Database
 ```
-sudo mysql -u root -p
+sudo mariadb
 ```
 Inside MariaDB:
 ```
-CREATE DATABASE wordpress;
-CREATE USER 'wpuser'@'localhost' IDENTIFIED BY 'strong_password';
-GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost';
+CREATE DATABASE wp_database;
+CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';        # Enter your user instead of "user" and enter your chosen password instead of "password".
+GRANT ALL PRIVILEGES ON wp_database.* TO 'user'@'localhost';
 FLUSH PRIVILEGES;
-EXIT;
+exit
 ```
 
 ### Step 7: Download and Install WordPress
