@@ -59,7 +59,18 @@ This aims to teach essential skills in operating system installation, partitioni
 | Profile Creation    | More intuitive, human-readable                   | Requires understanding of policy language              |
 
 ## UFW vs firewalld
--
+| Aspect              | UFW (Uncomplicated Firewall)                     | firewalld                                              |
+| :------------------ | :----------------------------------------------- | :----------------------------------------------------- |
+| Full Name           | Uncomplicated Firewall                           | FirewallD                                              |
+| Complexity          | Simple, straightforward syntax                   | More complex, feature-rich                             |
+| Learning Curve      | Very easy, beginner-friendly                     | Moderate, requires understanding zones                 |
+| Default On          | Debian and Ubuntu                                | Rocky, RHEL, Fedora                                    |
+| Configuration       | Command-line with simple syntax                  | Zone-based configuration system                        |
+| Dynamic Management  | Static rules (requires reload)                   | Dynamic, no restart needed for changes                 |
+| Use Case            | Simple firewall needs, basic servers             | Complex networking, multiple interfaces                |
+| Zones Concept       | No zone support                                  | Supports multiple trust zones                          |
+| Features            | Basic but sufficient for most cases              | Advanced features for complex setups                   |
+| Interface           | CLI only (simple commands)                       | CLI and GUI tools available                            |
 
 ## VirtualBox vs UTM
 -
