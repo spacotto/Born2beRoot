@@ -42,7 +42,7 @@ sudo chmod -R 755 html
 sudo apt install mariadb-server -y
 sudo systemctl enable mariadb
 sudo systemctl start mariadb
-sudo mariadb-secure-installation        # See the NOTE and WARNING below
+sudo mariadb-secure-installation        # This will trigger the WARNING mentioned below
 ```
 >[!NOTE]
 >Follow the prompts to secure MariaDB:
