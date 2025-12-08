@@ -5,13 +5,13 @@
 - Basic command line knowledge
 
 ## Host WordPress on Debian VM
-### Step 1: Update System
+### Update System
 ```
 sudo apt update
 sudo apt upgrade -y
 ```
 
-### Step 2: Install Lighttpd
+### Install Lighttpd
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-lighttpd.md#basic-configuration) you can find more details concerning Lighttpd.
 
@@ -20,21 +20,20 @@ sudo apt install lighttpd -y
 sudo systemctl enable lighttpd
 sudo systemctl start lighttpd
 ```
-### Step 3: Install WordPress
+### Install WordPress
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-wordpress.md) you can find more details concerning WordPress.
 
 ```
-sudo apt install wget zip                                  # Use wget to retrieve files, create mirrors of websites, and handle downloads in the background
-cd /var/www/
-sudo wget https://en.wordpress.org/latest-en_GB.zip        # This is the English version: change the parameters according to your language needs
-sudo unzip latest-en_GB.zip
-sudo mv html/ html_old/
-sudo mv wordpress/ html
-sudo chmod -R 755 html
+cd /tmp
+wget https://wordpress.org/latest.tar.gz                        # Use wget to retrieve files, create mirrors of websites, and handle downloads in the background
+tar -xvzf latest.tar.gz
+sudo mv wordpress /var/www/html/
+sudo chown -R www-data:www-data /var/www/html/wordpress
+sudo chmod -R 755 /var/www/html/wordpress
 ```
 
-### Step 4: Install MariaDB
+### Install MariaDB
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-mariadb.md) you can find more details concerning MariaDB.
 
@@ -59,7 +58,7 @@ Remove test database and access to it?       # Enter Y (By default, MariaDB come
 Reload privilege tables now?                 # Enter Y (Reloading the privilege tables will ensure that all changes made so far will take effect immediately.)
 ```
 
-### Step 5: Install PHP
+### Install PHP
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-php.md) you can find more details concerning PHP.
 
@@ -77,7 +76,7 @@ sudo systemctl start php8.4-fpm
 >php -v
 >```
 
-### Step: Configure Lighttpd for PHP
+### Configure Lighttpd for PHP
 Enable FastCGI modules:
 ```
 sudo lighttpd-enable-mod fastcgi
@@ -101,7 +100,7 @@ Restart Lighttpd:
 sudo systemctl restart lighttpd
 ```
 
-### Step 6: Create WordPress Database
+### Create WordPress Database with MariaDB
 ```
 sudo mariadb
 ```
@@ -114,17 +113,7 @@ FLUSH PRIVILEGES;
 exit
 ```
 
-### Step 7: Download and Install WordPress
-```
-cd /tmp
-wget https://wordpress.org/latest.tar.gz
-tar -xvzf latest.tar.gz
-sudo mv wordpress /var/www/html/
-sudo chown -R www-data:www-data /var/www/html/wordpress
-sudo chmod -R 755 /var/www/html/wordpress
-```
-
-### Step 8: Configure Lighttpd for WordPress
+### Configure Lighttpd for WordPress
 Create or edit the Lighttpd configuration:
 ```
 sudo nano /etc/lighttpd/lighttpd.conf
@@ -151,7 +140,7 @@ sudo lighttpd-enable-mod rewrite
 sudo systemctl restart lighttpd
 ```
 
-### Step 9: Configure WordPress
+### Configure WordPress
 Create WordPress Configuration
 ```
 cd /var/www/html/wordpress
@@ -175,7 +164,7 @@ sudo find /var/www/html/wordpress -type d -exec chmod 755 {} \;
 sudo find /var/www/html/wordpress -type f -exec chmod 644 {} \;
 ```
 
-### Step 10: Set Up Firewall
+### Set Up Firewall
 ```
 sudo apt install ufw -y
 sudo ufw allow OpenSSH
@@ -184,14 +173,14 @@ sudo ufw allow 443/tcp
 sudo ufw enable
 ```
 
-### Step 11: Complete WordPress Installation
+### Complete WordPress Installation
 Visit `http://your-server-ip` in your browser and follow the WordPress installation wizard:
 1. Select language
 2. Enter site title, username, password, and email
 3. Click "Install WordPress"
 4. Log in to admin panel at /wp-admin
 
-### Step 12: Install SSL Certificate (Optional)
+### Install SSL Certificate (Optional)
 ```
 sudo apt install certbot -y
 sudo systemctl stop lighttpd
