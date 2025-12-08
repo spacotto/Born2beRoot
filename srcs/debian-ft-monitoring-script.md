@@ -149,7 +149,7 @@ sudo crontab -e
 
 Add timer setting:
 ```
-*/10 * * * * /usr/local/bin/monitoring.sh | wall    # Display every 10m
+*/10 * * * * /usr/local/bin/monitoring.sh    # Display every 10m
 ```
 
 >[!TIP]
