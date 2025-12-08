@@ -185,7 +185,7 @@ Visit `http://your-server-ip` in your browser and follow the WordPress installat
 3. Click "Install WordPress"
 4. Log in to admin panel at /wp-admin
 
-### Step 11: Install SSL Certificate (Optional)
+### Step 12: Install SSL Certificate (Optional)
 ```
 sudo apt install certbot -y
 sudo systemctl stop lighttpd
