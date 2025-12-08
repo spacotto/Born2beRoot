@@ -13,6 +13,7 @@ su  # You will have to enter the root password.
 
 2. **Install the `sudo` package.**
 ```
+apt update
 apt install sudo
 ```
 
@@ -32,7 +33,7 @@ nano /etc/apt/sources.list
 ```
 Then, hide the 1st line with `#`, and add the following line:
 ```
-deb https://deb.debian.org/debian/ trixie contrib main non-free-firmware
+deb http://deb.debian.org/debian/ trixie contrib main non-free-firmware
 ```
 
 ## Essential `sudo` Commands
