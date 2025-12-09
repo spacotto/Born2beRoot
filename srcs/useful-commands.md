@@ -133,6 +133,11 @@ systemctl status ssh
 sudo service ssh status
 ```
 
+SSH connect:
+```
+ssh -p n username@vm_ip_address
+```
+
 ## Script monitoring
 Open crontab (root):
 ```
@@ -140,3 +145,7 @@ su          # Connect as root
 crontab -e
 ```
 
+Disable cron at boot
+```
+sudo systemctl disable cron
+```
