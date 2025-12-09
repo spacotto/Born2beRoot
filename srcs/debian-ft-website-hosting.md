@@ -163,7 +163,7 @@ sudo systemctl restart lighttpd
 ### Configure WordPress
 Create WordPress Configuration
 ```
-cd /var/www/html/wordpress
+cd /var/www/html/
 sudo cp wp-config-sample.php wp-config.php
 sudo nano /var/www/html/wp-config.php
 ```
