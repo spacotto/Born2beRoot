@@ -14,7 +14,7 @@ sudo systemctl status UFW
 
 SSH status:
 ```
-sudo systemctl status UFW
+sudo systemctl status ssh
 ```
 
 Check chosen OS:
@@ -23,8 +23,21 @@ head -n 2 /etc/os-release
 ```
 
 ## Users & Groups
+Check user groups:
 ```
-xxx
+groups username                          # Write the username of the user you want to check
+```
+
+Check group members:
+```
+getent group group1 group2 group3 ...    # Write the names of the groups you want to check
+```
+
+Check password policy configuration:
+```
+nano /etc/login.defs                     # Password Expiration Configuration
+nano /etc/pam.d/common-password          # Password Complexity Configuration
+nano /etc/sudoers.d/sudo_config          # sudo Password Configuration
 ```
 
 ## Hostname & Partitions
