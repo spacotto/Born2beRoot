@@ -45,10 +45,21 @@ sudo chmod -R 755 /var/www/html/wordpress
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-mariadb.md) you can find more details concerning MariaDB.
 
+Install MariaDB:
 ```
 sudo apt install mariadb-server -y
-sudo systemctl enable mariadb
-sudo systemctl start mariadb
+sudo systemctl status mariadb
+```
+
+>[!TIP]
+>If MariaDB is not active, run these commands:
+>```
+>sudo systemctl enable mariadb
+>sudo systemctl start mariadb
+>```
+
+Secure the installation:
+```
 sudo mariadb-secure-installation        # This will trigger the WARNING mentioned below
 ```
 
