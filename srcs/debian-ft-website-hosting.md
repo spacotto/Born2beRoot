@@ -95,6 +95,20 @@ sudo systemctl start php8.4-fpm
 >php -v
 >```
 
+### Create WordPress Database with MariaDB
+```
+sudo mariadb
+```
+
+Inside MariaDB:
+```
+CREATE DATABASE wp_database;
+CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';        # Enter your user instead of "user" and enter your chosen password instead of "password".
+GRANT ALL PRIVILEGES ON wp_database.* TO 'user'@'localhost';
+FLUSH PRIVILEGES;
+exit
+```
+
 ### Configure Lighttpd for PHP
 Enable FastCGI modules:
 ```
@@ -117,19 +131,6 @@ fastcgi.server += ( ".php" =>
 Restart Lighttpd:
 ```
 sudo systemctl restart lighttpd
-```
-
-### Create WordPress Database with MariaDB
-```
-sudo mariadb
-```
-Inside MariaDB:
-```
-CREATE DATABASE wp_database;
-CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';        # Enter your user instead of "user" and enter your chosen password instead of "password".
-GRANT ALL PRIVILEGES ON wp_database.* TO 'user'@'localhost';
-FLUSH PRIVILEGES;
-exit
 ```
 
 ### Configure Lighttpd for WordPress
