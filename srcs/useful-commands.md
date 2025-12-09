@@ -94,23 +94,49 @@ sudo cat /var/log/sudo/sudo_config
 ## UFW 
 Check UFW status:
 ```
-dpkg -s ufw              # Display detailed status information (-s is short for --status)
-systemctl status ufw     # Non-root command
-sudo service ufw status  # Root command
+dpkg -s ufw                 # Display detailed status information (-s is short for --status)
+systemctl status ufw        # Non-root command
+sudo service ufw status     # Root command
 ```
 
-Check ports:
+Check rules:
 ```
 sudo ufw status numbered
 ss -tunlp
 sudo /usr/sbin/ufw status
 ```
 
-Allow port:
+Allow connection:
 ```
-sudo ufw allow xxx    # Enter the port ID instead of xxx
+sudo ufw allow connection   # Enter the port ID instead of rule
+```
+
+Delete rule:
+```
+sudo ufw delete allow n     # Delete by rule where n is the rule (e.g., 4242)
+
+OR
+
+sudo ufw status numbered    # List numbered rules
+sudo ufw delete n           # Enter the number corresponding to the rule in the list 
 ```
 
 ## SSH 
+Check SSH folder:
+```
+which ssh
+```
+
+SSH status:
+```
+systemctl status ssh
+sudo service ssh status
+```
 
 ## Script monitoring
+Open crontab (root):
+```
+su          # Connect as root
+crontab -e
+```
+
