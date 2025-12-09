@@ -20,16 +20,13 @@ Born2beRoot is a system administration project that introduces the fundamentals 
 - **Software:** VirtualBox
 - **Version:** 7.0.20
 
->[!NOTE]
+>[!IMPORTANT]
 >Find out more about hypervisors and my hypervisor choice [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md).
 
 ### Guest Operating System (Guest OS)
 - **OS:** Debian
 - **Version:** 13.2.0 (amd64)
 - **Codename:** trixie
-
->[!NOTE]
->Find out more about OS [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-os.md).
 
 >[!IMPORTANT]
 >Find out more about my OS choice [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/os-choice.md).
