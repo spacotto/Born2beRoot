@@ -50,11 +50,18 @@ If you're on a company Mac (especially Apple Silicon), your IT environment may b
 UTM, using Apple’s built-in virtualisation framework, doesn’t require kernel-level hacks, so it works in restricted environments.
 
 ## VirtualBox vs UTM
-| Feature                    | VirtualBox        | UTM                                        |
-| -------------------------- | ----------------- | ------------------------------------------ |
-| Supported on Apple Silicon | ❌ No             | ✅ Yes                                     |
-| Apple Intel support        | ✅ Yes            | ⚠️ Yes (slower)                            |
-| Performance                | Good              | Good on Apple Silicon (via virtualisation) |
-| Underlying tech            | VirtualBox engine | QEMU                                       |
-| Ease of use                | Easy              | Easy                                       |
-| Cost                       | Free              | Free                                       |
+|                                | VirtualBox                                  | UTM                                         |
+| ------------------------------ | ------------------------------------------- | ------------------------------------------- |
+| **Platform Support**           | Windows, Linux, Intel Mac                   | macOS (especially Apple Silicon)            |
+| **Supported on Apple Silicon** | ❌ No                                       | ✅ Yes                                      |
+| **Apple Intel support**        | ✅ Yes                                      | ⚠️ Yes (slower)                             |
+| **Maturity**                   | Highly mature, industry standard            | Relatively new, growing ecosystem           |
+| **Performance**                | Excellent on supported platforms            | Excellent on Apple Silicon                  |
+| **Underlying tech**            | VirtualBox engine                           | QEMU                                        |
+| **Features**                   | Extensive (snapshots, shared folders, etc.) | Growing feature set, simpler interface      |
+| **Documentation**              | Extensive, decades of resources             | Less documentation, smaller community       |
+| **Ease of Use**                | User-friendly GUI, well-established         | Clean modern interface, intuitive           |
+| **Snapshots**                  | Robust snapshot system                      | Supports snapshots                          |
+| **Community**                  | Very large, widespread adoption             | Smaller but growing                         |
+| **Resource Usage**             | Can be resource-intensive                   | Lightweight, efficient on M-series chips    |
+| **Cost**                       | Free and open-source                        | Free and open-source                        |
