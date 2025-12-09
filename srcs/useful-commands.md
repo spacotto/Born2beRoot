@@ -37,7 +37,6 @@ Check password policy configuration:
 ```
 nano /etc/login.defs                     # Password Expiration Configuration
 nano /etc/pam.d/common-password          # Password Complexity Configuration
-nano /etc/sudoers.d/sudo_config          # sudo Password Configuration
 ```
 
 Create user:
@@ -67,14 +66,28 @@ sudo nano /etc/hostname
 sudo nano /etc/hosts
 ```
 
-Check partition scheme
+Check partition scheme:
 ```
 lsblk
 ```
 
 ## SUDO
+Check sudo status:
 ```
-xxx
+which sudo      # Locate sudo folder
+sudo -V         # Check sudo version
+```
+
+Check sudo password policy configuration:
+```
+sudo nano /etc/sudoers.d/sudo_config    # sudo Password Configuration
+
+```
+
+Check `/var/log/sudo/`:
+```
+sudo ls /var/log/sudo/
+sudo cat /var/log/sudo/
 ```
 
 ## UFW 
