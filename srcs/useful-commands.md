@@ -76,8 +76,8 @@ lsblk
 ## SUDO
 Check sudo status:
 ```
-which sudo      # Locate sudo folder
-sudo -V         # Check sudo version
+which sudo                              # Locate sudo folder
+sudo -V                                 # Check sudo version
 ```
 
 Check sudo password policy configuration:
@@ -94,9 +94,9 @@ sudo cat /var/log/sudo/sudo_config
 ## UFW 
 Check UFW status:
 ```
-dpkg -s ufw                 # Display detailed status information (-s is short for --status)
-systemctl status ufw        # Non-root command
-sudo service ufw status     # Root command
+dpkg -s ufw                             # Display detailed status information (-s is short for --status)
+systemctl status ufw                    # Non-root command
+sudo service ufw status                 # Root command
 ```
 
 Check rules:
@@ -108,17 +108,17 @@ sudo /usr/sbin/ufw status
 
 Allow connection:
 ```
-sudo ufw allow connection   # Enter the port ID instead of rule
+sudo ufw allow connection               # Enter the port ID instead of rule
 ```
 
 Delete rule:
 ```
-sudo ufw delete allow n     # Delete by rule where n is the rule (e.g., 4242)
+sudo ufw delete allow n                 # Delete by rule where n is the rule (e.g., 4242)
 
 OR
 
-sudo ufw status numbered    # List numbered rules
-sudo ufw delete n           # Enter the number corresponding to the rule in the list 
+sudo ufw status numbered                # List numbered rules
+sudo ufw delete n                       # Enter the number corresponding to the rule in the list 
 ```
 
 ## SSH 
