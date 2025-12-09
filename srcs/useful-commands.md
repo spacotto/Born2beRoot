@@ -56,8 +56,20 @@ sudo adduser usename group_name
 ```
 
 ## Hostname & Partitions
+Check hostname:
 ```
-xxx
+hostname
+```
+
+Change hostname:
+```
+sudo nano /etc/hostname
+sudo nano /etc/hosts
+```
+
+Check partition scheme
+```
+lsblk
 ```
 
 ## SUDO
