@@ -165,13 +165,13 @@ Create WordPress Configuration
 ```
 cd /var/www/html/wordpress
 sudo cp wp-config-sample.php wp-config.php
-sudo nano wp-config.php
+sudo nano /var/www/html/wp-config.php
 ```
 
 Update these lines with your database details:
 ```
-define('DB_NAME', 'wordpress');
-define('DB_USER', 'wpuser');
+define('DB_NAME', 'wp_database');
+define('DB_USER', 'wp_user');
 define('DB_PASSWORD', 'strong_password');
 define('DB_HOST', 'localhost');
 ```
