@@ -17,9 +17,17 @@ sudo apt upgrade -y
 
 ```
 sudo apt install lighttpd -y
-sudo systemctl enable lighttpd
-sudo systemctl start lighttpd
+sudo ufw allow 80                        # Default port for web services
+sudo ufw status                          # Remember to include port 80 (VM Settings → Network → Port forwarding 80:81)
+sudo systemctl status lighttpd
 ```
+>[!TIP]
+>If lighttpd is not active, run these commands:
+>```
+>sudo systemctl enable lighttpd
+>sudo systemctl start lighttpd
+>```
+
 ### Install WordPress
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-wordpress.md) you can find more details concerning WordPress.
