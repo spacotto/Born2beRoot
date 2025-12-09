@@ -1,7 +1,7 @@
 >[!CAUTION]
 >This is a work in progress.
 
-# Description
+## Overview
 Born2beRoot is a system administration project that introduces the fundamentals of virtualisation and server configuration. The goal is to create and configure a Virtual Machine (VM) following strict security guidelines and best practices. This project aims to teach essential skills in operating system installation, partitioning, user management, security policies, and service configuration. 
 
 >[!CAUTION]
@@ -10,18 +10,23 @@ Born2beRoot is a system administration project that introduces the fundamentals 
 >[!NOTE]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-overview.md) you can find more information on **virtualisation** and **VMs**.
 
-# Project description
-## My Choices
-### Virtualisation Software (Hypervisor): VirtualBox
+## Requirements
+### Host Operating System (Host OS)
+- **OS:** Ubuntu
+- **Version:** 22.04.4 LTS
+- **Codename:** jammy
+
+### Virtualisation Software (Hypervisor)
 - **Software:** VirtualBox
 - **Version:** 7.0.20
 
 >[!NOTE]
->Find out more about hypervisors [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md).
+>Find out more about hypervisors and my hypervisor choice [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md).
 
-### Operating System (OS): Debian (Trixie)
+### Guest Operating System (Guest OS)
 - **OS:** Debian
 - **Version:** 13.2.0 (amd64)
+- **Codename:** trixie
 
 >[!NOTE]
 >Find out more about OS [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-os.md).
