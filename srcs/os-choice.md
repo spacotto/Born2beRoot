@@ -20,43 +20,43 @@ A **Guest Operating System** (Guest OS) is **software installed within a VM that
 >What’s not the same: **Debian** uses the `APT` package manager and `.deb` packages, while **Rocky Linux** is a **Red Hat Enterprise Linux clone** and uses `DNF/YUM` with `.rpm` packages.
 
 ### Comparison Table: Debian vs Rocky Linux
-|                    | Debian                                               | Rocky Linux                                          |
-| :----------------- | :--------------------------------------------------- | :--------------------------------------------------- |
-| Stability          | Highly stable, focuses on thoroughly tested packages | Enterprise-grade stability, RHEL binary compatible   |
-| Documentation      | Extensive, beginner-friendly resources               | Strong enterprise documentation, RedHat-based guides |
-| Package Management | APT – intuitive and widely used                      | DNF/YUM – powerful but less familiar to beginners    |
-| Package Repository | Massive repository, wide software availability       | Smaller but curated for enterprise use               |
-| Learning Curve     | Gentle, great for beginners                          | Steeper, more enterprise-focused                     |
-| Update Cycle       | Packages may be older (stability focus)              | Conservative updates with enterprise focus           |
-| Use Case           | General purpose, education, servers                  | Enterprise production environments                   |
-| Community          | Large, diverse community                             | Growing community, backed by enterprise users        |
+|                        | Debian                                               | Rocky Linux                                          |
+| :--------------------- | :--------------------------------------------------- | :--------------------------------------------------- |
+| **Stability**          | Highly stable, focuses on thoroughly tested packages | Enterprise-grade stability, RHEL binary compatible   |
+| **Documentation**      | Extensive, beginner-friendly resources               | Strong enterprise documentation, RedHat-based guides |
+| **Package Management** | APT – intuitive and widely used                      | DNF/YUM – powerful but less familiar to beginners    |
+| **Package Repository** | Massive repository, wide software availability       | Smaller but curated for enterprise use               |
+| **Learning Curve**     | Gentle, great for beginners                          | Steeper, more enterprise-focused                     |
+| **Update Cycle**       | Packages may be older (stability focus)              | Conservative updates with enterprise focus           |
+| **Use Case**           | General purpose, education, servers                  | Enterprise production environments                   |
+| **Community**          | Large, diverse community                             | Growing community, backed by enterprise users        |
 
 ### Comparison Table: AppArmor vs SELinux
-| Aspect              | AppArmor                                         | SELinux                                                |
-| :------------------ | :----------------------------------------------- | :----------------------------------------------------- |
-| Complexity          | Simple to configure and understand               | Complex policy language, steep learning curve          |
-| Security Model      | Path-based (uses file paths)                     | Label-based (uses security contexts)                   |
-| Default On          | Debian and Ubuntu                                | Rocky, RHEL, Fedora                                    |
-| Granularity         | Less granular control                            | Highly granular, comprehensive security                |
-| Learning Curve      | Gentle, beginner-friendly                        | Steep, requires significant learning                   |
-| Troubleshooting     | Easier to debug and fix issues                   | Difficult to troubleshoot, cryptic errors              |
-| Security Robustness | Can be bypassed with hardlinks/symlinks          | More robust, label-based system                        |
-| Industry Use        | Common in Debian-based systems                   | Industry standard in enterprise environments           |
-| Profile Creation    | More intuitive, human-readable                   | Requires understanding of policy language              |
+|                         | AppArmor                                         | SELinux                                                |
+| :---------------------- | :----------------------------------------------- | :----------------------------------------------------- |
+| **Complexity**          | Simple to configure and understand               | Complex policy language, steep learning curve          |
+| **Security Model**      | Path-based (uses file paths)                     | Label-based (uses security contexts)                   |
+| **Default On**          | Debian and Ubuntu                                | Rocky, RHEL, Fedora                                    |
+| **Granularity**         | Less granular control                            | Highly granular, comprehensive security                |
+| **Learning Curve**      | Gentle, beginner-friendly                        | Steep, requires significant learning                   |
+| **Troubleshooting**     | Easier to debug and fix issues                   | Difficult to troubleshoot, cryptic errors              |
+| **Security Robustness** | Can be bypassed with hardlinks/symlinks          | More robust, label-based system                        |
+| **Industry Use**        | Common in Debian-based systems                   | Industry standard in enterprise environments           |
+| **Profile Creation**    | More intuitive, human-readable                   | Requires understanding of policy language              |
 
 ### Comparison Table: UFW vs firewalld
-| Aspect              | UFW (Uncomplicated Firewall)                     | firewalld                                              |
-| :------------------ | :----------------------------------------------- | :----------------------------------------------------- |
-| Full Name           | Uncomplicated Firewall                           | FirewallD                                              |
-| Complexity          | Simple, straightforward syntax                   | More complex, feature-rich                             |
-| Learning Curve      | Very easy, beginner-friendly                     | Moderate, requires understanding zones                 |
-| Default On          | Debian and Ubuntu                                | Rocky, RHEL, Fedora                                    |
-| Configuration       | Command-line with simple syntax                  | Zone-based configuration system                        |
-| Dynamic Management  | Static rules (requires reload)                   | Dynamic, no restart needed for changes                 |
-| Use Case            | Simple firewall needs, basic servers             | Complex networking, multiple interfaces                |
-| Zones Concept       | No zone support                                  | Supports multiple trust zones                          |
-| Features            | Basic but sufficient for most cases              | Advanced features for complex setups                   |
-| Interface           | CLI only (simple commands)                       | CLI and GUI tools available                            |
+|                         | UFW (Uncomplicated Firewall)                     | firewalld                                              |
+| :---------------------- | :----------------------------------------------- | :----------------------------------------------------- |
+| **Full Name**           | Uncomplicated Firewall                           | FirewallD                                              |
+| **Complexity**          | Simple, straightforward syntax                   | More complex, feature-rich                             |
+| **Learning Curve**      | Very easy, beginner-friendly                     | Moderate, requires understanding zones                 |
+| **Default On**          | Debian and Ubuntu                                | Rocky, RHEL, Fedora                                    |
+| **Configuration**       | Command-line with simple syntax                  | Zone-based configuration system                        |
+| **Dynamic Management**  | Static rules (requires reload)                   | Dynamic, no restart needed for changes                 |
+| **Use Case**            | Simple firewall needs, basic servers             | Complex networking, multiple interfaces                |
+| **Zones Concept**       | No zone support                                  | Supports multiple trust zones                          |
+| **Features**            | Basic but sufficient for most cases              | Advanced features for complex setups                   |
+| **Interface**           | CLI only (simple commands)                       | CLI and GUI tools available                            |
 
 ## Your Choice
 ### Choose Debian if...
