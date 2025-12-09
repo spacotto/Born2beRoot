@@ -83,7 +83,6 @@ sudo -V         # Check sudo version
 Check sudo password policy configuration:
 ```
 sudo nano /etc/sudoers.d/sudo_config    # sudo Password Configuration
-
 ```
 
 Check `/var/log/sudo/`:
@@ -93,19 +92,25 @@ sudo cat /var/log/sudo/sudo_config
 ```
 
 ## UFW 
-Check UFW status
+Check UFW status:
 ```
 dpkg -s ufw              # Display detailed status information (-s is short for --status)
 systemctl status ufw     # Non-root command
 sudo service ufw status  # Root command
 ```
 
-## SSH 
-Check ports
+Check ports:
 ```
 sudo ufw status numbered
 ss -tunlp
 sudo /usr/sbin/ufw status
 ```
+
+Allow port:
+```
+sudo ufw allow xxx    # Enter the port ID instead of xxx
+```
+
+## SSH 
 
 ## Script monitoring
