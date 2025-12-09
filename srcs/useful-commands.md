@@ -40,6 +40,21 @@ nano /etc/pam.d/common-password          # Password Complexity Configuration
 nano /etc/sudoers.d/sudo_config          # sudo Password Configuration
 ```
 
+Create user:
+```
+sudo adduser username
+```
+
+Create group:
+```
+sudo addgroup group_name
+```
+
+Add user to group:
+```
+sudo adduser usename group_name
+```
+
 ## Hostname & Partitions
 ```
 xxx
