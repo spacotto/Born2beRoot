@@ -146,7 +146,7 @@ ssh -p n username@vm_ip_address
 ## Script monitoring
 Open crontab (root):
 ```
-su          # Connect as root
+su                                      # Connect as root
 crontab -e
 ```
 
