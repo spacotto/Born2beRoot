@@ -9,12 +9,14 @@ ls /usr/bin/*session
 
 UFW status:
 ```
-sudo systemctl status UFW
+systemctl status ufw
+sudo service ufw status
 ```
 
 SSH status:
 ```
-sudo systemctl status ssh
+systemctl status ssh
+sudo service ssh status
 ```
 
 Check chosen OS:
@@ -87,17 +89,23 @@ sudo nano /etc/sudoers.d/sudo_config    # sudo Password Configuration
 Check `/var/log/sudo/`:
 ```
 sudo ls /var/log/sudo/
-sudo cat /var/log/sudo/
+sudo cat /var/log/sudo/sudo_config
 ```
 
 ## UFW 
+Check UFW status
 ```
-xxx
+dpkg -s ufw              # Display detailed status information (-s is short for --status)
+systemctl status ufw     # Non-root command
+sudo service ufw status  # Root command
 ```
 
 ## SSH 
+Check ports
 ```
-xxx
+sudo ufw status numbered
+ss -tunlp
+sudo /usr/sbin/ufw status
 ```
 
 ## Script monitoring
