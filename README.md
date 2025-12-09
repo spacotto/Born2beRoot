@@ -1,7 +1,7 @@
 >[!CAUTION]
 >This is a work in progress.
 
-## Overview
+# Overview
 Born2beRoot is a system administration project that introduces the fundamentals of virtualisation and server configuration. The goal is to create and configure a Virtual Machine (VM) following strict security guidelines and best practices. This project aims to teach essential skills in operating system installation, partitioning, user management, security policies, and service configuration. 
 
 >[!CAUTION]
@@ -34,7 +34,7 @@ Born2beRoot is a system administration project that introduces the fundamentals 
 >[!IMPORTANT]
 >Find out more about my OS choice [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/os-choice.md).
 
-# Instructions
+# Features
 >[!CAUTION]
 >Keep in mind this documentation concerns the creation of a **minimalist** VM and server. I am going to discuss **exclusively** the implementation of the **essential elements**. I am NOT going to address the implementation of UI or other additional features.
 
@@ -106,5 +106,5 @@ Born2beRoot is a system administration project that introduces the fundamentals 
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-website-hosting.md) you can find the details concerning the setup of a website on a Debian server.
 
-## Resources
+# Resources
 - [**Debian 13 (Trixie) Documentation**](https://www.debian.org/releases/trixie/release-notes/)
