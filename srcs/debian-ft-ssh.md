@@ -1,6 +1,5 @@
 # About SSH
->[!IMPORTANT]
->**Secure Shell (SSH)** is a **cryptographic network protocol** used to operate network services securely over an unsecured network. The most common applications are **remote command-line login** and **remote command execution**. It provides strong authentication and secure, encrypted communication.
+**Secure Shell (SSH)** is a **cryptographic network protocol** used to operate network services securely over an unsecured network. The most common applications are **remote command-line login** and **remote command execution**. It provides strong authentication and secure, encrypted communication.
 
 ## Installation on Debian 13
 SSH is typically installed and configured in two parts: the **server** (where you want to connect to) and the **client** (the machine you are connecting *from*).
