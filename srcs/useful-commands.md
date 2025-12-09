@@ -7,10 +7,15 @@ Graphical Interface (GUI) status:
 ls /usr/bin/*session
 ```
 
+AppArmor status:
+```
+/usr/sbin/aa-status
+sudo /usr/sbin/aa-status | less
+```
+
 UFW status:
 ```
-systemctl status ufw
-sudo service ufw status
+sudo /usr/sbin/ufw status
 ```
 
 SSH status:
