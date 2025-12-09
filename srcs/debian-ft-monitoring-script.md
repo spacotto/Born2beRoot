@@ -42,7 +42,7 @@ Healthchecks.io Pattern (works with any similar service):
 
 ## Monitoring Script Configuration
 >[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-pckg-cron.md) you can find the details about cron.
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-cron.md) you can find the details about cron.
 
 ### 1. Create a Monitoring Script
 ```
