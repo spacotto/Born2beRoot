@@ -20,7 +20,7 @@ A **Guest Operating System** (Guest OS) is **software installed within a VM that
 >What’s not the same: **Debian** uses the `APT` package manager and `.deb` packages, while **Rocky Linux** is a **Red Hat Enterprise Linux clone** and uses `DNF/YUM` with `.rpm` packages.
 
 ### Comparison Table: Debian vs Rocky Linux
-| Aspect             | Debian                                               | Rocky Linux                                          |
+|                    | Debian                                               | Rocky Linux                                          |
 | :----------------- | :--------------------------------------------------- | :--------------------------------------------------- |
 | Stability          | Highly stable, focuses on thoroughly tested packages | Enterprise-grade stability, RHEL binary compatible   |
 | Documentation      | Extensive, beginner-friendly resources               | Strong enterprise documentation, RedHat-based guides |
