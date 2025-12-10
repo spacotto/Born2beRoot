@@ -161,7 +161,7 @@ ssh username@localhost -p port_ID    # Enter the ID_port you chose for your host
 >[!NOTE]
 >You'll be prompted for the user's password.
 
-!(https://github.com/spacotto/Born2beRoot/blob/main/imgs/Screenshot%20from%202025-12-10%2012-46-29.png)
+![ssh](https://github.com/spacotto/Born2beRoot/blob/main/imgs/Screenshot%20from%202025-12-10%2012-46-29.png)
 
 ### SSH Key Authentication (Recommended)
 1. Generate SSH key on host (if you don't have one):
