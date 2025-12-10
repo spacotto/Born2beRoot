@@ -124,6 +124,27 @@ failregex = ^<HOST> .* "GET .* HTTP.*" 404
 ignoreregex =
 ```
 
+## Whitelisting IPs
+In `/etc/fail2ban/jail.local` under `[DEFAULT]`:
+```
+ignoreip = 127.0.0.1/8 ::1 your.trusted.ip.address
+```
+
+## Verifying It's Working
+After configuration changes:
+```
+sudo systemctl restart fail2ban
+sudo fail2ban-client status             # Should show active jails
+```
+
+Check logs: 
+```
+sudo tail -f /var/log/fail2ban.log
+```
+
+Test from another machine with intentional failed logins.
+
+
 ## Common Commands
 Check status
 ```
@@ -159,3 +180,21 @@ View logs
 ```
 sudo tail -f /var/log/fail2ban.log
 ```
+
+## Testing Your Configuration
+Test a filter against a log file
+```
+sudo fail2ban-regex /var/log/lighttpd/access.log /etc/fail2ban/filter.d/wordpress-auth.conf
+```
+
+Check jail configuration
+```
+sudo fail2ban-client -d
+```
+
+## Important Notes
+- Fail2Ban uses iptables or nftables (Debian 13 likely uses nftables)
+- Always whitelist your own IP to avoid locking yourself out
+- Monitor `/var/log/fail2ban.log` after setup to ensure it's working
+- Adjust `maxretry` and `bantime` based on your security needs
+- Backup your jail.local file before major changes
