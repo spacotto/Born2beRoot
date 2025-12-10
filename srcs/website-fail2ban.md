@@ -100,3 +100,27 @@ bantime = 7200
 port = http,https
 ```
 
+## Lighttpd Access Log Protection
+For repeated 404 errors (potential scanning):
+```
+[lighttpd-404]
+enabled = true
+filter = lighttpd-404
+logpath = /var/log/lighttpd/access.log
+maxretry = 20
+findtime = 300
+bantime = 3600
+```
+
+Create:
+```
+/etc/fail2ban/filter.d/lighttpd-404.conf
+```
+
+Add:
+```
+[Definition]
+failregex = ^<HOST> .* "GET .* HTTP.*" 404
+ignoreregex =
+```
+
