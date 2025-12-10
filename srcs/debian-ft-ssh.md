@@ -156,10 +156,12 @@ Look for the IP address (e.g., `192.168.1.100`).
 ### Connect from Host
 Basic connection:
 ```
-ssh username@vm_ip_address
+ssh username@localhost -p port_ID    # Enter the ID_port you chose for your host (example in the image below)
 ```
 >[!NOTE]
 >You'll be prompted for the user's password.
+
+!(https://github.com/spacotto/Born2beRoot/blob/main/imgs/Screenshot%20from%202025-12-10%2012-46-29.png)
 
 ### SSH Key Authentication (Recommended)
 1. Generate SSH key on host (if you don't have one):
