@@ -130,6 +130,17 @@ In `/etc/fail2ban/jail.local` under `[DEFAULT]`:
 ignoreip = 127.0.0.1/8 ::1 your.trusted.ip.address
 ```
 
+## Testing Your Configuration
+Test a filter against a log file
+```
+sudo fail2ban-regex /var/log/lighttpd/access.log /etc/fail2ban/filter.d/wordpress-auth.conf
+```
+
+Check jail configuration
+```
+sudo fail2ban-client -d
+```
+
 ## Verifying It's Working
 After configuration changes:
 ```
@@ -179,17 +190,6 @@ sudo systemctl restart fail2ban
 View logs
 ```
 sudo tail -f /var/log/fail2ban.log
-```
-
-## Testing Your Configuration
-Test a filter against a log file
-```
-sudo fail2ban-regex /var/log/lighttpd/access.log /etc/fail2ban/filter.d/wordpress-auth.conf
-```
-
-Check jail configuration
-```
-sudo fail2ban-client -d
 ```
 
 ## Important Notes
