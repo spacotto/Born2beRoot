@@ -142,18 +142,6 @@ Port 4242  # It is 22 by default
 ```
 
 ## Connect Host and VM through SSH
-### Find VM's IP Address
-On the VM, run:
-```
-ip addr show
-```
-or
-```
-hostname -I
-```
-Look for the IP address (e.g., `192.168.1.100`).
-
-### Connect from Host
 Basic connection:
 ```
 ssh username@localhost -p port_ID    # Enter the ID_port you chose for your host (example in the image below)
