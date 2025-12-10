@@ -142,10 +142,10 @@ sudo nano /var/www/html/wp-config.php
 
 Update these lines with your database details:
 ```
-define('DB_NAME', 'wp_database');
-define('DB_USER', 'wp_user');
-define('DB_PASSWORD', 'strong_password');
-define('DB_HOST', 'localhost');
+define( 'DB_NAME', 'database_name_here' );
+define( 'DB_USER', 'username_here' );
+define( 'DB_PASSWORD', 'password_here' );
+define( 'DB_HOST', 'localhost' );
 ```
 Generate and add security keys. Visit `https://api.wordpress.org/secret-key/1.1/salt/` and replace the placeholder keys in wp-config.php.
 
@@ -156,45 +156,12 @@ sudo find /var/www/html/wordpress -type d -exec chmod 755 {} \;
 sudo find /var/www/html/wordpress -type f -exec chmod 644 {} \;
 ```
 
-### Set Up Firewall
-```
-sudo apt install ufw -y
-sudo ufw allow OpenSSH
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
-sudo ufw enable
-```
-
 ### Complete WordPress Installation
 Visit `http://your-server-ip` in your browser and follow the WordPress installation wizard:
 1. Select language
 2. Enter site title, username, password, and email
 3. Click "Install WordPress"
 4. Log in to admin panel at /wp-admin
-
-### Install SSL Certificate (Optional)
-```
-sudo apt install certbot -y
-sudo systemctl stop lighttpd
-sudo certbot certonly --standalone -d yourdomain.com -d www.yourdomain.com
-```
-Edit Lighttpd SSL configuration:
-```
-sudo nano /etc/lighttpd/conf-available/10-ssl.conf
-```
-Add:
-```
-$SERVER["socket"] == ":443" {
-    ssl.engine = "enable"
-    ssl.pemfile = "/etc/letsencrypt/live/yourdomain.com/fullchain.pem"
-    ssl.privkey = "/etc/letsencrypt/live/yourdomain.com/privkey.pem"
-}
-```
-Enable SSL module:
-```
-sudo lighttpd-enable-mod ssl
-sudo systemctl start lighttpd
-```
 
 ## Troublshooting
 ### PHP files downloading instead of executing
