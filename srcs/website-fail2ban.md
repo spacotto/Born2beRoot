@@ -22,3 +22,23 @@ sudo systemctl status fail2ban
 - Ban time: How long an IP stays blocked
 - Max retry: Number of failed attempts before banning
 
+## Configuration Files
+Default config (don't edit directly)
+```
+/etc/fail2ban/jail.conf
+```
+
+Your custom config (overrides jail.conf)
+```
+/etc/fail2ban/jail.local
+```
+
+Filter definitions
+```
+/etc/fail2ban/filter.d/
+```
+
+Action definitions
+```
+/etc/fail2ban/action.d/
+```
