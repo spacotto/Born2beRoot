@@ -42,3 +42,30 @@ Action definitions
 ```
 /etc/fail2ban/action.d/
 ```
+
+## Basic Setup (Stack)
+Create: 
+```
+/etc/fail2ban/jail.local
+```
+
+Edit
+```
+[DEFAULT]
+bantime = 3600
+findtime = 600
+maxretry = 5
+destemail = your@email.com
+sendername = Fail2Ban
+action = %(action_mwl)s
+
+[sshd]
+enabled = true
+port = ssh
+logpath = /var/log/auth.log
+
+[lighttpd-auth]
+enabled = true
+port = http,https
+logpath = /var/log/lighttpd/error.log
+```
