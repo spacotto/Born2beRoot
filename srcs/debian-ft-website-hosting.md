@@ -82,7 +82,7 @@ Reload privilege tables now?                 # Enter Y (Reloading the privilege 
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-php.md) you can find more details concerning PHP.
 
 ```
-sudo apt install php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-zip php-imagick -y
+sudo apt install php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-zip php-imagick php-cgi -y
 sudo systemctl enable php8.4-fpm
 sudo systemctl start php8.4-fpm
 ```
