@@ -9,8 +9,16 @@ sudo systemctl status fail2ban
 ```
 
 >[!TIP]
->If Fail2Ban is NOT active, run the floowing commands:
+>If Fail2Ban is NOT active, run the following commands:
 >```
 >sudo systemctl enable fail2ban
 >sudo systemctl start fail2ban
 >```
+
+## Core Concepts
+- Jail: A service to monitor (SSH, lighttpd, WordPress, etc.)
+- Filter: Regex patterns that identify malicious activity in logs
+- Action: What to do when a match is found (usually ban the IP)
+- Ban time: How long an IP stays blocked
+- Max retry: Number of failed attempts before banning
+
