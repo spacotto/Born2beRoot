@@ -109,30 +109,6 @@ FLUSH PRIVILEGES;
 exit
 ```
 
-### Configure Lighttpd for PHP
-Enable FastCGI modules:
-```
-sudo lighttpd-enable-mod fastcgi
-sudo lighttpd-enable-mod fastcgi-php
-```
-Edit the PHP configuration:
-```
-sudo nano /etc/lighttpd/conf-available/15-fastcgi-php.conf
-```
-Ensure it contains:
-```
-fastcgi.server += ( ".php" =>
-        ((
-                "socket" => "/run/php/php8.2-fpm.sock",
-                "broken-scriptfilename" => "enable"
-        ))
-)
-```
-Restart Lighttpd:
-```
-sudo systemctl restart lighttpd
-```
-
 ### Configure Lighttpd for WordPress
 Create or edit the Lighttpd configuration:
 ```
@@ -140,7 +116,7 @@ sudo nano /etc/lighttpd/lighttpd.conf
 ```
 Ensure these settings are present:
 ```
-server.document-root = "/var/www/html/wordpress"
+server.document-root = "/var/www/html"
 server.upload-dirs = ( "/var/cache/lighttpd/uploads" )
 server.errorlog = "/var/log/lighttpd/error.log"
 server.pid-file = "/run/lighttpd.pid"
@@ -149,10 +125,6 @@ server.groupname = "www-data"
 server.port = 80
 
 index-file.names = ( "index.php", "index.html" )
-
-url.rewrite-if-not-file = (
-    "^/(.*)$" => "/index.php/$1"
-)
 ```
 Enable URL rewriting module:
 ```
