@@ -69,3 +69,34 @@ enabled = true
 port = http,https
 logpath = /var/log/lighttpd/error.log
 ```
+
+## WordPress Protection
+Create:
+```
+/etc/fail2ban/filter.d/wordpress-auth.conf
+```
+
+Edit:
+```
+[Definition]
+failregex = ^<HOST> .* "POST /wp-login.php
+            ^<HOST> .* "POST /xmlrpc.php
+ignoreregex =
+```
+
+Open:
+```
+/etc/fail2ban/jail.local
+```
+
+Add:
+```
+[wordpress-auth]
+enabled = true
+filter = wordpress-auth
+logpath = /var/log/lighttpd/access.log
+maxretry = 3
+bantime = 7200
+port = http,https
+```
+
