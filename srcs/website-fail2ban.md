@@ -124,3 +124,38 @@ failregex = ^<HOST> .* "GET .* HTTP.*" 404
 ignoreregex =
 ```
 
+## Common Commands
+Check status
+```
+sudo fail2ban-client status
+```
+
+Check specific jail
+```
+sudo fail2ban-client status sshd
+```
+
+Unban an IP
+```
+sudo fail2ban-client set sshd unbanip 192.168.1.100
+```
+
+Ban an IP manually
+```
+sudo fail2ban-client set sshd banip 192.168.1.100
+```
+
+Reload configuration
+```
+sudo fail2ban-client reload
+```
+
+Restart service
+```
+sudo systemctl restart fail2ban
+```
+
+View logs
+```
+sudo tail -f /var/log/fail2ban.log
+```
