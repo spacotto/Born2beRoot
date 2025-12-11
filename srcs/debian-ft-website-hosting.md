@@ -166,9 +166,24 @@ Complete WordPress installation:
 ![wordpress](https://github.com/spacotto/Born2beRoot/blob/main/imgs/Screenshot%20from%202025-12-11%2011-15-24.png)
 
 ### Install & Configure Fail2Ban
+>[!IMPORTANT]
+>[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-fail2ban.md) you can find more details concerning Fail2Ban.
+
 Install Fail2Ban:
 ```
-sudo aptitude install fail2ban
+sudo apt install fail2ban
+```
+
+Copy the default configuration:
+```
+sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+```
+>[!CAUTION]
+>The default configuration should NOT be edited directly.
+
+Edit the local configuration:
+```
+sudo nano /etc/fail2ban/jail.local
 ```
 
 ## Troublshooting
@@ -206,33 +221,3 @@ define('DISALLOW_FILE_EDIT', true);
 ```
 - Limit login attempts
 - Keep PHP and MariaDB updated
-
-## Maintenance
-Restart Lighttpd:
-```
-sudo systemctl restart lighttpd
-```
-Restart PHP-FPM:
-```
-sudo systemctl restart php8.2-fpm
-```
-Backup database:
-```
-mysqldump -u wpuser -p wordpress > wordpress_backup_$(date +%Y%m%d).sql
-```
-Backup WordPress files:
-```
-sudo tar -czf wordpress_files_$(date +%Y%m%d).tar.gz /var/www/html/wordpress
-```
-Update system:
-```
-sudo apt update && sudo apt upgrade -y
-```
-Check Lighttpd configuration:
-```
-sudo lighttpd -t -f /etc/lighttpd/lighttpd.conf
-```
-View Lighttpd logs:
-```
-sudo tail -f /var/log/lighttpd/error.log
-```
