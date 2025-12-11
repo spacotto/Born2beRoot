@@ -1,6 +1,5 @@
 # About Monitoring Script Service
->[!IMPORTANT]
->A monitoring service **tracks scheduled jobs and alerts** you when they fail to run, run unsuccessfully, or produce unexpected output.
+A monitoring service **tracks scheduled jobs and alerts** you when they fail to run, run unsuccessfully, or produce unexpected output.
 
 ## Basic Monitoring Approaches
 ### 1. Email Notifications (Built-in)
@@ -163,3 +162,9 @@ Add timer setting:
 >```
 >*/10 * * * * /usr/local/bin/monitoring.sh >> /var/log/monitoring.log
 >```
+
+## Resources
+- [5 Custom Bash Scripts to Monitor Your Linux Server Performance](https://dev.to/caffinecoder54/5-custom-bash-scripts-to-monitor-your-linux-server-performance-acj)
+- [A Basic Bash Script for System Monitoring](https://medium.com/@wojtekszczerbinski/a-basic-bash-script-for-system-monitoring-b74deb59b7e4)
+- [Bash Scripting: Create a Simple System Resource Monitor](https://www.eastagile.com/blogs/bash-system-resource-monitor)
+- [Monitoring](https://bash.cyberciti.biz/shell/monitoring/)
