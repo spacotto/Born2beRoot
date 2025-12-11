@@ -42,3 +42,8 @@ Individuals may use VMs to run legacy applications that require older operating 
 | Security              | Resource demands     |
 | Flexibility           | hardware limitations |
 | Recovery & Continuity | Complexity at scale  |
+
+## Resources
+- [Virtualization - Wikipedia](https://en.wikipedia.org/wiki/Virtualization)
+- [What is virtualization? (IBM)](https://www.ibm.com/think/topics/virtualization)
+- [What is virtualization? (RedHat)](https://www.redhat.com/en/topics/virtualization/what-is-virtualization)
