@@ -99,7 +99,7 @@ Born2beRoot is a system administration project that introduces the fundamentals 
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-monitoring-script.md) you can find the details concerning the setup of the Monitoring Script and Cron service.
 
-### Website Hosting: WordPress, lighttpd, MariaDB, PHP
+### Website Hosting: WordPress, lighttpd, MariaDB, PHP, Fail2Ban
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-website-hosting.md) you can find the details concerning the setup of a website on a Debian server.
 
