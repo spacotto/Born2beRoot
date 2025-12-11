@@ -39,3 +39,6 @@ After the command runs, the file will contain something like (hash + VM name):
 
 >[!TIP]
 >You can also use the same command on other types of files to obtain their hash.
+
+## Resources
+- [man sha1sum](https://manpages.ubuntu.com/manpages/jammy/en/man1/sha1sum.1.html)
