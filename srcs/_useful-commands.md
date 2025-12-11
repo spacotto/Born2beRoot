@@ -1,5 +1,5 @@
 # Useful Commands
-Here is a list of the most used command lines to check the state of your VM server
+Here is a list of the most used command lines to check the state of your VM.
 
 ## VM Stauts
 Generate signature:
