@@ -157,11 +157,13 @@ sudo find /var/www/html/wordpress -type f -exec chmod 644 {} \;
 ```
 
 ### Complete WordPress Installation
-Visit `http://your-server-ip` in your browser and follow the WordPress installation wizard:
-1. Select language
-2. Enter site title, username, password, and email
-3. Click "Install WordPress"
-4. Log in to admin panel at /wp-admin
+In your browser, visit:
+```
+http://localhost:host_port
+```
+
+Complete Wordpress installation:
+![wordpress](https://github.com/spacotto/Born2beRoot/blob/main/imgs/Screenshot%20from%202025-12-11%2011-15-24.png)
 
 ## Troublshooting
 ### PHP files downloading instead of executing
