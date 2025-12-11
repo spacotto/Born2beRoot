@@ -33,17 +33,18 @@ sudo service ssh status
 Check chosen OS:
 ```
 head -n 2 /etc/os-release
+uname -a
 ```
 
 ## Users & Groups
 Check user groups:
 ```
-groups username                          # Write the username of the user you want to check
+groups [username]                          # Write the username of the user you want to check
 ```
 
 Check group members:
 ```
-getent group group1 group2 group3 ...    # Write the names of the groups you want to check
+getent [group] [group1] [group2] [group3] [...]    # Write the names of the groups you want to check
 ```
 
 Check password policy configuration:
@@ -54,17 +55,17 @@ nano /etc/pam.d/common-password          # Password Complexity Configuration
 
 Create user:
 ```
-sudo adduser username
+sudo adduser [username]
 ```
 
 Create group:
 ```
-sudo addgroup group_name
+sudo addgroup [group_name]
 ```
 
 Add user to group:
 ```
-sudo adduser usename group_name
+sudo adduser [usename] [group_name]
 ```
 
 ## Hostname & Partitions
@@ -119,17 +120,17 @@ sudo /usr/sbin/ufw status
 
 Allow connection:
 ```
-sudo ufw allow connection               # Enter the port ID instead of rule
+sudo ufw allow [connection]             # Enter the port ID instead of rule
 ```
 
 Delete rule:
 ```
-sudo ufw delete allow n                 # Delete by rule where n is the rule (e.g., 4242)
+sudo ufw delete allow [connection]      # Delete by rule where n is the rule (e.g., 4242)
 
 OR
 
 sudo ufw status numbered                # List numbered rules
-sudo ufw delete n                       # Enter the number corresponding to the rule in the list 
+sudo ufw delete [list n]                # Enter the number corresponding to the rule in the list 
 ```
 
 ## SSH 
@@ -146,14 +147,13 @@ sudo service ssh status
 
 SSH connect:
 ```
-ssh -p n username@vm_ip_address
+ssh username@localhost -p [port_id]
 ```
 
 ## Script monitoring
-Open crontab (root):
+Open crontab (@root):
 ```
-su                                      # Connect as root
-crontab -e
+sudo crontab -e
 ```
 
 Disable cron at boot
