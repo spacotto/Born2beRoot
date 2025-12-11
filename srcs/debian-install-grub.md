@@ -159,3 +159,6 @@ sudo update-grub
 - Use `/dev/sdX` (disk) for grub-install, not `/dev/sdX1` (partition).
 - Keep backups before making major changes to boot configuration.
 - If dual-booting, `os-prober` must be enabled to detect other operating systems.
+
+## Resources
+- [Debian GNU/Linux Installation Guide](https://www.debian.org/releases/stable/amd64/index)
