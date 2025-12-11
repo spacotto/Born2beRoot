@@ -65,3 +65,13 @@ UTM, using Apple’s built-in virtualisation framework, doesn’t require kernel
 | **Community**                  | Very large, widespread adoption             | Smaller but growing                         |
 | **Resource Usage**             | Can be resource-intensive                   | Lightweight, efficient on M-series chips    |
 | **Cost**                       | Free and open-source                        | Free and open-source                        |
+
+## Resources 
+- [Fusion and Workstation](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
+- [Hyper-V Server 2019](https://www.microsoft.com/en-us/evalcenter/evaluate-hyper-v-server-2019)
+- [Hypervisor - Wikipedia](https://en.wikipedia.org/wiki/Hypervisor)
+- [UTM | Virtual machines for Mac](https://mac.getutm.app/)
+- [VirtualBox](https://www.virtualbox.org/)
+- [What are hypervisors?](https://www.ibm.com/think/topics/hypervisors)
+- [What is a hypervisor?](https://www.vmware.com/topics/hypervisor)
+- [What is KVM?](https://www.redhat.com/en/topics/virtualization/what-is-KVM)
