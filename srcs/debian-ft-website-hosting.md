@@ -167,6 +167,7 @@ Visit `http://your-server-ip` in your browser and follow the WordPress installat
 ### PHP files downloading instead of executing
 Check if FastCGI-PHP is enabled:
 ```
+sudo lighttpd-enable-mod fastcgi
 sudo lighttpd-enable-mod fastcgi-php
 sudo systemctl restart lighttpd
 ```
