@@ -82,4 +82,6 @@ I chose **Debian 13 (Trixie)** over Rocky Linux because, as a beginner, I wanted
 
 ## Resources
 - [Debian - Wikipedia](https://en.wikipedia.org/wiki/Debian)
+- [Debian “trixie” Release Information](https://www.debian.org/releases/trixie/)
+- [Release Notes for Debian 13 (trixie)](https://www.debian.org/releases/trixie/release-notes/)
 - [Rocky Linux - Wikipedia](https://en.wikipedia.org/wiki/Rocky_Linux)
