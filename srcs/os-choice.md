@@ -84,4 +84,7 @@ I chose **Debian 13 (Trixie)** over Rocky Linux because, as a beginner, I wanted
 - [Debian - Wikipedia](https://en.wikipedia.org/wiki/Debian)
 - [Debian “trixie” Release Information](https://www.debian.org/releases/trixie/)
 - [Release Notes for Debian 13 (trixie)](https://www.debian.org/releases/trixie/release-notes/)
+- [Rocky Linux](https://rockylinux.org/)
 - [Rocky Linux - Wikipedia](https://en.wikipedia.org/wiki/Rocky_Linux)
+- [Security-Enhanced Linux](https://en.wikipedia.org/wiki/Security-Enhanced_Linux)
+- [What is SELinux (Security-Enhanced Linux)?](https://www.redhat.com/en/topics/linux/what-is-selinux)
