@@ -20,3 +20,6 @@ Configuring the locals is the first step of the OS installation.
 
 ## Configure the keyboard
 ![config-keyboard](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm009.png)
+
+## Resources
+- [Debian GNU/Linux Installation Guide](https://www.debian.org/releases/stable/amd64/index)
