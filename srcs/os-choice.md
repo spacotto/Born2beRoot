@@ -81,8 +81,12 @@ Debian 13, codenamed "Trixie," is the **latest release** (November 2025) of the 
 I chose **Debian 13 (Trixie)** over Rocky Linux because, as a beginner, I wanted a system that is simple to set up, well-documented, and widely supported by the community. Debian is known for its stability and ease of use, making it ideal for learning the basics of Linux without being overwhelmed by complexity. Moreover, since **I'm not specifically interested in working with Red Hat Enterprise Linux (RHEL)** environments or their derivatives, Rocky Linux's enterprise focus didn't match my needs. Debian 13 lets me explore, learn, and customise my VM with confidence, while providing plenty of helpful resources for newcomers.
 
 ## Resources
+- [A beginner's guide to firewalld in Linux](https://www.redhat.com/en/blog/beginners-guide-firewalld)
 - [Debian - Wikipedia](https://en.wikipedia.org/wiki/Debian)
 - [Debian “trixie” Release Information](https://www.debian.org/releases/trixie/)
+- [firewalld](https://firewalld.org/)
+- [man apparmor](https://manpages.debian.org/trixie/apparmor/apparmor.7.en.html)
+- [man ufw](https://manpages.debian.org/trixie/ufw/ufw.8.en.html)
 - [Release Notes for Debian 13 (trixie)](https://www.debian.org/releases/trixie/release-notes/)
 - [Rocky Linux](https://rockylinux.org/)
 - [Rocky Linux - Wikipedia](https://en.wikipedia.org/wiki/Rocky_Linux)
