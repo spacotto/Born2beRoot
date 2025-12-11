@@ -132,3 +132,4 @@ Defaults  secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/
 - [libpam-pwquality](https://packages.debian.org/trixie/libpam-pwquality)
 - [man login.defs](https://manpages.debian.org/trixie/login.defs/login.defs.5.en.html)
 - [man pam_pwquality](https://manpages.debian.org/testing/libpam-pwquality/pam_pwquality.8.en.html)
+- [man sudoers](https://manpages.debian.org/trixie/sudo/sudoers.5.en.html)
