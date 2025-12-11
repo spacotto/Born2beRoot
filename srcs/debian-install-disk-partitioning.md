@@ -290,3 +290,6 @@ sda                        8:0     0    20G   0  disk
     └─LVMGroup-var--log  254:8     0   952M   0  lvm   /var/log     
 sr0                       11:0     1  1024M   0  rom                
 ```
+
+## Resources
+- [Debian GNU/Linux Installation Guide](https://www.debian.org/releases/stable/amd64/index)
