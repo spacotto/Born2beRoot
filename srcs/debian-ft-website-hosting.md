@@ -165,6 +165,9 @@ http://localhost:host_port
 Complete WordPress installation:
 ![wordpress](https://github.com/spacotto/Born2beRoot/blob/main/imgs/Screenshot%20from%202025-12-11%2011-15-24.png)
 
+### Install & Configure Fail2Ban
+
+
 ## Troublshooting
 ### PHP files downloading instead of executing
 Check if FastCGI-PHP is enabled:
