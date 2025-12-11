@@ -113,3 +113,7 @@ sudo ufw logging low                      # Set log level (low/medium/high/full)
 ```
 sudo tail -f /var/log/ufw.log
 ```
+
+## Resources
+- [man ufw](https://manpages.debian.org/trixie/ufw/ufw.8.en.html)
+- [Package: ufw (0.36.2-9)](https://packages.debian.org/trixie/ufw)
