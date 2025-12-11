@@ -198,3 +198,6 @@ sudo tail -f /var/log/fail2ban.log
 - Monitor `/var/log/fail2ban.log` after setup to ensure it's working
 - Adjust `maxretry` and `bantime` based on your security needs
 - Backup your jail.local file before major changes
+
+## Resources
+- [Fail2ban - Wikipedia](https://en.wikipedia.org/wiki/Fail2ban)
