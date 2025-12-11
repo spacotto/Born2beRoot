@@ -1,10 +1,5 @@
 # About AppArmor (Debian)
-**AppArmor** is a **Mandatory Access Control (MAC) security system** for Linux that **restricts programs' capabilities** using per-program profiles. It's enabled by default on Debian 10 and later.
-
->[!IMPORTANT]
->[Here](https://wiki.debian.org/AppArmor) you can find the official Debian documentation about AppArmor.
-
-AppArmor **confines applications to a limited set of resources**, preventing them from accessing files, network ports, or system capabilities they shouldn't need. Each confined program has a **security** profile that defines what it can access.
+**AppArmor** is a **Mandatory Access Control (MAC) security system** for Linux that **restricts programs' capabilities** using per-program profiles. It's enabled by default on Debian 10 and later. AppArmor **confines applications to a limited set of resources**, preventing them from accessing files, network ports, or system capabilities they shouldn't need. Each confined program has a **security** profile that defines what it can access.
 
 ## Installation
 AppArmor comes **pre-installed** on modern Debian systems. Use this command to install utilities if needed:
@@ -144,3 +139,6 @@ Or add `apparmor=0` to kernel boot parameters in `/etc/default/grub`, then run `
 
 >[!NOTE]
 >AppArmor provides strong security with minimal performance impact when profiles are properly configured.
+
+## Resources
+- [AppArmor](https://wiki.debian.org/AppArmor)
