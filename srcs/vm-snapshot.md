@@ -63,3 +63,6 @@ Alternatively, use the VBoxManage command-line tool:
 
 >[!TIP]
 >For deleting multiple snapshots, a script can automate the process by reading snapshot names from a text file and executing the delete command for each one.
+
+## Resources
+- [Snapshots](https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/snapshots.html)
