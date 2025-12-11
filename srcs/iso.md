@@ -14,3 +14,6 @@ ISO images are typically used for **archiving**, **backing up**, **sharing**, or
 
 ### How to use
 To use an ISO image, it is not opened like a regular file. Instead, it is either **mounted as a virtual drive by the operating system**, allowing applications to access its contents as if a physical disc were inserted, or it can be burned to a physical optical disc using disc-burning software. This process creates **a new disc that is an exact copy of the original**. Users can also extract individual files from an ISO image without burning it, which is useful for accessing specific data. The integrity of the image can be verified using checksums to ensure it hasn't been corrupted or tampered with.
+
+## Resources
+- [Optical disc image](https://en.wikipedia.org/wiki/Optical_disc_image)
