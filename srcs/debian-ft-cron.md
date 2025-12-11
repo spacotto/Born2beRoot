@@ -1,9 +1,6 @@
 # About Cron
 **Time-based job scheduling** is an integral part of most operating systems. In the UNIX world, this is usually accomplished by a program called cron.
 
->[!IMPORTANT]
->[Here](https://wiki.debian.org/cron) you can find official Debian documentation on **cron**.
-
 ## Basic Cron Commands
 ### View Crontabs
 - View current user's crontab
@@ -79,3 +76,6 @@ grep CRON /var/log/syslog | tail -20
 ```
 * * * * * echo "Test at $(date)" >> /tmp/crontest.log
 ```
+
+## Resources
+- [Cron Documentation](https://wiki.debian.org/cron)
