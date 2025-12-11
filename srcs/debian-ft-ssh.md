@@ -180,3 +180,6 @@ sudo ufw allow ssh
 ```
 ssh -p 2222 username@vm_ip_address
 ```
+
+## Resources
+- [man ssh](https://manpages.debian.org/trixie/openssh-client/ssh.1.en.html)
