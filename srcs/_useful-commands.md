@@ -39,7 +39,7 @@ uname -a
 ## Users & Groups
 Check user groups:
 ```
-groups [username]                          # Write the username of the user you want to check
+groups [username]                                  # Write the username of the user you want to check
 ```
 
 Check group members:
@@ -49,8 +49,8 @@ getent [group] [group1] [group2] [group3] [...]    # Write the names of the grou
 
 Check password policy configuration:
 ```
-nano /etc/login.defs                     # Password Expiration Configuration
-nano /etc/pam.d/common-password          # Password Complexity Configuration
+nano /etc/login.defs                               # Password Expiration Configuration
+nano /etc/pam.d/common-password                    # Password Complexity Configuration
 ```
 
 Create user:
@@ -88,13 +88,13 @@ lsblk
 ## SUDO
 Check sudo status:
 ```
-which sudo                              # Locate sudo folder
-sudo -V                                 # Check sudo version
+which sudo                                        # Locate sudo folder
+sudo -V                                           # Check sudo version
 ```
 
 Check sudo password policy configuration:
 ```
-sudo nano /etc/sudoers.d/sudo_config    # sudo Password Configuration
+sudo nano /etc/sudoers.d/sudo_config              # sudo Password Configuration
 ```
 
 Check `/var/log/sudo/`:
@@ -106,9 +106,9 @@ sudo cat /var/log/sudo/sudo_config
 ## UFW 
 Check UFW status:
 ```
-dpkg -s ufw                             # Display detailed status information (-s is short for --status)
-systemctl status ufw                    # Non-root command
-sudo service ufw status                 # Root command
+dpkg -s ufw                                       # Display detailed status information (-s is short for --status)
+systemctl status ufw                              # Non-root command
+sudo service ufw status                           # Root command
 ```
 
 Check rules:
@@ -120,17 +120,17 @@ sudo /usr/sbin/ufw status
 
 Allow connection:
 ```
-sudo ufw allow [connection]             # Enter the port ID instead of rule
+sudo ufw allow [connection]                       # Enter the port ID instead of rule
 ```
 
 Delete rule:
 ```
-sudo ufw delete allow [connection]      # Delete by rule where n is the rule (e.g., 4242)
+sudo ufw delete allow [connection]                # Delete by rule where n is the rule (e.g., 4242)
 
 OR
 
-sudo ufw status numbered                # List numbered rules
-sudo ufw delete [list n]                # Enter the number corresponding to the rule in the list 
+sudo ufw status numbered                          # List numbered rules
+sudo ufw delete [list n]                          # Enter the number corresponding to the rule in the list 
 ```
 
 ## SSH 
