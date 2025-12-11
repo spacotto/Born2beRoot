@@ -102,6 +102,3 @@ Born2beRoot is a system administration project that introduces the fundamentals 
 ### Website Hosting: WordPress, lighttpd, MariaDB, PHP, Fail2Ban
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-website-hosting.md) you can find the details concerning the setup of a website on a Debian server.
-
-# Resources
-- [**Debian 13 (Trixie) Documentation**](https://www.debian.org/releases/trixie/release-notes/)
