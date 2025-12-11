@@ -2,23 +2,15 @@
 >[!NOTE]
 >On ArchLinux, `pacman` is a middle way between the two.
 
-## apt
 ```
 apt
 ```
 A command-line tool for package management in Debian-based systems (like Ubuntu). It's the modern, user-friendly interface for package management.
 
->[!IMPORTANT]
->[Here](https://wiki.debian.org/Apt) you can find Debian's official documentation on `apt`.
-
-# aptitude
 ```
 aptitude
 ```
 An alternative package manager with both command-line and text-based interactive interfaces. In other words, `aptitude` not only gives you **warnings** in case of issues, but it also **proposes solutions** interactively.
-
->[!IMPORTANT]
->[Here](https://wiki.debian.org/Aptitude) you can find Debian's official documentation on `aptitude`.
 
 ## Key Differences
 ### Interface
@@ -46,3 +38,7 @@ Use `aptitude` if you:
 
 >[!TIP]
 >Both tools use the same package sources and can be used interchangeably on the same system, though it's recommended to (1) stick with one for consistency, and (2) **use `aptitude` if you know what you are doing**.
+
+## Resources
+- [Apt Documentation](https://wiki.debian.org/Apt)
+- [Aptitude Documentation](https://wiki.debian.org/Aptitude)
