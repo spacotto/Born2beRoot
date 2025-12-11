@@ -71,8 +71,8 @@ reject_username                      # The password must NOT include the name of
 ```
 # difok=7                            # The password must have at least 7 characters that are not part of the former password
 ```
->[!CAUTION]
->I recommend NOT applying this rule to `root`.
+>[!IMPORTANT]
+>The module will return error on failed check even if the user changing the password is root. This option is off by default which means that just the message about the failed check is printed but root can change the password anyway. Note that root is not asked for an old password so the checks that compare the old and new password are not performed (Debian man).
 
 #### Enforce Policy For Root
 ```
@@ -127,3 +127,8 @@ For security reasons, the paths used by `sudo` shall be restricted
 ```
 Defaults  secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
 ```
+
+## Resources
+- [libpam-pwquality](https://packages.debian.org/trixie/libpam-pwquality)
+- [man login.defs](https://manpages.debian.org/trixie/login.defs/login.defs.5.en.html)
+- [pam_pwquality](https://manpages.debian.org/testing/libpam-pwquality/pam_pwquality.8.en.html)
