@@ -129,6 +129,9 @@ sudo:x:27:spacotto
 >```
 
 ## Resources
+- [man addgroup](https://manpages.debian.org/trixie/adduser/addgroup.8.en.html)
 - [man adduser](https://manpages.debian.org/testing/adduser/adduser.8.en.html)
+- [man delgroup](https://manpages.debian.org/trixie/adduser/delgroup.8.en.html)
 - [man deluser](https://manpages.debian.org/testing/adduser/deluser.8.en.html)
 - [man getent](https://manpages.debian.org/testing/manpages/getent.1.en.html)
+- [man groups](https://manpages.debian.org/trixie/coreutils/groups.1.en.html)
