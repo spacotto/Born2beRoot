@@ -30,3 +30,6 @@
 
 ## Key Consideration
 LVM is particularly valuable in VM environments where **storage requirements frequently change**. It pairs exceptionally well with VM snapshots and **backup solutions**. For static workloads with predictable storage needs, traditional partitioning might be simpler, but for **dynamic environments** requiring flexibility, LVM's benefits far outweigh its complexity.
+
+## Resources
+- [man lvm](https://manpages.debian.org/trixie/lvm2/lvm.8.en.html)
