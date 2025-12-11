@@ -131,3 +131,4 @@ sudo:x:27:spacotto
 ## Resources
 - [man adduser](https://manpages.debian.org/testing/adduser/adduser.8.en.html)
 - [man deluser](https://manpages.debian.org/testing/adduser/deluser.8.en.html)
+- [man getent](https://manpages.debian.org/testing/manpages/getent.1.en.html)
