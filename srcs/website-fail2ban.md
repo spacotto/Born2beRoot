@@ -201,3 +201,6 @@ sudo tail -f /var/log/fail2ban.log
 
 ## Resources
 - [Fail2ban - Wikipedia](https://en.wikipedia.org/wiki/Fail2ban)
+- [How to install Fail2ban on Debian](https://upcloud.com/resources/tutorials/install-fail2ban-debian/)
+- [Package: fail2ban (1.1.0-8)](https://packages.debian.org/trixie/fail2ban)
+
