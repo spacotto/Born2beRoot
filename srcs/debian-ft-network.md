@@ -127,3 +127,7 @@ sudo:x:27:spacotto
 >```
 >getent group sudo | cut -d: -f4
 >```
+
+## Resources
+- [man adduser](https://manpages.debian.org/testing/adduser/adduser.8.en.html)
+- [man deluser](https://manpages.debian.org/testing/adduser/deluser.8.en.html)
