@@ -74,3 +74,6 @@ Execute `<command>` as the specified `<user>` instead of `root`:
 ```
 sudo -u <user> <command>
 ```
+
+## Resources
+- [man sudo](https://manpages.debian.org/trixie/sudo-ldap/sudo.8.en.html)
