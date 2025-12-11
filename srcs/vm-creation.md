@@ -58,3 +58,6 @@ ISO Image  # The ISO image of the OS.
 
 ## 4. Confirm Summary
 ![hardware-summary](https://github.com/spacotto/Born2beRoot/blob/main/imgs/vm004.png)
+
+## Resources
+- [Creating Your First Virtual Machine](https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/gui-createvm.html)
