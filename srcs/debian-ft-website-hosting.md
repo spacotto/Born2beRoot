@@ -162,7 +162,7 @@ In your browser, visit:
 http://localhost:host_port
 ```
 
-Complete Wordpress installation:
+Complete WordPress installation:
 ![wordpress](https://github.com/spacotto/Born2beRoot/blob/main/imgs/Screenshot%20from%202025-12-11%2011-15-24.png)
 
 ## Troublshooting
