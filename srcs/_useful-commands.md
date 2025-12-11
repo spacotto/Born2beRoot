@@ -1,7 +1,7 @@
 # Useful Commands
 Here is a list of the most used command lines to check the state of your VM.
 
-## VM Stauts
+## VM Status
 Generate signature:
 ```
 sha1sum debian_serv.vdi > signature.txt
