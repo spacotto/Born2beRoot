@@ -44,7 +44,7 @@ groups [username]                                  # Write the username of the u
 
 Check group members:
 ```
-getent [group] [group1] [group2] [group3] [...]    # Write the names of the groups you want to check
+getent group [group1] [group2] [group3] [...]    # Write the names of the groups you want to check
 ```
 
 Check password policy configuration:
