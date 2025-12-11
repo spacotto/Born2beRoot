@@ -60,3 +60,6 @@ This is the second OS installation step.
 
 >[!NOTE]
 >Find out more about Strong Password Policy & Generation [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/password-policy.md).
+
+## Resources
+- [Debian GNU/Linux Installation Guide](https://www.debian.org/releases/stable/amd64/index)
