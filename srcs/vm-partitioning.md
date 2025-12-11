@@ -93,7 +93,7 @@ rom
 4. Encrypted space used as LVM physical volume
 5. Logical volumes created for different system directories
 
-## Sources
+## Resources
 - [GPU partitioning](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/gpu-partitioning)
 - [Understanding Partitioning, BROADCOM](https://techdocs.broadcom.com/us/en/vmware-tanzu/data-solutions/tanzu-gemfire/10-1/gf/developing-partitioned_regions-how_partitioning_works.html)
 - [VM, It Is Not What You Think!](https://www.packtpub.com/en-us/learning/how-to-tutorials/vm-it-not-what-you-think/)
