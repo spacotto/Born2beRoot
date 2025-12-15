@@ -17,13 +17,10 @@ Born2beRoot is a system administration project that introduces the fundamentals 
 - **Software:** VirtualBox
 - **Version:** 7.0.20
 
-### Guest Operating System (Guest OS)
+### Guest [Operating System](https://github.com/spacotto/Born2beRoot/blob/main/srcs/os-choice.md) (Guest OS)
 - **OS:** Debian
 - **Version:** 13.2.0 (amd64)
 - **Codename:** trixie
-
->[!IMPORTANT]
->Find out more about my OS choice [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/os-choice.md).
 
 # Features
 >[!CAUTION]
