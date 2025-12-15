@@ -13,12 +13,9 @@ Born2beRoot is a system administration project that introduces the fundamentals 
 - **Version:** 22.04.4 LTS
 - **Codename:** jammy
 
-### Virtualisation Software (Hypervisor)
+### Virtualisation Software ([**Hypervisor**](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md))
 - **Software:** VirtualBox
 - **Version:** 7.0.20
-
->[!IMPORTANT]
->Find out more about hypervisors and my hypervisor choice [here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md).
 
 ### Guest Operating System (Guest OS)
 - **OS:** Debian
