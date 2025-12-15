@@ -1,28 +1,28 @@
 >[!CAUTION]
 >This is a work in progress.
 
-# Overview
+## Overview
 Born2beRoot is a system administration project that introduces the fundamentals of virtualisation and server configuration. The goal is to create and configure a [**Virtual Machine (VM)**](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-overview.md) following strict security guidelines and best practices. This project aims to teach essential skills in operating system installation, partitioning, user management, security policies, and service configuration. 
 
 >[!CAUTION]
 >Since this project serves as an introduction to virtualisation, I will focus on installing the minimum of services. For this reason, **I will not provide sources concerning the graphical interface**.
 
-## Requirements
-### Host Operating System (Host OS)
+### Requirements
+#### Host Operating System (Host OS)
 - **OS:** Ubuntu
 - **Version:** 22.04.4 LTS
 - **Codename:** jammy
 
-### Virtualisation Software ([**Hypervisor**](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md))
+#### Virtualisation Software ([**Hypervisor**](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md))
 - **Software:** VirtualBox
 - **Version:** 7.0.20
 
-### Guest [Operating System](https://github.com/spacotto/Born2beRoot/blob/main/srcs/os-choice.md) (Guest OS)
+#### Guest [Operating System](https://github.com/spacotto/Born2beRoot/blob/main/srcs/os-choice.md) (Guest OS)
 - **OS:** Debian
 - **Version:** 13.2.0 (amd64)
 - **Codename:** trixie
 
-# Features
+## Features
 >[!CAUTION]
 >Keep in mind this documentation concerns the creation of a **minimalist** VM and server. I am going to discuss **exclusively** the implementation of the **essential elements**. I am NOT going to address the implementation of UI or other additional features.
 
