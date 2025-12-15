@@ -4,9 +4,6 @@
 >[!NOTE]
 >An **iptables** is the **command-line tool** traditionally used on Linux systems like Debian to **configure the kernel's Netfilter framework**. **Netfilter** is the underlying, low-level **packet filtering system** inside the Linux kernel that handles network traffic.
 
->[!IMPORTANT]
-> [Here](https://wiki.debian.org/Uncomplicated%20Firewall%20%28ufw%29) you can find the official Debian documentation about UFW.
-
 ## Installation
 ```
 sudo apt install ufw
@@ -115,5 +112,6 @@ sudo tail -f /var/log/ufw.log
 ```
 
 ## Resources
+- [Debian Documentation](https://wiki.debian.org/Uncomplicated%20Firewall%20%28ufw%29)
 - [man ufw](https://manpages.debian.org/trixie/ufw/ufw.8.en.html)
 - [Package: ufw (0.36.2-9)](https://packages.debian.org/trixie/ufw)
