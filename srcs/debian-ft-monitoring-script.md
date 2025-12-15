@@ -1,44 +1,6 @@
 # About Monitoring Script Service
 A monitoring service **tracks scheduled jobs and alerts** you when they fail to run, run unsuccessfully, or produce unexpected output.
 
-## Basic Monitoring Approaches
-### 1. Email Notifications (Built-in)
-Cron automatically emails output to the user. Configure in crontab:
-```
-MAILTO=admin@example.com
-```
->[!WARNING]
->All job output (`stdout`/`stderr`) will be emailed. To suppress emails for successful runs:
->```
->0 2 * * * /path/to/script.sh > /dev/null 2>&1
->```
-
-### 2. Logging to Files
-Add logging to your cron jobs:
-```
-0 2 * * * /path/to/script.sh >> /var/log/myscript.log 2>&1
-```
->[!NOTE]
->Monitor logs with `logrotate` to prevent disk fills. Create `/etc/logrotate.d/myscript`:
->```
->/var/log/myscript.log {
->    weekly
->    rotate 4
->    compress
->    missingok
->    notifempty
->}
->```
-
-### 3. External Monitoring Services
-Healthchecks.io Pattern (works with any similar service):
-```
-# Successful run notification
-0 2 * * * /path/to/script.sh && curl -m 10 --retry 5 https://hc-ping.com/YOUR-UUID
-```
->[!NOTE]
->The service expects regular pings. Missing pings trigger alerts.
-
 ## Monitoring Script Configuration
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-cron.md) you can find the details about cron.
@@ -148,7 +110,37 @@ sudo crontab -e
 
 Add timer setting:
 ```
-*/10 * * * * /usr/local/bin/monitoring.sh    # Display every 10m
+# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# .------------------ minute (0 - 59)
+# | .---------------- hour (0 - 23)
+# | |   .------------ day of month (1 - 31)
+# | |   |   .-------- month (1 - 12) OR jan, feb, mar, etc.
+# | |   |   |   .---- day of the week (0 - 6) (Sunday=0 or 7)
+# | |   |   |   |
+# m h  dom mon dow   command
+*/10 * * * * /usr/local/bin/monitoring.sh
+# Display every 10m the script found at the given path
 ```
 
 >[!TIP]
