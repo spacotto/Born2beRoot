@@ -4,14 +4,13 @@
 - Domain name (optional, but recommended)
 - Basic command line knowledge
 
-## Host WordPress on Debian VM
-### Update System
+## Update System
 ```
 sudo apt update
 sudo apt upgrade -y
 ```
 
-### Install Lighttpd
+## Install Lighttpd
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-lighttpd.md#basic-configuration) you can find more details concerning Lighttpd.
 
@@ -28,7 +27,7 @@ sudo systemctl status lighttpd
 >sudo systemctl start lighttpd
 >```
 
-### Install WordPress
+## Install WordPress
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-wordpress.md) you can find more details concerning WordPress.
 
@@ -41,7 +40,7 @@ sudo chown -R www-data:www-data /var/www/html/wordpress
 sudo chmod -R 755 /var/www/html/wordpress
 ```
 
-### Install MariaDB
+## Install MariaDB
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-mariadb.md) you can find more details concerning MariaDB.
 
@@ -77,7 +76,7 @@ Remove test database and access to it?       # Enter Y (By default, MariaDB come
 Reload privilege tables now?                 # Enter Y (Reloading the privilege tables will ensure that all changes made so far will take effect immediately.)
 ```
 
-### Install PHP
+## Install PHP
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-php.md) you can find more details concerning PHP.
 
@@ -95,7 +94,7 @@ sudo systemctl start php8.4-fpm
 >php -v
 >```
 
-### Create WordPress Database with MariaDB
+## Create WordPress Database with MariaDB
 ```
 sudo mariadb
 ```
@@ -109,7 +108,7 @@ FLUSH PRIVILEGES;
 exit
 ```
 
-### Configure Lighttpd for WordPress
+## Configure Lighttpd for WordPress
 Create or edit the Lighttpd configuration:
 ```
 sudo nano /etc/lighttpd/lighttpd.conf
@@ -132,7 +131,7 @@ sudo lighttpd-enable-mod rewrite
 sudo systemctl restart lighttpd
 ```
 
-### Configure WordPress
+## Configure WordPress
 Create WordPress Configuration
 ```
 cd /var/www/html/
@@ -156,7 +155,7 @@ sudo find /var/www/html/wordpress -type d -exec chmod 755 {} \;
 sudo find /var/www/html/wordpress -type f -exec chmod 644 {} \;
 ```
 
-### Complete WordPress Installation
+## Complete WordPress Installation
 In your browser, visit:
 ```
 http://localhost:host_port
@@ -165,7 +164,7 @@ http://localhost:host_port
 Complete WordPress installation:
 ![wordpress](https://github.com/spacotto/Born2beRoot/blob/main/imgs/Screenshot%20from%202025-12-11%2011-15-24.png)
 
-### Install & Configure Fail2Ban
+## Install & Configure Fail2Ban
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-fail2ban.md) you can find more details concerning Fail2Ban.
 
