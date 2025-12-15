@@ -7,17 +7,17 @@ Born2beRoot is a system administration project that introduces the fundamentals 
 >[!CAUTION]
 >Since this project serves as an introduction to virtualisation, I will focus on installing the minimum of services. For this reason, **I will not provide sources concerning the graphical interface**.
 
-### Requirements
-#### Host Operating System (Host OS)
+## Requirements
+### Host Operating System (Host OS)
 - **OS:** Ubuntu
 - **Version:** 22.04.4 LTS
 - **Codename:** jammy
 
-#### Virtualisation Software ([**Hypervisor**](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md))
+### Virtualisation Software ([**Hypervisor**](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-hypervisor.md))
 - **Software:** VirtualBox
 - **Version:** 7.0.20
 
-#### Guest [Operating System](https://github.com/spacotto/Born2beRoot/blob/main/srcs/os-choice.md) (Guest OS)
+### Guest [Operating System](https://github.com/spacotto/Born2beRoot/blob/main/srcs/os-choice.md) (Guest OS)
 - **OS:** Debian
 - **Version:** 13.2.0 (amd64)
 - **Codename:** trixie
@@ -35,34 +35,11 @@ Born2beRoot is a system administration project that introduces the fundamentals 
   - [Install the GRUB boot loader](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-grub.md)
 - Server Features (Services, Packages, Utilities)
   - [Package Manager: `apt` and `aptitude`](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-apt-aptitude.md)
-  - `sudo` Installation 
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-sudo.md) you can find the details concerning the setup of `sudo` command.
-
-### AppArmor
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-apparmor.md) you can find the details concerning the setup of SSH.
-
-### SSH
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-ssh.md) you can find the details concerning the setup of SSH.
-
-### UFW
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-ufw.md) you can find the details concerning the setup of UFW.
-
-### Strong Password Policy Implementation
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-password-policy-config.md) you can find the details concerning the implementation of the Strong Password Policy.
-
-### Users & Groups Management
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-network.md) you can find the details concerning the setup of group management.
-
-### Monitoring Script
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-monitoring-script.md) you can find the details concerning the setup of the Monitoring Script and Cron service.
-
-### Website Hosting: WordPress, lighttpd, MariaDB, PHP, Fail2Ban
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-website-hosting.md) you can find the details concerning the setup of a website on a Debian server.
+  - [`sudo` Installation](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-sudo.md)
+  - [AppArmor](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-apparmor.md)
+  - [SSH](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-ssh.md)
+  - [UFW](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-ufw.md)
+  - [Strong Password Policy Implementation](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-password-policy-config.md)
+  - [Users & Groups Management](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-network.md)
+  - [Monitoring Script](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-monitoring-script.md)
+  - [Website Hosting](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-website-hosting.md): WordPress, lighttpd, MariaDB, PHP, Fail2Ban
