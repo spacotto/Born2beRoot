@@ -42,4 +42,5 @@ Born2beRoot is a system administration project that introduces the fundamentals 
   - [Strong Password Policy Implementation](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-password-policy-config.md)
   - [Users & Groups Management](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-network.md)
   - [Monitoring Script](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-monitoring-script.md)
+    - [Cron: Time-based job scheduling](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-cron.md)
   - [Website Hosting](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-website-hosting.md): WordPress, lighttpd, MariaDB, PHP, Fail2Ban
