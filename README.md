@@ -2,13 +2,10 @@
 >This is a work in progress.
 
 # Overview
-Born2beRoot is a system administration project that introduces the fundamentals of virtualisation and server configuration. The goal is to create and configure a Virtual Machine (VM) following strict security guidelines and best practices. This project aims to teach essential skills in operating system installation, partitioning, user management, security policies, and service configuration. 
+Born2beRoot is a system administration project that introduces the fundamentals of virtualisation and server configuration. The goal is to create and configure a [**Virtual Machine (VM)**](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-overview.md) following strict security guidelines and best practices. This project aims to teach essential skills in operating system installation, partitioning, user management, security policies, and service configuration. 
 
 >[!CAUTION]
 >Since this project serves as an introduction to virtualisation, I will focus on installing the minimum of services. For this reason, **I will not provide sources concerning the graphical interface**.
-
->[!NOTE]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-overview.md) you can find more information on **virtualisation** and **VMs**.
 
 ## Requirements
 ### Host Operating System (Host OS)
