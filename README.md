@@ -31,27 +31,11 @@ Born2beRoot is a system administration project that introduces the fundamentals 
   - [Configure Locals](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-config-locals.md)
   - [Configure the Network](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-config-network.md)
   - [Partition Disk](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-disk-partitioning.md)
-
-### Configure the package manager & Software Selection
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-config-pckg.md) you can find the details concerning the package manager configuration and the software selection.
-
-### Install the GRUB boot loader
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-grub.md) you can find the details concerning the installation of GRUB boot loader.
-
-## Server Features (Services, Packages, Utilities)
->[!CAUTION]
->Before starting to interact with your new VM terminal, I recommend checking what shell you are using. You can find this out by running the following command in the terminal:
->```
->echo $0
->```
-
-### Package Manager: `apt` and `aptitude`
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-apt-aptitude.md) you can find the details concerning `apt` and `aptitude`.
-
-### `sudo` Installation 
+  - [Configure the package manager & Software Selection](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-config-pckg.md)
+  - [Install the GRUB boot loader](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-grub.md)
+- Server Features (Services, Packages, Utilities)
+  - [Package Manager: `apt` and `aptitude`](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-apt-aptitude.md)
+  - `sudo` Installation 
 >[!IMPORTANT]
 >[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-sudo.md) you can find the details concerning the setup of `sudo` command.
 
