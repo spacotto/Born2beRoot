@@ -26,14 +26,10 @@ Born2beRoot is a system administration project that introduces the fundamentals 
 >[!CAUTION]
 >Keep in mind this documentation concerns the creation of a **minimalist** VM and server. I am going to discuss **exclusively** the implementation of the **essential elements**. I am NOT going to address the implementation of UI or other additional features.
 
-## Create a Virtual Machine
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-creation.md) you can find the details concerning the VM creation.
+- [Create a Virtual Machine](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-creation.md)
+- Debian Installation
+  - [Configure Locals](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-config-locals.md)
 
-## Debian Installation
-### Configure Locals
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-config-locals.md) you can find the details concerning locals configuration.
 
 ### Configure the Network
 >[!IMPORTANT]
