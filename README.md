@@ -29,15 +29,8 @@ Born2beRoot is a system administration project that introduces the fundamentals 
 - [Create a Virtual Machine](https://github.com/spacotto/Born2beRoot/blob/main/srcs/vm-creation.md)
 - Debian Installation
   - [Configure Locals](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-config-locals.md)
-
-
-### Configure the Network
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-config-network.md) you can find the details concerning the network configuration.
-
-### Partition Disk
->[!IMPORTANT]
->[Here](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-disk-partitioning.md) you can find the details concerning the disk (storage) partitioning process.
+  - [Configure the Network](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-config-network.md)
+  - [Partition Disk](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-install-disk-partitioning.md)
 
 ### Configure the package manager & Software Selection
 >[!IMPORTANT]
