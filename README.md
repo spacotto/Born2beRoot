@@ -44,8 +44,8 @@ Born2beRoot is a system administration project that introduces the fundamentals 
   - [Monitoring Script](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-monitoring-script.md)
     - [Cron: Time-based job scheduling](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-cron.md)
   - [Website Hosting](https://github.com/spacotto/Born2beRoot/blob/main/srcs/debian-ft-website-hosting.md):
-    - WordPress
-    - lighttpd
-    - MariaDB
-    - PHP
-    - Fail2Ban
+    - [WordPress: Content Management System (CMS)](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-wordpress.md)
+    - [lighttpd: Web Server](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-lighttpd.md)
+    - [MariaDB: Database Management System](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-mariadb.md)
+    - [PHP: Scripting Language](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-php.md)
+    - [Fail2Ban: Bonus Service](https://github.com/spacotto/Born2beRoot/blob/main/srcs/website-fail2ban.md)
